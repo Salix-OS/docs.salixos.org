@@ -1,5 +1,6 @@
 ---
-title: "How do I change the default system hostname"
+title: "How do I change the default system hostname?"
+menutitle: "Change the default hostname"
 ---
 
 The easy way to do it, is to simply run the `gtkhostsetup` Salix system
@@ -9,13 +10,14 @@ Otherwise, you may follow the instructions below:
 
 If you completed a **FULL** mode Salix installation, the default
 hostname is set to `darkstar.example.net` (inherited from Slackware). If
-you need to change the hostname you can edit the **/etc/hosts** and
-**/etc/HOSTNAME** files accordingly. For example:
+you need to change the hostname you can edit the `/etc/hosts` and
+`/etc/HOSTNAME` files accordingly. For example:
 
 **/etc/hosts:**
 ```
 #
-# hosts        This file describes a number of hostname-to-address
+# hosts
+#      This file describes a number of hostname-to-address
 #      mappings for the TCP/IP subsystem.  It is mostly
 #      used at boot time, when no name servers are running.
 #      On small systems, this file can be used instead of a
@@ -35,7 +37,6 @@ you need to change the hostname you can edit the **/etc/hosts** and
 ```
 
 **/etc/HOSTNAME:**
-
 ```
 mypc.salixos.org
 ```
