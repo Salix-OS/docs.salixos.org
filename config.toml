@@ -6,7 +6,7 @@ title = "Hugo Learn Documentation"
 theme = "hugo-theme-learn"
 themesdir = "themes"
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
+defaultContentLanguageInSubdir = false
 
 [params]
   editURL = "https://github.com/Salix-OS/docs.salixos.org"
