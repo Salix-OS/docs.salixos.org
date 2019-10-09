@@ -1,9 +1,7 @@
 ---
 title: Developer Documentation
-weight: 2
+weight: 3
 ---
-
-# Developer Documentation
 
 Find out how to create and organize your content quickly and intuitively.
 

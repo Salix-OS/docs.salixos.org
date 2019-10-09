@@ -6,7 +6,7 @@ menutitle: "Install SalixLive on USB"
 **These instructions are for LiveCD images of Salix only!!!** If your
 iso image file does not have *'live'* in it's name look at these
 instructions:
-[Install-from-USB](/faq/install-from-usb)
+[Install-from-USB](/user/install-from-usb)
 
 It depends if you already have a Salix Live CD or simply an ISO image.
 **Unetbootin version < 575** is not supported and should not be
