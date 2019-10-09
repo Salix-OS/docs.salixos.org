@@ -1,6 +1,6 @@
 ---
 title: "Package Manager Wants to Downgrade Packages"
-menutitle: "Package Manager Downgrades"
+menutitle: "Package manager downgrades"
 ---
 
 If you install packages from third party mirrors or from Slackbuilds you

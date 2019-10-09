@@ -1,6 +1,6 @@
 ---
 title: "Can I Use Third Party Repositories?"
-menutitle: "3rd Party Repos"
+menutitle: "3rd party repos"
 ---
 
 Yes, of course you are free to add third party repositories (e.g. GSB,
