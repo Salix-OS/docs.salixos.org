@@ -24,24 +24,17 @@ defaultContentLanguageInSubdir = false
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+name = "<i class='fas fa-home'></i> Main website"
 identifier = "ds"
 url = "https://github.com/matcornic/hugo-theme-learn"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Showcases"
-url = "showcase"
-weight = 11
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
+name = "<i class='fas fa-question-circle'></i> Support Forum"
+url = "https://forum.salixos.org"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
-url = "/credits"
+name = "<i class='fas fa-blog'></i> Blog"
+url = "https://blog.salixos.org"
 weight = 30
-
