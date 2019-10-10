@@ -1,7 +1,8 @@
 ---
-title: FAQ
+title: "Frequently Asked Questions"
+menutitle: FAQ
 weight: 1
 ---
 
-Find out how to create and organize your content quickly and intuitively.
+This is a list of questions that we get asked frequently.
 
