@@ -14,13 +14,17 @@ most cases, and no recompiling is necessary. You should only recompile if:
 **Before going ahead**, it may be easier (and will in many cases be sufficient
 to solve the problem) to 
 [install the kernel from Slackware current](/user/install-kernel-from-current),
-which will always be relatively recent. In some cases, you may wish to
-[rebuild the default kernel with different settings](/user/rebuild-kernel).
+which will always be relatively recent.
 
 The procedure is actually quite simple, as long as you remember to reinstall
 the bootloader before rebooting. However, it can take a long time.
 
-## Preparation
+## Download the kernel source
+
+You may either compile a completely new kernel from source, or
+recompile the kernel that is packaged by Salix with new configuration.
+
+### New kernel from kernel.org
 
 First, download the appropriate kernel source from http://www.kernel.org
 
@@ -30,7 +34,22 @@ extension).
 Unpack source into a directory of your choosing (any directory will do,
 preferably somewhere in your home directory).
 
-Move to that directory, and do
+### Already installed kernel
+
+Alternatively, you could rebuild the already installed kernel. For that,
+you will need to install the `kernel-source` package, if you don't have
+it already:
+
+```
+sudo slapt-get -i kernel-source
+```
+
+The kernel source will then be in
+`/usr/src/linux-3.2.25` (change 3.2.25 to the appropriate version.
+
+## Preparation
+
+Move to the directory that the kernel source is and run:
 ```
 make mrproper
 ```
