@@ -1,0 +1,23 @@
+---
+title: "Icons Missing in the Xfce Menu"
+menutitle: "Icons missing in Xfce"
+---
+
+If you installed a new software package and the respective icons are
+missing from the Xfce menu, it's because Xfce is too slow to update the
+icon caches. Just run the following command as to update the icon
+cache for all icon themes installed in your system (among other things):
+
+```
+sudo update-all
+```
+
+If you have any icon themes installed in your home directory instead of
+having them installed systemwide, you probably need to run something
+like this (as non-priviliged user this time):
+
+```
+for i in ~/.icons/*;do  gtk-update-icon-cache -f $i; done
+```
+
+
