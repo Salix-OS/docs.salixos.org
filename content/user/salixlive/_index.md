@@ -61,29 +61,29 @@ screenshots are not exactly what you're seeing. ;)
     and open it by double-clicking. This should bring up your default
     archive manager.
 3.  Now select the *Extract* button.
-    ![usbinstall-extract1.png](/images/salixlive/usbinstall-extract1.png")
+    ![usbinstall-extract1.png](usbinstall-extract1.png)
 4.  In the popping up dialog window select your USB stick in the
     left column. For me it's "TEST". If the USB Stick doesn't show up,
     try opening it first in your regular file manager. Also make sure
     that the same tickboxes/radio buttons are selected in the bottom of
     the window (Extract "All files", "Re-create folders" and "Overwrite
     existing files").\
-    ![usbinstall-extract2.png](/images/salixlive/usbinstall-extract2.png")
+    ![usbinstall-extract2.png](usbinstall-extract2.png)
 5.  Now press the *Extract* button and wait until the operation
     is finished. If it is, press the *Quit* button.\
-    ![usbinstall-extract4.png](/images/salixlive/usbinstall-extract4.png")
+    ![usbinstall-extract4.png](usbinstall-extract4.png)
 6.  Open your file manager and navigate to your USB stick. Open the boot
     directory in the root of your stick.
 7.  Start the installation by double-clicking the install-on-USB.sh
     script.\
-    ![usbinstall-execute.png](/images/salixlive/usbinstall-execute.png")
+    ![usbinstall-execute.png](usbinstall-execute.png)
 8.  You need to enter your root password because administrative
     privileges are required.\
-    ![usbinstall-root.png](/images/salixlive/usbinstall-root.png")
+    ![usbinstall-root.png](usbinstall-root.png)
 9.  Now follow the on-screen instructions. It should be safe to always
     say yes, after checking whether the right devices have been chosen.
     Finally you should end up like this:\
-    ![usbinstall-install.png](/images/salixlive/usbinstall-install.png")\
+    ![usbinstall-install.png](usbinstall-install.png)
     If you end up getting a error message, first try to make some sense
     out of it. You might be missing one of the utilities mentioned
     before (syslinux, parted, lilo).
@@ -92,11 +92,11 @@ screenshots are not exactly what you're seeing. ;)
     the device. Don't unplug it before it's really unmounted. For Thunar
     and many other file managers unmounting works by right-clicking onto
     the device in the left-hand panel.\
-    ![usbinstall-unmount.png](/images/salixlive/usbinstall-unmount.png")
+    ![usbinstall-unmount.png](usbinstall-unmount.png)
 11. If the stick is really unmounted and all data has been written, this
     is somehow indicated. For example by graying out the device. Now you
     may safely unplug your stick if you want.\
-    ![usbinstall-unmounted.png](/images/salixlive/usbinstall-unmounted.png")
+    ![usbinstall-unmounted.png](usbinstall-unmounted.png)
 12. Done! Now reboot with your stick plugged in and select it as the
     boot device for your BIOS.\
     Many BIOS offer a Boot Selection Menu for this task, which is
