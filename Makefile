@@ -1,7 +1,13 @@
 
+.PHONY: all
 all: faq user dev
-	hugo
+	hugo-0.111.3
 
+.PHONY: serve
+serve: all
+	hugo-0.111.3 serve
+
+.PHONY: faq
 faq:
 	cat headers/faq.md > content/faq/_index.md
 	grep -R "^title: " content/faq/[[:alnum:]]*.md |\
@@ -9,6 +15,7 @@ faq:
 		sed "s/\"//g" \
 		>> content/faq/_index.md
 
+.PHONY: user
 user:
 	cat headers/user.md > content/user/_index.md
 	grep -R "^title: " content/user/[[:alnum:]]*.md |\
@@ -16,6 +23,7 @@ user:
 		sed "s/\"//g" \
 		>> content/user/_index.md
 
+.PHONY: dev
 dev:
 	cat headers/dev.md > content/dev/_index.md
 	grep -R "^title: " content/dev/ |\
