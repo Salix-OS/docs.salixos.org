@@ -18,3 +18,18 @@ Documentation is generally split into three sections:
 * [Frequently Asked Questions](/faq)
 * [User Documentation](/user)
 * [Developer Documentation](/dev)
+
+You can navigate the documentation or use the search bar for looking up
+specific terms.
+
+If you can't find what you're looking for, or have a suggestion for new
+content, please don't hesitate to reach out in our
+[forums](https://forum.salixos.org/) or the
+[mailing list](https://salixos.org/mailinglists.html).
+
+If you would like to edit existing documentation or add new articles, you can
+do it by forking the respective git repository at Github and making a pull
+request.
+We're constantly updating and improving the documentation, and your feedback is
+invaluable in helping us make it more comprehensive and user-friendly. Happy
+reading!
