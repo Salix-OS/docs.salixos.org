@@ -72,12 +72,12 @@ If you are installing software from a SlackBuild or similar, please consider
 these
 [additional instructions](http://alien.slackbook.org/dokuwiki/doku.php?id=slackware:multilib#compiling_32-bit_programs).
 
-## Alternatively .... 
+## Alternatively... 
 
 A script to do it all for you may be found
 [in the forums](http://forum.salixos.org/viewtopic.php?f=20&t=4910&p=31878&hilit=multilib#p31878)
 
-## Finally ... 
+## Finally
 
 Whichever method you use, you need to add gcc* and glibc* to the excludes in
 /etc/slapt-get/slapt-getrc, whether directly or through the GSlapt interface;
