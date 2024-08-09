@@ -1,5 +1,5 @@
 ---
-title: "How to Read the Salix Man Page
+title: "How to Read the Salix Man Page"
 menutitle: "Salix Man Page"
 ---
 
