@@ -3,7 +3,7 @@ title: "How to Work with Transifex"
 menutitle: "Transifex"
 ---
 
-# Install the Transifex client 
+## Install the Transifex client 
 
 
 First you need to install the **transifex-client** package, so:
@@ -12,7 +12,7 @@ First you need to install the **transifex-client** package, so:
 slapt-get -i transifex-client
 ```
 
-# How to map local translation files to a Transifex project 
+## How to map local translation files to a Transifex project 
 
 
 You should only do this once for each application you have in Transifex. If
@@ -67,7 +67,7 @@ Check the output for errors too. This should map the local translation files
 with the ones from Transifex, so from now on, you can push/pull files to/from
 Transifex.
 
-# How to pull translation files from Transifex 
+## How to pull translation files from Transifex 
 
 In order to update the local *.po files with the ones from Transifex, you just need to run this inside the project's directory:
 
@@ -103,7 +103,7 @@ And finally upload the updated/new translations to svn:
 svn commit
 ```
 
-# How to push translation files to Transifex 
+## How to push translation files to Transifex 
 
 If you want to inform Transifex about changes in the pot file, you should run:
 
