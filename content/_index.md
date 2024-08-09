@@ -28,8 +28,15 @@ content, please don't hesitate to reach out in our
 [mailing list](https://salixos.org/mailinglists.html).
 
 If you would like to edit existing documentation or add new articles, you can
-do it by forking the respective git repository at Github and making a pull
-request.
-We're constantly updating and improving the documentation, and your feedback is
-invaluable in helping us make it more comprehensive and user-friendly. Happy
-reading!
+do it by forking the
+[git repository](https://github.com/Salix-OS/docs.salixos.org)
+at Github and making
+a pull request. We're constantly updating and improving the documentation, and
+your feedback is invaluable in helping us make it more comprehensive and
+user-friendly. Happy reading!
+
+{{% notice tip %}}
+In addition to this documentation, the
+[Salix Startup Guide](https://guide.salixos.org) is also available to guide
+you with your first steps with Salix.
+{{% /notice %}}
