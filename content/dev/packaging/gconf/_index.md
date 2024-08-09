@@ -72,7 +72,7 @@ packaging directory. This can be achieved by putting something like this
 in your buildscript somewhere after the `make install` line:
 
 ```
-# gconf stuff\
+# gconf stuff
 export GCONF_CONFIG_SOURCE="xml::$startdir/pkg/etc/gconf/gconf.xml.defaults"\
 if [ -d $startdir/pkg/etc/gconf/schemas ]; then\
     install -v -d -m755 $startdir/pkg/etc/gconf/gconf.xml.defaults\
