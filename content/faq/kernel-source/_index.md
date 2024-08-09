@@ -26,6 +26,18 @@ sudo slapt-get -i kernel-source
 That's it, the **kernel-source** package should be downloaded and
 installed when the download is finished.
 
+Make sure the kernel-source package you are installing matches your current
+kernel. You can check the currently installed kernel packages with:
+
+```
+ls /var/log/packages/kernel-*
+```
+
+If the kernel-source package version does not match your current kernel, you
+need to upgrade your kernel packages first. See
+[How to install a different kernel](/user/install-different-kernel) for how to do
+this.
+
 
 ### Salix 14.0 and earlier
 
