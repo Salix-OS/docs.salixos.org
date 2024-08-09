@@ -3,7 +3,7 @@ title: "How to Read the Salix Man Page"
 menutitle: "Salix Man Page"
 ---
 
-# What is a Man Page? 
+## What is a Man Page? 
 
 The Linux manual pages are the reference documentation of the system user (from
 the basic user to the administrator via the developer). They include all the
@@ -20,20 +20,20 @@ Or if you want to use our GTK manual page viewer:
 gtkman the_command_you_want_to_know_about
 ```
 
-## Example
+### Example
 
 ```
 man slapt-get
 ```
 
-# The Salix Man page 
+## The Salix Man page 
 
 
 This manual page allows you to read the minimum vital to use your Salix
 Operating System. To read it, you can run:
 
 ```
-$ man salix
+man salix
 ```
 
 This man page is installed by default and is included in the **salix-man**
