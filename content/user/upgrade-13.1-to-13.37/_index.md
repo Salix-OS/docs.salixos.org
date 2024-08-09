@@ -100,8 +100,9 @@ have installed, if any. It will also remove any packages that used to be part
 of the Slackware or Salix repos in 13.1, but are not anymore in 13.37. And it's
 never a bad idea to have a look at the Slackware CHANGES_AND_HINTS.TXT file:
 
-* [Changes and Hints File for i486](http://slackware.uk/slackware/slackware-13.37/CHANGES_AND_HINTS.TXT)
-* [Changes and Hints file for x86_64](http://slackware.uk/slackware/slackware64-13.37/CHANGES_AND_HINTS.TXT)
+* [Changes and Hints File for i486](https://slackware.uk/slackware/slackware-13.37/CHANGES_AND_HINTS.TXT)
+* [Changes and Hints file for x86_64](https://slackware.uk/slackware/slackware64-13.37/CHANGES_AND_HINTS.TXT)
+
 
 One of the major changes in 13.37 is the replacement of the OpenOffice.org
 office suite with LibreOffice. By running the above mentioned command,
