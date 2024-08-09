@@ -1,6 +1,6 @@
 
 .PHONY: all
-all: faq user dev
+all: faq user dev packaging
 	hugo-0.111.3
 
 .PHONY: serve
@@ -26,7 +26,21 @@ user:
 .PHONY: dev
 dev:
 	cat headers/dev.md > content/dev/_index.md
-	grep -R "^title: " content/dev/*/_index.md |\
-		sed "s|content/dev/\(.*\)/_index.md:title: \(.*\)|- [\2](/dev/\1)|" |\
+	find ./content/dev -type f -name "_index.md" | \
+	grep -v "dev/_index.md" | \
+	grep -v "/packaging/" | \
+	xargs grep "^title: " | \
+	sed "s|\./content/dev/\(.*\)/_index.md:title: \(.*\)|- [\2](/dev/\1)|" | \
 		sed "s/\"//g" \
 		>> content/dev/_index.md
+	echo -e "\nThere is also a section dedicated to [packaging](/dev/packaging)." >> content/dev/_index.md
+
+.PHONY: packaging
+packaging:
+	cat headers/packaging.md > content/dev/packaging/_index.md
+	find ./content/dev/packaging -type f -name "_index.md" | \
+	grep -v "packaging/_index.md" | \
+	xargs grep "^title: " | \
+	sed "s|\./content/dev/packaging/\(.*\)/_index.md:title: \(.*\)|- [\2](/dev/packaging/\1)|" | \
+		sed "s/\"//g" \
+		>> content/dev/packaging/_index.md
