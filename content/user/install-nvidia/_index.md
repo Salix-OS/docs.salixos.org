@@ -17,7 +17,7 @@ printout.
 
 * Close all your applications and save all data. Also log out if possible.
 * Now press __Ctrl + Alt + F2__ to go to a terminal in text-mode and login.
-* Now terminate X by dropping to runlevel 3 (text-mode only).
+* Now terminate X by dropping to runlevel 3 (text-mode only):
 
 ```
 sudo init 3
@@ -37,14 +37,12 @@ sudo sh NVIDIA-Linux-*.run
 
 * Follow the instructions of the installer. Select to update your xorg.conf.
 Otherwise you need to do so manually.
-* Reboot, **and repeat** (run the installer again). The first run blacklists
-the nouveau driver and the second installs the new one. See
-[this forum post for more](https://forum.salixos.org/viewtopic.php?f=16&t=5452&hilit=nouveau+blacklist&start=20)
-* When finished return to X by going to runlevel 4:
+* When finished, reboot:
 
 ```
-sudo init 4
+sudo reboot
 ```
+
 
 You can tweak some settings with the __nvidia-settings__ tools now, if you
 need/want to. To be able to save any such changes to your __xorg.conf__ you
