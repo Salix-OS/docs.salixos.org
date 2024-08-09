@@ -101,12 +101,13 @@ And then upgrade all other packages to their new versions:
 ```
 slapt-get --upgrade
 ```
-**DO NOT** use:<strike>
+
+**DO NOT** use:
 
 ```
 slapt-get --dist-upgrade
 ```
-</strike>in any case. Although it might seem to be the best option for upgrading to a different version, it really isn't.
+in any case. Although it might seem to be the best option for upgrading to a different version, it really isn't.
 
 The procps and ConsoleKit packages have been replaced by alternative implementations, so you'll need to install them:
 
@@ -148,39 +149,58 @@ You can remove all the rest obsolete packages automatically with:
 ```
 slapt-get --remove-obsolete --remove
 ```
-Careful, because this will also remove all personal packages that you might have installed, if any. It will also remove any packages that used to be part of the Slackware or Salix repos in 14.1, but are not anymore in 14.2. Take a careful look at the list of packages to be removed and if you recognise anything that you want to keep, make a note. It might have been renamed to something slightly different or it may be available as a binary package in the new release, so you might have to build it using a SlackBuild (with spi, slapt-src or sourcery) later. And it's never a bad idea to have a look at the Slackware CHANGES_AND_HINTS.TXT file:
 
-* ftp://ftp.ntua.gr/pub/linux/slackware/slackware-14.2/CHANGES_AND_HINTS.TXT
-* ftp://ftp.ntua.gr/pub/linux/slackware/slackware64-14.2/CHANGES_AND_HINTS.TXT
+Careful, because this will also remove all personal packages that you might
+have installed, if any. It will also remove any packages that used to be
+part of the Slackware or Salix repos in 14.1, but are not anymore in 14.2.
+Take a careful look at the list of packages to be removed and if you
+recognise anything that you want to keep, make a note. It might have been
+renamed to something slightly different or it may be available as a binary
+package in the new release, so you might have to build it using a SlackBuild
+(with spi, slapt-src or sourcery) later. And it's never a bad idea to have a
+look at the Slackware CHANGES_AND_HINTS.TXT file:
+
+* [Changes and Hints File for i486](https://slackware.uk/slackware/slackware-14.2/CHANGES_AND_HINTS.TXT)
+* [Changes and Hints File for x864_64](https://slackware.uk/slackware/slackware64-14.2/CHANGES_AND_HINTS.TXT)
 
 ## Upgrading the kernel 
-
 
 Run:
 
 ```
 ls /var/log/packages/kernel*
 ```
-to see which kernel packages you have installed and do a **slapt-get -i <packagename>** for each one of them. (Do not include the package version in **<packagename>**).
 
-If you have switched to the kernel-generic package instead of the default kernel-huge package, don't forget to recreate the initrd.gz file which will be needed for booting you upgraded system. If you're still using the default kernel-huge package, an initrd is not needed anyway and you needn't be concerned about it.
+to see which kernel packages you have installed and do a **slapt-get -i
+<packagename>** for each one of them. (Do not include the package version in
+**<packagename>**).
 
-After upgrading the packages, don't forget to edit your **/etc/lilo.conf** file accordingly and run:
+If you have switched to the kernel-generic package instead of the default
+kernel-huge package, don't forget to recreate the initrd.gz file which will
+be needed for booting you upgraded system. If you're still using the default
+kernel-huge package, an initrd is not needed anyway and you needn't be
+concerned about it.
+
+After upgrading the packages, don't forget to edit your **/etc/lilo.conf**
+file accordingly and run:
 
 ```
 lilo -v
 ```
+
 to inform the bootloader about the kernel upgrade.
 
-On similar note, users running multi-boot systems on GRUB2 must log into the distro that controls the bootloader and re-run
+On similar note, users running multi-boot systems on GRUB2 must log into the
+distro that controls the bootloader and re-run
 
 ```
 update-grub
 ```
+
 to inform the bootloader about the kernel upgrade.
 
-For those using elilo, you just need to copy the new kernel and initrd (if using kernel-generic) to appropriate directory in the ESP:
-
+For those using elilo, you just need to copy the new kernel and initrd (if
+using kernel-generic) to appropriate directory in the ESP:
 
 ```
 cp /boot/vmlinuz /boot/efi/EFI/Salix/vmlinuz
@@ -196,9 +216,9 @@ update-all
 ```
 
 This updates icon caches, font indexes, desktop and mime databases, pango
-files, glib schemas etc. You'll need to run this, or you'll probably won't be
-able to start a graphical environment and even if you do, you'll probably see
-garbage instead of readable characters.
+files, glib schemas etc. You'll need to run this, or you'll probably won't
+be able to start a graphical environment and even if you do, you'll probably
+see garbage instead of readable characters.
 
 ## Configuration files 
 
@@ -209,10 +229,10 @@ dotnew
 ```
 
 to accept or reject new configuration files. Make sure that you **DO NOT**
-replace your **/etc/passwd**, **/etc/shadow** or **/etc/group** files. If you
-do, you will lose all users/groups/passwords you have in your system. However,
-even if you do, you can get the old files back, they will be kept in the same
-locations, with an .orig suffix.
+replace your **/etc/passwd**, **/etc/shadow** or **/etc/group** files. If
+you do, you will lose all users/groups/passwords you have in your system.
+However, even if you do, you can get the old files back, they will be kept
+in the same locations, with an .orig suffix.
 
 If you are starting your system in init 3 (console), instead of init 4
 (graphics) and you start the GUI by running 'startx', you'd better refresh the
