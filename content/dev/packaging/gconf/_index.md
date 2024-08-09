@@ -6,8 +6,7 @@ pre: ""
 ---
 
 
-What is gconf?
---------------
+## What is gconf?
 
 GConf is a configuration scheme currently used by the GNOME desktop.
 Programs which use it setup default values in a `$NAME.schemas`file
@@ -24,8 +23,7 @@ build, or these will get installed in the packager's system instead of
 put in the package itself. They can then be created and placed in the
 package manually.
 
-Disabling schemas installation
-------------------------------
+## Disabling schemas installation
 
 When a package requires the installation of gconf schemas, there is
 usually a `--disable-schemas-install` configure option that can be
@@ -51,8 +49,8 @@ running make install, like this:
 GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 make install DESTDIR=$startdir/pkg
 ```
 
-where \$startdir/pkg is your packaging directory (as used by
-[SLKBUILD](SLKBUILD "wikilink")).
+where $startdir/pkg is your packaging directory (as used by
+SLKBUILD).
 
 Be careful not to do:
 
@@ -65,8 +63,7 @@ using gconf in other distributions, because the setting will stick and
 you won't be allowed to install the schemas manually later on in your
 buildscript.
 
-Installing schemas in the package
----------------------------------
+## Installing schemas in the package
 
 Files with the *.schemas* extension will be created under the
 *\$startdir/pkg* directory after running `make install` as specified
@@ -94,10 +91,9 @@ will register any .schemas files present in
 `$startdir/pkg/etc/gconf/schemas` and put their default settings inside
 the package.
 
-SLKBUILD and gconf schemas files
---------------------------------
+## SLKBUILD and gconf schemas files
 
-If you are using [SLKBUILD](SLKBUILD "wikilink") to create your
+If you are using SLKBUILD to create your
 packages, the default behaviour is to make every file under /etc a
 *.new* file automatically. A *.new* file does not replace any older
 versions of the same file, this happens only after the user explicitly
@@ -119,4 +115,5 @@ options=('noautodotnew')
 ```
 
 and add any other files that you want to be .new'd in the dotnew=()
-array (see *man SLKBUILD* for details)
+array (see the SLKBUILD manpage for details)
+
