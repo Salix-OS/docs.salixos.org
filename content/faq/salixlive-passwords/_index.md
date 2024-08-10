@@ -2,6 +2,7 @@
 title: "SalixLive Passwords"
 ---
 
+
 ## Salix 14.1 and newer
 
 For Salix 14.1 and newer there is no root user. You can log in as user
