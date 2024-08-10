@@ -11,8 +11,8 @@ to be upgraded at the same time.
 
 ### Salix 14.1 and newer
 
-To install the **kernel-source** package, in Salix 14.1 use `sudo` . Open
-a terminal window, run
+To install the **kernel-source** package, in Salix 14.1 and newer use `sudo` . Open
+a terminal window and run:
 ```none
 sudo slapt-get -u
 ```
