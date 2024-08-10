@@ -1,6 +1,6 @@
 
 .PHONY: all
-all: faq user dev packaging
+all: faq user dev packaging upgrading
 	hugo-0.111.3
 
 .PHONY: serve
@@ -23,6 +23,17 @@ user:
 		sed "s/\"//g" \
 		>> content/user/_index.md
 
+.PHONY: upgrading
+upgrading:
+	cat headers/upgrading.md > content/user/upgrading/_index.md
+	find ./content/user/upgrading -type f -name "_index.md" | \
+	grep -v "upgrading/_index.md" | \
+	xargs grep "^title: " | \
+	sed "s|\./content/user/upgrading/\(.*\)/_index.md:title: \(.*\)|- [\2](/user/upgrading/\1)|" | \
+		sed "s/\"//g" | \
+		tac \
+		>> content/user/upgrading/_index.md
+
 .PHONY: dev
 dev:
 	cat headers/dev.md > content/dev/_index.md
@@ -33,7 +44,7 @@ dev:
 	sed "s|\./content/dev/\(.*\)/_index.md:title: \(.*\)|- [\2](/dev/\1)|" | \
 		sed "s/\"//g" \
 		>> content/dev/_index.md
-	echo -e "\nThere is also a section dedicated to [packaging](/dev/packaging)." >> content/dev/_index.md
+	cat footers/dev.md >> content/dev/_index.md
 
 .PHONY: packaging
 packaging:
