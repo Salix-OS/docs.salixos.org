@@ -1,2 +1,8 @@
 public
 .hugo_build.lock
+content/faq/_index.md
+content/dev/_index.md
+content/dev/packaging/_index.md
+content/user/_index.md
+content/user/upgrading/_index.md
+
