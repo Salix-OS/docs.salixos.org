@@ -17,6 +17,7 @@ defaultContentLanguageInSubdir = false
   disableLanguageSwitchingButton = true
   themeVariant = "green"
   disableInlineCopyToClipBoard = true
+  disableExplicitIndexURLs = true
 
 
 [outputs]
