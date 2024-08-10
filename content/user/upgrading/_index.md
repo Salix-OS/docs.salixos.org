@@ -4,6 +4,17 @@ weight: 2
 chapter: false
 ---
 
-This is a list of tutorials for how to upgrade from one Salix release to the
-next one. Only upgrading to the next release is supported in any case. It is
-not advised to try to upgrade between multiple releases at once.
+Upgrading to a new Salix release is a straightforward process, and we've put
+together a series of tutorials to guide you through it. Below, you'll find
+step-by-step instructions on how to upgrade from one Salix release to the next.
+Please note that only upgrading to the next consecutive release is officially
+supported, so it's recommended to upgrade in sequence rather than skipping
+releases. Attempting to upgrade multiple releases at once is not recommended
+and may lead to unexpected issues.
+
+- [How to Upgrade Salix 14.2 to 15.0](/user/upgrading/14.2-to-15.0)
+- [How to Upgrade Salix 14.1 to 14.2](/user/upgrading/14.1-to-14.2)
+- [How to Upgrade Salix 14.0 to 14.1](/user/upgrading/14.0-to-14.1)
+- [How to Upgrade Salix 13.37 to 14.0](/user/upgrading/13.37-to-14.0)
+- [How to Upgrade Salix 13.1 to 13.37](/user/upgrading/13.1-to-13.37)
+- [How to Upgrade Salix 13.0 to 13.1](/user/upgrading/13.0-to-13.1)

@@ -24,7 +24,8 @@ specific terms.
 
 If you can't find what you're looking for, or have a suggestion for new
 content, please don't hesitate to reach out in our
-[forums](https://forum.salixos.org/) or the
+[forums](https://forum.salixos.org/),
+[IRC channel](https://salixos.org/chat.html) or the
 [mailing list](https://salixos.org/mailinglists.html).
 
 If you would like to edit existing documentation or add new articles, you can
