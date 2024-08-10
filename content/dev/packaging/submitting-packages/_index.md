@@ -1,6 +1,5 @@
 ---
-title: "Submitting packages"
-menutitle: "Submitting packages"
+title: "Submitting Packages"
 ---
 
 ## What you should do before submitting packages 

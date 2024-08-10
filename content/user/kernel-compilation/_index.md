@@ -1,6 +1,6 @@
 ---
 title: "How to Compile the Linux Kernel"
-menutitle: "Kernel compilation"
+linktitle: "Kernel Compilation"
 ---
 
 It should be noted that the default kernel that ships with Salix will work in

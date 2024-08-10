@@ -1,6 +1,6 @@
 ---
 title: "How to Read the Salix Man Page"
-menutitle: "Salix Man Page"
+linktitle: "Salix Man Page"
 ---
 
 ## What is a Man Page? 

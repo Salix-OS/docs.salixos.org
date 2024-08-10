@@ -1,6 +1,6 @@
 ---
 title: "Packages that are Different from Slackware"
-menutitle: "Packages different from Slackware"
+linktitle: "Packages different from Slackware"
 ---
 
 Here is a list of packages, present in both Salix and Slackware

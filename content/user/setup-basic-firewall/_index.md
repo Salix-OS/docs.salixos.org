@@ -1,6 +1,5 @@
 ---
 title: "Setup Basic Firewall"
-menutitle: "Setup basic firewall"
 ---
 
 You can setup a secure basic firewall using the "Uncomplicated Firewall or UFW".

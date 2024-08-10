@@ -1,6 +1,6 @@
 ---
 title: "How to Install the Proprietary NVIDIA Driver"
-menutitle: "Install NVIDIA Driver"
+linktitle: "Install NVIDIA Driver"
 ---
 
 You need to close all running applications during the installation of the

@@ -1,6 +1,6 @@
 ---
 title: "Repository Mirrors"
-menutitle: "Repository Mirrors"
+linktitle: "Repository Mirrors"
 ---
 
 The following mirrors are available for the Salix repositories. Individual

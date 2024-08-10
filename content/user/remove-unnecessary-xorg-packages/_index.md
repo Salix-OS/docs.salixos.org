@@ -1,6 +1,6 @@
 ---
 title: "How to Remove Unnecessary Xorg Packages"
-menutitle: "Remove Unnecessary Xorg Packages"
+linktitle: "Remove Unnecessary Xorg Packages"
 ---
 
 Salix __basic__ and __full__ installation modes install several xorg packages

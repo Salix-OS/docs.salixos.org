@@ -1,6 +1,6 @@
 ---
 title: "Greek Polytonic on Openbox"
-menutitle: "Greek Polytonic on Openbox"
+linktitle: "Greek Polytonic on Openbox"
 ---
 
 Writing greek polytonic,monotonic and ancient, modern spell checking on LibreOffice and Openbox.

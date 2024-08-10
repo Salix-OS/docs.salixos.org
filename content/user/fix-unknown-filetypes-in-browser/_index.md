@@ -1,6 +1,5 @@
 ---
 title: "Fix Unknown Filetypes in Browser"
-menutitle: "Fix unknown filetypes in browser"
 ---
 
 ## Symptom

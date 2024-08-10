@@ -1,6 +1,6 @@
 ---
-title: "Boot into existing installation on hard disk using installation CD"
-menutitle: "Boot into existing installation"
+title: "Boot Into Existing Installation on Hard Disk Using Installation CD"
+linktitle: "Boot Into Existing Installation"
 ---
 
 After installing Salix to hard disk my LILO or GRUB was broken. How can

@@ -1,6 +1,6 @@
 ---
 title: "Install Kernel From Current"
-menutitle: "Install Kernel From Current"
+linktitle: "Install Kernel From Current"
 ---
 
 If you have hardware that is not supported by the kernel that ships with Salix,

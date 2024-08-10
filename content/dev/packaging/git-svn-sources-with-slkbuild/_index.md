@@ -1,6 +1,6 @@
 ---
 title: "Getting git or svn sources for use with slkbuild"
-menutitle: "Git/SVN with slkbuild"
+linktitle: "Git/SVN with slkbuild"
 ---
 
 If the source only exists in a git or svn repository, then you will have to

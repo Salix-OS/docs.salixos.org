@@ -1,6 +1,6 @@
 ---
 title: "How to Work with Transifex"
-menutitle: "Transifex"
+linktitle: "Transifex"
 ---
 
 ## Install the Transifex client 

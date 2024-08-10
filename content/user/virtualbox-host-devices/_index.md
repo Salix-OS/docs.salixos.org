@@ -1,6 +1,6 @@
 ---
 title: "How to Access Host USB Devices in a Guest OS Running in VirtualBox PUEL"
-menutitle: "Virtualbox Access Host USB"
+linktitle: "Virtualbox Access Host USB"
 ---
 
 If you want to access usb devices in a guest OS running in VirtualBox PUEL, you

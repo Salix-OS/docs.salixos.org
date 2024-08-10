@@ -1,6 +1,6 @@
 ---
 title: "How to Install a Different Kernel"
-menutitle: "Install Different Kernel"
+linktitle: "Install Different Kernel"
 ---
 
 If you have hardware that is not supported by the kernel that ships with Salix,

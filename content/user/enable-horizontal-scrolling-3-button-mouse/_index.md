@@ -1,6 +1,6 @@
 ---
-title: "How to enable horizontal scrolling with a 3-button mouse"
-menutitle: "3-button Mouse Horizontal Scrolling"
+title: "How to Enable Horizontal Scrolling With a 3-Button Mouse"
+linktitle: "3-button Mouse Horizontal Scrolling"
 ---
 
 You may have a 3 buttons mouse with vertical scroll, but no physical horizontal scroll.

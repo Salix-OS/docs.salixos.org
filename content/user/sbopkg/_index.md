@@ -1,6 +1,6 @@
 ---
 title: "How to Use Sbopkg with Salix"
-menutitle: "Sbopkg"
+linktitle: "Sbopkg"
 ---
 
 Download the sbopkg package from its [homepage](https://www.sbopkg.org/) The

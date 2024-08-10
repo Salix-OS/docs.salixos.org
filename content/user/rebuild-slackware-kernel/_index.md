@@ -1,6 +1,6 @@
 ---
 title: "How to Rebuild the Slackware Kernel"
-menutitle: "Rebuild Slackware Kernel"
+linktitle: "Rebuild Slackware Kernel"
 ---
 
 It should be noted that the default kernel that ships with Salix will work in

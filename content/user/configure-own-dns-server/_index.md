@@ -1,6 +1,6 @@
 ---
-title: "How to configure your own DNS server with a static ip"
-menutitle: "Configure own DNS server"
+title: "How to Configure Your Own DNS Server With a Static IP"
+linktitle: "Configure Own DNS Server"
 ---
 
 Because a friend had to setup his own dns server using the static ip and

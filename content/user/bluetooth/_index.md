@@ -1,6 +1,6 @@
 ---
 title: "Bluetooth"
-menutitle: "Bluetooth"
+linktitle: "Bluetooth"
 ---
 
 ## Installing firmware

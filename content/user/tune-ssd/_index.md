@@ -1,6 +1,6 @@
 ---
 title: "How to Tune an SSD"
-menutitle: "Tune an SSD"
+linktitle: "Tune an SSD"
 ---
 
 The biggest single upgrade you can make to a PC's performance is to add a

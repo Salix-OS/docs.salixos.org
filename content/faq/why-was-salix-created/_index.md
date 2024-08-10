@@ -1,5 +1,5 @@
 ---
-title: "Why was Salix created?"
+title: "Why Was Salix Created?"
 ---
 
 The initial development team did know each other from other projects and

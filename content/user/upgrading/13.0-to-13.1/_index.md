@@ -1,6 +1,6 @@
 ---
 title: "How to Upgrade Salix 13.0 to 13.1"
-menutitle: "Upgrade Salix 13.0 to 13.1"
+linktitle: "Upgrade Salix 13.0 to 13.1"
 ---
 
 ## Preparing for the upgrade 

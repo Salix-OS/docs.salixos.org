@@ -1,6 +1,6 @@
 ---
 title: "Restore Fluxbox Menu"
-menutitle: "Restore Fluxbox menu"
+linktitle: "Restore Fluxbox menu"
 ---
 
 If for some reason you messed up your menu in your Fluxbox installation,

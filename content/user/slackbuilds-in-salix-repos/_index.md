@@ -1,6 +1,6 @@
 ---
 title: "Slackbuilds in Salix Repositories"
-menutitle: "Slackbuilds in Salix Repos"
+linktitle: "Slackbuilds in Salix Repos"
 ---
 
 Salix integrates dependency management for packages in its own repositories and

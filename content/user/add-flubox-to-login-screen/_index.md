@@ -1,6 +1,6 @@
 ---
 title: "Add Flubox to Login Screen Menu"
-menutitle: "Add Flubox to Login Screen"
+linktitle: "Add Flubox to Login Screen"
 ---
 
 Fluxbox is a Slackware package and has no provision for a login screen

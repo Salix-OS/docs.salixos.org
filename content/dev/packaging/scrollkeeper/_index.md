@@ -1,6 +1,6 @@
 ---
 title: "Scrollkeeper and Packaging"
-menutitle: "Scrollkeeper"
+linktitle: "Scrollkeeper"
 ---
 
 ## What is scrollkeeper? 

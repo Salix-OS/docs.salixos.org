@@ -1,6 +1,6 @@
 ---
 title: "How to Install the Virtualbox Guest Additions in a Salix Guest"
-menutitle: "Install VirtualBox Guest Additions"
+linktitle: "Install VirtualBox Guest Additions"
 ---
 
 If you're running Salix inside a virtualbox VM, you'll find out that the

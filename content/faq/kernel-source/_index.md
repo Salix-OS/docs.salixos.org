@@ -1,6 +1,6 @@
 ---
-title: "How to install the kernel source"
-menutitle: "Install kernel-source"
+title: "How to Install the Kernel Source"
+linktitle: "Install Kernel Source"
 ---
 
 The **kernel-source** package is by default locked in *gslapt*, just

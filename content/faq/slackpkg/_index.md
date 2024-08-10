@@ -1,6 +1,6 @@
 ---
-title: "Can I use slackpkg in Salix?"
-menutitle: "slackpkg"
+title: "Can I Use slackpkg in Salix?"
+linktitle: "slackpkg"
 ---
 
 It is recommended that you use slapt-get/gslapt and not slackpkg.

@@ -1,6 +1,6 @@
 ---
 title: "Packaging rules"
-menutitle: "Packaging rules"
+linktitle: "Packaging rules"
 ---
 
 Packagers are encouraged to also visit the following links:

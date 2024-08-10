@@ -1,6 +1,6 @@
 ---
 title: "Building Packages with slkbuild"
-menutitle: "Packaging with slkbuild"
+linktitle: "Packaging with slkbuild"
 ---
 
 **slkbuild** is a script which makes package creation much easier. It parses a

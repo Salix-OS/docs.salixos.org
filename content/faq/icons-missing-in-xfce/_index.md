@@ -1,6 +1,6 @@
 ---
 title: "Icons Missing in the Xfce Menu"
-menutitle: "Icons missing in Xfce"
+linktitle: "Icons missing in Xfce"
 ---
 
 If you installed a new software package and the respective icons are

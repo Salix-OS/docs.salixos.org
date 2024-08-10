@@ -1,6 +1,6 @@
 ---
 title: "How to Work with Sourceforge"
-menutitle: "Sourceforge"
+linktitle: "Sourceforge"
 ---
 
 ## Upload file releases 

@@ -1,6 +1,6 @@
 ---
 title: "How to Upgrade Salix 14.0 to 14.1"
-menutitle: "Upgrade Salix 14.0 to 14.1"
+linktitle: "Upgrade Salix 14.0 to 14.1"
 ---
 
 ## Preparing for the upgrade 

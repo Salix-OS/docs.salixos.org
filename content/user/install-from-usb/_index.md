@@ -1,6 +1,6 @@
 ---
 title: "Install Salix from a USB stick"
-menutitle: "Install from USB"
+linktitle: "Install from USB"
 ---
 
 This page is about using the standard installation images, not the live

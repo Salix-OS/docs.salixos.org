@@ -1,6 +1,6 @@
 ---
-title: "How to access a server running in a VirtualBox guest"
-menutitle: "Access server in VirtualoBox"
+title: "How to Access a Server Running in a VirtualBox Guest"
+linktitle: "Access Server in VirtualBox"
 ---
 
 VirtualBox guests are usually set up with NAT networking. That way, there is no

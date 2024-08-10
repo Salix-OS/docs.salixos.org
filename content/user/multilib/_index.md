@@ -1,6 +1,6 @@
 ---
 title: "How to Install Multilib"
-menutitle: "Multilib"
+linktitle: "Multilib"
 ---
 
 {{% notice warning %}}

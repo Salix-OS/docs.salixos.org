@@ -1,6 +1,6 @@
 ---
-title: "How to install Salix Live on a USB key?"
-menutitle: "Install SalixLive on USB"
+title: "How to Install Salix Live on a USB Key?"
+linktitle: "Install SalixLive on USB"
 ---
 
 **These instructions are for LiveCD images of Salix only!!!** If your

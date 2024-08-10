@@ -1,6 +1,5 @@
 ---
-title: "New to packaging"
-menutitle: "New to packaging"
+title: "New to Packaging"
 ---
 
 ## Packaging 101 

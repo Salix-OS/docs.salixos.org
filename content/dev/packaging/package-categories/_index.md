@@ -1,6 +1,6 @@
 ---
 title: "Package Categories"
-menutitle: "Package Categories"
+linktitle: "Package Categories"
 ---
 
 These are the package categories for the Salix repositories (some of them might

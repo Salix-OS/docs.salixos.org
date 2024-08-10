@@ -1,6 +1,6 @@
 ---
 title: "MATEConf Schemas and Packaging"
-menutitle: "MATEConf"
+linktitle: "MATEConf"
 ---
 
 ## What is mateconf? 

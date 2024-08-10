@@ -1,6 +1,6 @@
 ---
-title: "How do I change the default system hostname?"
-menutitle: "Change the default hostname"
+title: "How Do I Change the Default System Hostname?"
+linktitle: "Change the Default Hostname"
 ---
 
 The easy way to do it, is to simply run the `gtkhostsetup` Salix system

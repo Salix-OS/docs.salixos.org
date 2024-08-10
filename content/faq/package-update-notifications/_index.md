@@ -1,6 +1,6 @@
 ---
-title: "How to get notifications for package updates"
-menutitle: "Package update notifications"
+title: "How to Get Notifications for Package Updates"
+linktitle: "Package Update Notifications"
 ---
 
 If you have selected the **FULL** set of packages when you installed

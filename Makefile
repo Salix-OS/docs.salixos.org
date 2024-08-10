@@ -1,11 +1,11 @@
 
 .PHONY: all
 all: faq user dev packaging upgrading
-	hugo-0.111.3
+	hugo-0.123.8
 
 .PHONY: serve
 serve: all
-	hugo-0.111.3 serve
+	hugo-0.123.8 serve
 
 .PHONY: faq
 faq:

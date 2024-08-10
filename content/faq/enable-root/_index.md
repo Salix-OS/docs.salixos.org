@@ -1,6 +1,6 @@
 ---
-title: "How to enable the root user"
-menutitle: "Enable the root user"
+title: "How to Enable the root User"
+linktitle: "Enable the root User"
 ---
 
 Since the 14.1 release the root user is disabled by default and the use

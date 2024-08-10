@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-menutitle: FAQ
+linktitle: FAQ
 weight: 1
 ---
 

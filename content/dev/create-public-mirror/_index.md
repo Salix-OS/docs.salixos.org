@@ -1,6 +1,6 @@
 ---
 title: "How to Create a Public Salix Mirror"
-menutitle: "How to Create a Public Salix Mirror"
+linktitle: "How to Create a Public Salix Mirror"
 ---
 
 These are rather generic instructions to create a public Salix mirror. You

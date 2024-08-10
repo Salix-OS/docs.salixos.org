@@ -1,6 +1,6 @@
 ---
-title: "How to play multimedia files"
-menutitle: "Multimedia"
+title: "How to Play Multimedia Files"
+linktitle: "Multimedia"
 ---
 
 By default, a new Salix installation supports playback of most free video

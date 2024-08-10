@@ -1,6 +1,6 @@
 ---
-title: "How to install b43 firmware for Broadcom Wireless cards"
-menutitle: "Broadcom wifi"
+title: "How to Install b43 Firmware for Broadcom Wireless Cards"
+linktitle: "Broadcom WiFi"
 ---
 
 *The Broadcom wireless chip needs proprietary software (called

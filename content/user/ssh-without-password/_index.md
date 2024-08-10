@@ -1,6 +1,6 @@
 ---
 title: "How to Login with SSH Without a Password"
-menutitle: "SSH Login Without Password"
+linktitle: "SSH Login Without Password"
 ---
 
 A user might need the ability of login to a remote machine without typing

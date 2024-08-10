@@ -1,6 +1,6 @@
 ---
 title: "How to Create a Video DVD from the CLI"
-menutitle: "Video DVD from the CLI"
+linktitle: "Video DVD from the CLI"
 ---
 
 It is very easy to create a video DVD out of your existing video files, using only command line tools. 

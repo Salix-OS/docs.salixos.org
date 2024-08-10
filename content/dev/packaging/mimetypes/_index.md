@@ -1,6 +1,6 @@
 ---
 title: "Installing Mimetypes with a Package"
-menutitle: "Mimetypes"
+linktitle: "Mimetypes"
 ---
 
 When your package includes xml files in __usr/share/mime__, the system should

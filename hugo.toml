@@ -2,16 +2,15 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
-theme = "hugo-theme-learn"
+title = "Salix Documentation"
+theme = "hugo-theme-relearn"
 themesdir = "themes"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir = false
 
 [params]
   editURL = "https://github.com/Salix-OS/docs.salixos.org"
-  description = "Salix Documentation"
-  author = "George Vlahavas"
+  author.name = "George Vlahavas"
   showVisitedLinks = false
   disableBreadcrumb = false
   disableNextPrev = true
@@ -21,7 +20,7 @@ defaultContentLanguageInSubdir = false
 
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = [ "html", "rss", "search", "searchpage"]
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-home'></i> Main website"

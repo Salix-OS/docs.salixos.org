@@ -1,6 +1,6 @@
 ---
-title: "How to setup alpine with a gmail account"
-menutitle: "Setup alpine with gmail"
+title: "How to Setup Alpine With a Gmail Account"
+linktitle: "Setup Alpine With Gmail"
 ---
 
 Alpine is basically the same application as Pine, which used to be

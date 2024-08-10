@@ -1,6 +1,6 @@
 ---
 title: "How to Internationalize Shell Scripts"
-menutitle: "Internationalize Shell Scripts"
+linktitle: "Internationalize Shell Scripts"
 ---
 
 ## Modification of the original script 

@@ -1,5 +1,5 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-menutitle: "{{ replace .Name "-" " " | title }}"
+linktitle: "{{ replace .Name "-" " " | title }}"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "UIDs and GIDs to use with slkbuild"
-menutitle: "slkbuild UIDs/GIDs"
+linktitle: "slkbuild UIDs/GIDs"
 ---
 
 ## Recommended UID/GIDs 

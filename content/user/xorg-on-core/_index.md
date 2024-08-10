@@ -1,6 +1,6 @@
 ---
 title: "How to Install Xorg on Salix Core"
-menutitle: "Install Xorg on Core"
+linktitle: "Install Xorg on Core"
 ---
 
 ## Installing Xorg 

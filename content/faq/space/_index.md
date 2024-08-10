@@ -1,6 +1,6 @@
 ---
-title: "How much disk space does Salix need"
-menutitle: "Required disk space"
+title: "How Much Disk Space Does Salix Need"
+linktitle: "Required Risk Space"
 ---
 
 For the three different installation modes available, Salix occupies

@@ -1,6 +1,6 @@
 ---
-title: "How to get an extra console in the salix installer"
-menutitle: "Installer extra console"
+title: "How to Get an Extra Console in the Salix Installer"
+linktitle: "Installer Extra Console"
 ---
 
 If you find the need to open an extra virtual console during the
