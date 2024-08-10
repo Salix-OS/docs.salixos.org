@@ -12,3 +12,17 @@ Category index pages are created automatically when running `make`. Category
 header text is in the `headers` directory and footer text is in the `footers`
 directory.
 
+# Cloning this repo
+
+The theme is in a git submodule, so if you want to include that in your clone, you should run:
+
+```
+git clone --recursive https://github.com/Salix-OS/gemini.salixos.org.git
+```
+
+In order to update the theme submodule to the latest version, run:
+
+```
+git submodule update --recursive --remote
+```
+
