@@ -18,6 +18,7 @@ defaultContentLanguageInSubdir = false
   themeVariant = "green"
   disableInlineCopyToClipBoard = true
   disableExplicitIndexURLs = true
+  images = ['images/og_image.png']
 
 
 [outputs]
