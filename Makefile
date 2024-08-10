@@ -1,3 +1,7 @@
+SSH_HOST=salixos.org
+SSH_PORT=22
+SSH_USER=web
+SSH_TARGET_DIR=/srv/www/docs
 
 .PHONY: all
 all: faq user dev packaging upgrading
@@ -55,3 +59,10 @@ packaging:
 	sed "s|\./content/dev/packaging/\(.*\)/_index.md:title: \(.*\)|- [\2](/dev/packaging/\1)|" | \
 		sed "s/\"//g" \
 		>> content/dev/packaging/_index.md
+
+.PHONY: upload
+upload: all
+	rsync -e "ssh -p $(SSH_PORT)" \
+		-avz \
+		--delete ./public/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)/
+
