@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir = false
 
 [params]
-  editURL = "https://github.com/Salix-OS/docs.salixos.org/content/"
+  editURL = "https://github.com/Salix-OS/docs.salixos.org/tree/master/content/"
   author.name = "George Vlahavas"
   showVisitedLinks = false
   disableBreadcrumb = false
