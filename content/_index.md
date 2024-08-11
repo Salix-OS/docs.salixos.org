@@ -18,7 +18,7 @@ Documentation is generally split into three sections:
 * [Developer Documentation](/dev)
 
 You can navigate the documentation or use the search bar for looking up
-specific terms.
+specific terms. Note that the search function requires Javascript.
 
 If you can't find what you're looking for, or have a suggestion for new
 content, please don't hesitate to reach out in our
