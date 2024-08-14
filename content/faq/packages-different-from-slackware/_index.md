@@ -6,6 +6,18 @@ linktitle: "Packages Different from Slackware"
 Here is a list of packages, present in both Salix and Slackware
 repositories and the reasons Salix is using a different build:
 
+## Salix 15.0
+
+-   **elilo:** Minor tweaks to eliloconfig.
+-   **lilo:** Salix artwork. Minor tweaks to liloconfig.
+-   **mozilla-firefox:** Using the latest ESR version.
+-   **sysvinit-scripts:** Tweaked for boot speedup. Colorized
+    boot messages. Autostart feature for every executable file
+    in /etc/rc.d/.
+-   **xfce packages:** We offer repositories for Xfce 4.18:
+[i586](https://download.salixos.org/i486/xfce4.18-15.0/),
+[x86_64](https://download.salixos.org/x86_64/xfce4.18-15.0/).
+
 ## Salix 14.2
 
 -   **elilo:** Minor tweaks to eliloconfig.
