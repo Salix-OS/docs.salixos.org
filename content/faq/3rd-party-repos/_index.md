@@ -4,7 +4,7 @@ linktitle: "3rd Party Repos"
 ---
 
 Yes, of course you are free to add third party repositories (e.g. GSB,
-linuxpackages.net, alienbob...) to slapt-get, however, there may be
+MSB, alienbob...) to slapt-get, however, there may be
 issues.
 
 It is important to remember that Salix does handle package dependencies,
