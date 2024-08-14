@@ -15,14 +15,14 @@ The package should be named `$name-$version-$arch-$packagereleaseXY.txz` with a 
 
 * `$name`: the name of the software and should contain only alphanumeric characters. "-" is supported.
 * `$version`: the version of the software, ie 1.5.0.6
-
-The $version has the following additional restrictions:
-* Separators "-" , "()" are forbidden, "." is the digit separator that should be normally used
-* Packages compiled from svn sources must be version like "r12345", where 12345 is the svn commit.
-
 * `$arch`: **i586** in most cases for 32-bit packages, **x86_64** for 64-bit packages, **noarch** for scripts or "resource only" packages (ie : artwork)
 * `$packagerelease`: Start with 1 and for any subsequent updates to the same version of the package, increase by 1; this includes rebuilding for a new Salix edition. If the package can be transferred without rebuilding, the name remains unchanged. When upgrading to a new version, go back to 1. 
-:* `XY`: your initials, so it's obvious who the packager is.
+* `XY`: your initials, so it's obvious who the packager is.
+
+The $version has the following additional restrictions:
+
+* Separators "-" , "()" are forbidden, "." is the digit separator that should be normally used
+* Packages compiled from svn sources must be version like "r12345", where 12345 is the svn commit.
 
 All packages shall install without requiring that the user perform
 postinstallation procedure to render the application usable. Not applicable to
