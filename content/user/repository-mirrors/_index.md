@@ -66,7 +66,7 @@ Please use the main rsync service only if you are mirroring the Salix
 repositories for the purpose of providing a publicly available mirror.
 
 Rsync can be used to create even more mirrors, following
-[these instructions](dev/create-public-mirror/).
+[these instructions](/dev/create-public-mirror/).
 If you would like to contribute a
 public mirror, please contact the Salix developers.
 
