@@ -38,7 +38,7 @@ the spacebar when sbopkg asks for their creation. As soon as the sbopkg menu
 comes up, you'll have to select the Sync option and then you can use sbopkg
 normally. This will take some time. It's a good idea to sync every now and
 then, in order to get all updates from the slackbuilds.org repository. Make
-sure you read the sbopkg documentation: http://www.sbopkg.org/docs.php
+sure you read the [sbopkg documentation](https://www.sbopkg.org/docs.php).
 
 {{% notice warning %}}
 It should be noted that SlackBuilds at slackbuilds.org assume that you have a
