@@ -13,7 +13,7 @@ Slackware and does not include what is needed to create a menu entry for your
 Display Manager. You can fix this issue and start your preferred Window Manager
 in two ways.
 
-# Use the configured xwmconfig WM
+## Use the configured xwmconfig WM
 
 You may select your preferred Window Manager by running:
 
@@ -26,7 +26,7 @@ xwmconfig
 After that, at the login screen, just select the "Xsession default" option. Whichever
 Window Manager you have configured with xwmconfig will be started.
 
-# Add custom menu entry
+## Add custom menu entry
 
 You can also add a custom menu entrty yourself by creating a file in `/usr/share/xessions`.
 For the Fluxbox example, this could be a`/usr/share/xsessions/fluxbox.desktop`
