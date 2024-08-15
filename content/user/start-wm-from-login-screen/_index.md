@@ -1,5 +1,5 @@
 ---
-title: "Start Your Window Manager to the Login Screen Menu"
+title: "Start Your Window Manager from the Login Screen Menu"
 linktitle: "Start WM from Login Screen"
 ---
 
