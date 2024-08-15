@@ -5,8 +5,7 @@ linktitle: "Install from USB"
 
 This page is about using the standard installation images, not the live
 images. If you want to install SalixLive on your USB drive, follow these
-instructions instead: [How to install salix live on a USB
-key](/user/salixlive)
+instructions instead: [How to install salix live on a USB key](/user/salixlive)
 
 dd
 --
