@@ -1,5 +1,5 @@
 ---
-title: "Is Flatpak Available in Salix"
+title: "Is Flatpak Available in Salix?"
 linktitle: "Flatpak"
 ---
 
