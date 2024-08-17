@@ -10,6 +10,8 @@ repositories and the reasons Salix is using a different build:
 
 -   **elilo:** Minor tweaks to eliloconfig.
 -   **lilo:** Salix artwork. Minor tweaks to liloconfig.
+-   **meson:** Newer version so that updated versions of other packages
+    can be built.
 -   **mozilla-firefox:** Using the latest ESR version.
 -   **sysvinit-scripts:** Tweaked for boot speedup. Colorized
     boot messages. Autostart feature for every executable file
