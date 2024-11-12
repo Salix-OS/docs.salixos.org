@@ -16,7 +16,7 @@ a txz or tgz extension, instead of the more usual tar.xz and tar.gz extensions.
 
 The format that Salix uses for its packages comes from Slackware. A Slackware
 package (txz or tgz) is created with a specific version of tar and follows a
-particular directory structure. It includes binary files that are organized
+particular directory structure. It includes files that are organized
 according to your system's hierarchy, such as binaries in /usr/bin and manpages
 in /usr/man. On the other hand, a source tarball usually contains only the
 source code.
