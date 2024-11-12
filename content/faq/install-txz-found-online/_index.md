@@ -70,3 +70,10 @@ but not on yours. After all, the package may have been intended for a
 different Slackware (and therefore Salix) release or for a different
 architecture than yours.
 
+If what is indeed a package and you really want to install it, then you can
+just run spkg like this example:
+
+```
+sudo spkg salixtools-gtk-2.5.7-noarch-1gv.txz
+```
+
