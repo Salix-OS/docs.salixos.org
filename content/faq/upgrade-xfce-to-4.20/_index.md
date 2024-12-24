@@ -33,5 +33,5 @@ You'll probably want to log out of Xfce and back in after that. You will then
 be greeted with the shiny new Xfce 4.20 environment!
 
 **NOTE**: If you have already added
-[Xfce 4.18 to your system](/faq/upgrade-xfce-to-4.18/), don't forget to remove
+[Xfce 4.18](/faq/upgrade-xfce-to-4.18/) to your system, don't forget to remove
 the respective lines for it from your package configuration.
