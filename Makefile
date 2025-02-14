@@ -3,12 +3,22 @@ SSH_PORT=22
 SSH_USER=web
 SSH_TARGET_DIR=/srv/www/docs
 
-.PHONY: all
-all: faq user dev packaging upgrading
+.PHONY: build
+build: faq user dev packaging upgrading
+	rm -rf public
+	mkdir public
+	git worktree prune
+	rm -rf .git/worktrees/public/
+	git worktree add -B master public origin/master
+	rm -rf public/*
 	hugo-0.123.8
+	cp README.md public/
+	cd public && \
+	rm -f index.xml && \
+	ln -s post/index.xml index.xml
 
 .PHONY: serve
-serve: all
+serve: build
 	hugo-0.123.8 serve
 
 .PHONY: faq
@@ -61,8 +71,18 @@ packaging:
 		>> content/dev/packaging/_index.md
 
 .PHONY: upload
-upload: all
+upload: build
 	rsync -e "ssh -p $(SSH_PORT)" \
 		-avz \
 		--delete ./public/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)/
 
+.PHONY: publish
+publish: build
+	cd public && \
+	git add --all && \
+	git commit -m "Publish on `LANG=C.utf8 date`" && \
+	git push -u origin master
+
+.PHONY: update-theme
+update-theme:
+	git submodule update --remote themes/even
