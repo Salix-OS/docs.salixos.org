@@ -2,6 +2,7 @@ SSH_HOST=salixos.org
 SSH_PORT=22
 SSH_USER=web
 SSH_TARGET_DIR=/srv/www/docs
+GIT_PUBLISH_BRANCH=master
 
 .PHONY: build
 build: faq user dev packaging upgrading
@@ -9,7 +10,7 @@ build: faq user dev packaging upgrading
 	mkdir public
 	git worktree prune
 	rm -rf .git/worktrees/public/
-	git worktree add -B master public origin/master
+	git worktree add -B $(GIT_PUBLISH_BRANCH) public origin/$(GIT_PUBLISH_BRANCH)
 	rm -rf public/*
 	hugo-0.123.8
 	cp README.md public/
@@ -79,7 +80,7 @@ publish: build
 	cd public && \
 	git add --all && \
 	git commit -m "Publish on `LANG=C.utf8 date`" && \
-	git push -u origin master
+	git push -u origin $(GIT_PUBLISH_BRANCH)
 
 .PHONY: update-theme
 update-theme:
