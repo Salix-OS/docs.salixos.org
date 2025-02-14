@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Upgrade Salix 14.1 to 14.2 :: Salix Documentation</title>
+    <link>/user/upgrading/14.1-to-14.2/</link>
+    <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.2. Open file /etc/slapt-get/slapt-getrc and change all “14.1” instances to “14.2”. Also make sure the Slackware repositories have an OFFICIAL priority. Make sure you add the new extra repository, with an OFFICIAL priority too. Example setups are shown below:&#xA;i486 architecture SOURCE=http://slackware.uk/salix/i486/slackware-14.2/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/slackware-14.2/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/14.2/:PREFERRED SOURCE=http://slackware.uk/salix/i486/extra-14.2/:OFFICIALx86_64 architecture SOURCE=http://slackware.uk/salix/x86_64/slackware-14.2/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/slackware-14.2/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/14.2/:PREFERRED SOURCE=http://slackware.uk/salix/x86_64/extra-14.2/:OFFICIALslapt-srcrc Also edit your /etc/slapt-get/slapt-srcrc file to point to 14.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/upgrading/14.1-to-14.2/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

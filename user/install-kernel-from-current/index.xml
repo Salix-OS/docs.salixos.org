@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Install Kernel From Current :: Salix Documentation</title>
+    <link>/user/install-kernel-from-current/</link>
+    <description>If you have hardware that is not supported by the kernel that ships with Salix, you can always compile your own. In most cases though, it is sufficient to install the latest kernel from the repositories. This page contains instructions for this straightforward procedure, and also for installing the kernel manually. In some cases, if there is a regression, meaning hardware that used to be supported doesn’t work any more, you might actually need to downgrade to an older kernel, but in most cases the solution will be a more recent one.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/install-kernel-from-current/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

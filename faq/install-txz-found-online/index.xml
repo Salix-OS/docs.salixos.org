@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How Do I Install a txz/tgz File I Found Online? :: Salix Documentation</title>
+    <link>/faq/install-txz-found-online/</link>
+    <description>Generally, you can’t.&#xA;While technically they are very similar, txz and tgz files are in fact tar.xz and tar.gz files, they are not the same. It’s essential to understand that what you found might not be a Slackware package, even if it has the same extension. Most likely, it’s a source tarball, which is different from a Slackware package.&#xA;To confuse matters more, some people create source tarballs and name them with a txz or tgz extension, instead of the more usual tar.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/install-txz-found-online/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Why Was Salix Created? :: Salix Documentation</title>
+    <link>/faq/why-was-salix-created/</link>
+    <description>The initial development team did know each other from other projects and were good friends. They enjoyed working together, and decided to start their own Slackware based distribution since what they had in mind (expand on Slackware ease of use while staying fully compatible with it) was not really implemented elsewhere. This was the birth of Salix.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/why-was-salix-created/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

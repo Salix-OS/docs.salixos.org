@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="description" content="The biggest single upgrade you can make to a PC’s performance is to add a Solid-State-Drive or SSD. Doing so will shorten your boot times, dramatically increase your write-to-disk speed and prolong battery life on a laptop.
+When adding the SSD, three factors need balancing:
+System performance SSD longevity Data Safety Background SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS. The controller takes care of all the low level details for us, but knowing something about how the controller works can help us get the best out of our new drive.">
+    <meta name="author" content="George Vlahavas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/og_image.png">
+    <meta name="twitter:title" content="How to Tune an SSD :: Salix Documentation">
+    <meta name="twitter:description" content="The biggest single upgrade you can make to a PC’s performance is to add a Solid-State-Drive or SSD. Doing so will shorten your boot times, dramatically increase your write-to-disk speed and prolong battery life on a laptop.
+When adding the SSD, three factors need balancing:
+System performance SSD longevity Data Safety Background SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS. The controller takes care of all the low level details for us, but knowing something about how the controller works can help us get the best out of our new drive.">
+    <meta property="og:url" content="/user/tune-ssd/">
+    <meta property="og:site_name" content="Salix Documentation">
+    <meta property="og:title" content="How to Tune an SSD :: Salix Documentation">
+    <meta property="og:description" content="The biggest single upgrade you can make to a PC’s performance is to add a Solid-State-Drive or SSD. Doing so will shorten your boot times, dramatically increase your write-to-disk speed and prolong battery life on a laptop.
+When adding the SSD, three factors need balancing:
+System performance SSD longevity Data Safety Background SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS. The controller takes care of all the low level details for us, but knowing something about how the controller works can help us get the best out of our new drive.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/og_image.png">
+    <meta itemprop="name" content="How to Tune an SSD :: Salix Documentation">
+    <meta itemprop="description" content="The biggest single upgrade you can make to a PC’s performance is to add a Solid-State-Drive or SSD. Doing so will shorten your boot times, dramatically increase your write-to-disk speed and prolong battery life on a laptop.
+When adding the SSD, three factors need balancing:
+System performance SSD longevity Data Safety Background SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS. The controller takes care of all the low level details for us, but knowing something about how the controller works can help us get the best out of our new drive.">
+    <meta itemprop="wordCount" content="1635">
+    <meta itemprop="image" content="/images/og_image.png">
+    <title>How to Tune an SSD :: Salix Documentation</title>
+    <link href="/user/tune-ssd/index.xml" rel="alternate" type="application/rss+xml" title="How to Tune an SSD :: Salix Documentation">
+    <link href="/images/favicon.png?1739552208" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1739552208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1739552208" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1739552208" rel="stylesheet">
+    <link href="/css/auto-complete.css?1739552208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1739552208" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1739552208" rel="stylesheet">
+    <link href="/css/fonts.css?1739552208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1739552208" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1739552208" rel="stylesheet">
+    <link href="/css/theme-green.css?1739552208" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-learn.css?1739552208" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1739552208" rel="stylesheet">
+    <link href="/css/print.css?1739552208" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1739552208"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='';
+      window.index_js_url="/index.search.js?1739552208";
+      // variant stuff
+      window.variants && variants.init( [ 'green' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/user/tune-ssd/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#system-performance">System Performance</a>
+      <ul>
+        <li><a href="#move-volatile-data-off-the-drive">Move volatile data off the drive</a></li>
+        <li><a href="#reduce-metadata-writes">Reduce &lsquo;metadata&rsquo; writes</a></li>
+        <li><a href="#using-a-different-scheduler-for-your-ssd">Using a different scheduler for your SSD</a></li>
+      </ul>
+    </li>
+    <li><a href="#ssd-longevity">SSD Longevity</a></li>
+    <li><a href="#data-safety">Data Safety</a></li>
+    <li><a href="#so-whats-best-for-me">So, what&rsquo;s best for me?</a></li>
+    <li><a href="#further-reading">Further reading</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Salix Documentation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/user/"><span itemprop="name">User Documentation</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tune an SSD</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+				
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/Salix-OS/docs.salixos.org/tree/master/content/user/tune-ssd/_index.md" target="_blank" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="how-to-tune-an-ssd">How to Tune an SSD</h1>
+
+<p>The biggest single upgrade you can make to a PC&rsquo;s performance is to add a
+<strong>S</strong>olid-<strong>S</strong>tate-<strong>D</strong>rive or <strong>SSD</strong>. Doing so will shorten your boot
+times, dramatically increase your write-to-disk speed and prolong battery life
+on a laptop.</p>
+<p>When adding the SSD, three factors need balancing:</p>
+<ul>
+<li>System performance</li>
+<li>SSD longevity</li>
+<li>Data Safety</li>
+</ul>
+<h2 id="background">Background</h2>
+<p>SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS.
+The controller takes care of all the low level details for us, but knowing
+something about how the controller works can help us get the best out of our
+new drive.</p>
+<p>Specifically, a write operation is done on a page, while a delete operation is
+done on a block, which is not really important until we face a situation where
+the drive starts to run out of blank pages. Then the drive controller needs to
+recover some of the deleted pages. And to do so, it first needs to copy into
+its cache any data on the pages in the block that are not marked for deletion.
+Once in the cache it needs to update the ones that are marked for deletion,
+then blank the &ldquo;real&rdquo; block, then write the cache copy into the &ldquo;real&rdquo; block.
+As you can imagine, that takes much more time than just writing data to an
+empty page. This leads to a situation known as &ldquo;write amplification&rdquo;, where
+unnecessary page writes are happening most of the time. And since the number of
+erase/write cycles has a maximum for each SSD, this situation accelerates us
+towards that limit.</p>
+<p>Another factor that comes into play is &ldquo;wear levelling&rdquo;, a process that the
+controller uses to ensure that pages (or their component cells) are used evenly
+across the drive. Because if your Operating System is continually writing data
+to the same pages on the SSD, they will quickly reach their erase/write limit
+and effectively be &ldquo;dead&rdquo; and so will your data.</p>
+<p>Wear levelling needs free cells to work with, and once your drive fills up,
+wear levelling doesn&rsquo;t happen and can lead to a &ldquo;dead&rdquo; drive. Again.</p>
+<p>The good news is that these are known problems and newer SSD controllers are
+built to handle these situations - with a little help from us.</p>
+<h2 id="system-performance">System Performance</h2>
+<h3 id="move-volatile-data-off-the-drive">Move volatile data off the drive</h3>
+<ul>
+<li>Log files are useful, but only if you read them - generally, logs are
+consulted when a problem arises. Therefore keeping reams and reams of logs on a
+desktop machine is probably not necessary, as long as you can read the logs for
+your current session. So move the logs to another drive, or better yet, into
+memory by moving &lsquo;/var/log&rsquo; into RAM.Note that if you do move the logs into
+RAM, Gslapt and Sourcery will not &ldquo;see&rdquo; any installed packages after a reboot.</li>
+<li>Lots of programs use the &lsquo;/tmp&rsquo; directory for intermediate files and data
+while working. Most of it is relevant only to your current session - that&rsquo;s why
+&lsquo;/tmp&rsquo; is cleared on reboot. Move it into RAM. Same for &lsquo;/var/tmp/&rsquo;.</li>
+<li>Programs that use on-disk caches like web browsers can write thousands of
+files to your drive in a short web browsing session. If at all possible, move
+their caches into RAM. I can&rsquo;t find a way to do this with midori, but it is
+possible with Firefox. You will of course lose your cache upon a reboot, so
+take that into account before doing this.</li>
+</ul>
+<h3 id="reduce-metadata-writes">Reduce &lsquo;metadata&rsquo; writes</h3>
+<ul>
+<li>There is a lot of updating of metadata involved in a file read or write
+operation. The access time, the modification time, the extents used, etc, etc.
+The biggest problem here is the atime or access time parameter - it ensures
+that for every read from the disk, we do a write. (Don&rsquo;t ask!). Mount your SSD
+filesystems with the &rsquo;noatime&rsquo; mount directive and you will get a performance
+boost as well as prolonging the life of your SSD.</li>
+</ul>
+<h3 id="using-a-different-scheduler-for-your-ssd">Using a different scheduler for your SSD</h3>
+<ul>
+<li>Without going into too much detail, you can set a different scheduling
+algorithm for each drive - rotational as well as SSD. Depending on the
+underlying hardware, a change of scheduler may provide a performance boost. The
+&ldquo;deadline&rdquo; scheduler is the system default (at the moment), but the &ldquo;noop&rdquo;
+scheduler may provide better performance for your circumstances. You can
+experiment using the following snippet of code:</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0"><code>echo &#34;noop&#34; &gt; /sys/block/sdb/queue/scheduler</code></pre></div><p>(where &lsquo;/dev/sdb&rsquo; is your SSD )</p>
+
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</div>
+  <div class="box-content">
+
+<p>Don&rsquo;t try this without a backup - while it didn&rsquo;t harm my system, I was working on an almost empty drive,
+and making backups before trying this stuff is just plain common sense, right?</p>
+</div>
+</div>
+<h2 id="ssd-longevity">SSD Longevity</h2>
+<p>Use a filesystem that supports the TRIM command. The TRIM command is a command
+to the SSD controller to mark a page as invalid when the OS has deleted the
+files&rsquo; data in that page. At some point in the future, the drives garbage
+collection routines will reclaim the page to the free pool. As far as I am
+aware, all the latest SSDs support the TRIM command.</p>
+<p>File systems known to support the TRIM command:</p>
+<ul>
+<li>EXT4</li>
+<li>Btrfs</li>
+<li>GFS2</li>
+<li>XFS</li>
+</ul>
+<p>Some user space programs exist to initiate a TRIM command on a drive that
+supports it, should you be using a file system that does not. See recent
+versions of hdparm, but beware that its use (for this purpose) will destroy
+your data.</p>
+<p>When first partitioning your SSD, make sure it is &ldquo;aligned&rdquo; - meaning that the
+block size of your filesystem will align with the block size of your partiton.
+For this to happen, start your first partition 1MB from the start of the drive.
+This will ensure that data doesn&rsquo;t cross page boundaries.</p>
+<p>It is highly unlikely that a TRIM-enabled SSD used with a TRIM enabled
+filesystem with the TRIM mount option active, on a desktop machine used for
+ordinary proposes will become unusable due to &ldquo;wearing out&rdquo; the memory in a
+less than reasonable time. Personally, I consider 3 years to be the maximum
+life of any drive and experience of running many mail servers, web servers and
+file stores for a large user-base reinforces that figure for me. So if my new
+SSD lasts 3 years, I will consider that a reasonable time - your mileage may
+vary, but anything above 3 years I consider a bonus :-)</p>
+<h2 id="data-safety">Data Safety</h2>
+<p>If you use a journalling file system, you may have options about what is
+actually journaled, and when. In EXT4, we have:</p>
+<ul>
+<li><strong>data=writeback mode</strong> - no data journalling, but metadata is journalled. A
+crash/recovery cycle can cause incorrect data to be in files updated shortly
+before the crash. Best performing of all journalling modes, and less
+writes=longer SSD longevity.</li>
+<li><strong>data=ordered mode</strong> - journals metadata, but &ldquo;orders&rdquo; metadata changes with the
+data blocks into &ldquo;transactions&rdquo;. When a write is done, the associated data
+blocks are written first. This is the default in Linux EXT4, and is a good
+compromise between performance and data safety.</li>
+<li><strong>data=journal</strong> - all data and metadata is journalled. Sloooow, except when both
+reading and writing specific data, when it is the best performing of all.</li>
+</ul>
+<p>If using data=writeback, the &ldquo;nobh&rdquo; option will not associate buffer heads with
+data pages, speeding things up a bit. The &ldquo;bh&rdquo; option is on by default.</p>
+<p>The &ldquo;barrier&rdquo; option (also on by default) enforces on-disk ordering of commits,
+adding a safety factor to volatile disk write caches. If you have a battery
+backed drive (only ones I have seen are on RAID controllers) you may get a
+performance boost by using the &ldquo;nobarrier&rdquo; mount option.</p>
+<p>The <strong>commit</strong> option tells EXT4 to sync its data and metadata every n seconds.
+The default is 5 seconds. If your disk crashes you will have lost a maximum of
+5 seconds of changes, but your file system will be undamaged due to the
+journal. Very large numbers can give a performance boost, but will increase the
+amount of changes lost on a crash.</p>
+<h2 id="so-whats-best-for-me">So, what&rsquo;s best for me?</h2>
+<p>Taking all these factors into consideration, and knowing your own work
+patterns, you should be able to make an informed decision on what needs to be
+done with your new SSD.</p>
+<p>As my laptop is used for web browsing, email, and writing, I chose a middle
+road. I partitioned the disk so that it was aligned, and here is my
+&lsquo;/etc/fstab&rsquo; file for my new SSD:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>/dev/sda2        swap             swap        defaults         0   0
+/dev/sda3        /                ext4        defaults,noatime,discard          1   1
+/dev/sda1        /boot            ext2        defaults,noatime         1   2
+#/dev/cdrom      /mnt/cdrom       auto        noauto,owner,ro,comment=x-gvfs-show 0   0
+/dev/fd0         /mnt/floppy      auto        noauto,users,rw,umask=00 0   0
+devpts           /dev/pts         devpts      gid=5,mode=620   0   0
+proc             /proc            proc        defaults         0   0
+tmpfs            /dev/shm         tmpfs       defaults         0   0
+
+tmpfs	/tmp  	tmpfs 	defaults,noatime,mode=1777	0 0
+tmpfs	/var/tmp	tmpfs	defaults,noatime,mode=1777	0 0</code></pre></div><p>The root partition is mounted with the &rsquo;noatime&rsquo; and &lsquo;discard&rsquo; mount options,
+signifying no access time update after a file read, and initiating the TRIM
+command. Note that &lsquo;discard&rsquo; is not used on the &lsquo;/boot&rsquo; partition because it is
+ext2, and the TRIM command is not supported by the ext2 filesystem. Also, note
+the use of &rsquo;tmpfs&rsquo; for &lsquo;/tmp&rsquo;, &lsquo;/var/tmp&rsquo; and &lsquo;/var/log&rsquo; - and all of these are
+mounted with the noatime directive, but I am fairly sure that its use on a
+tmpfs is irrelevant - in any event, writes to memory are very fast, so we are
+not losing much if the &ldquo;noatime&rdquo; option does nothing. (more research needed)</p>
+<p>I left the scheduler at &ldquo;deadline&rdquo; after noting no real performance gain from
+the &ldquo;noop&rdquo; scheduler, and I did not change the journaling mode from the
+default, as I am not too happy about data inconsistencies.</p>
+<p>Overall, my 5 year old laptop is now performing better than when it was new.</p>
+<p>Any inaccuracies are down to me (Shanek54).</p>
+<h2 id="further-reading">Further reading</h2>
+<ul>
+<li><a href="https://www.kernel.org/doc/Documentation/filesystems/ext4.txt" rel="external" target="_blank">EXT4 Spec</a></li>
+<li><a href="https://ext4.wiki.kernel.org/index.php/Main_Page" rel="external" target="_blank">EXT4 Wiki</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wear_leveling" rel="external" target="_blank">Wear Levellling</a></li>
+<li><a href="http://www.hardwarecanucks.com/forum/storage/39762-so-you-wanna-buy-ssd-read-first.html" rel="external" target="_blank">Excellent (but dated) overview of the &ldquo;Why buy an SSD?&rdquo; type</a></li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://docs.salixos.org">
+	<img src="/images/salix-logo.svg" />
+</a>
+
+        </div>
+
+        <search><form action="/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.min.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1739552208" defer></script>
+        <script src="/js/search.js?1739552208" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/faq/" class=""><a class="padding" href="/faq/">FAQ</a><ul id="R-subsections-925d2998f3d6f88021b2fdbd47d69792" class="morespace collapsible-menu">
+          <li data-nav-id="/faq/3rd-party-repos/" class=""><a class="padding" href="/faq/3rd-party-repos/">3rd Party Repos</a></li>
+          <li data-nav-id="/faq/hostname/" class=""><a class="padding" href="/faq/hostname/">Change the Default Hostname</a></li>
+          <li data-nav-id="/faq/enable-root/" class=""><a class="padding" href="/faq/enable-root/">Enable the root User</a></li>
+          <li data-nav-id="/faq/flatpak/" class=""><a class="padding" href="/faq/flatpak/">Flatpak</a></li>
+          <li data-nav-id="/faq/icons-missing-in-xfce/" class=""><a class="padding" href="/faq/icons-missing-in-xfce/">Icons missing in Xfce</a></li>
+          <li data-nav-id="/faq/kernel-source/" class=""><a class="padding" href="/faq/kernel-source/">Install Kernel Source</a></li>
+          <li data-nav-id="/faq/install-txz-found-online/" class=""><a class="padding" href="/faq/install-txz-found-online/">Install txz/tgz File Found Online</a></li>
+          <li data-nav-id="/faq/extra-console/" class=""><a class="padding" href="/faq/extra-console/">Installer Extra Console</a></li>
+          <li data-nav-id="/faq/multimedia/" class=""><a class="padding" href="/faq/multimedia/">Multimedia</a></li>
+          <li data-nav-id="/faq/package-manager-wants-to-downgrade-packages/" class=""><a class="padding" href="/faq/package-manager-wants-to-downgrade-packages/">Package Manager Downgrades</a></li>
+          <li data-nav-id="/faq/package-update-notifications/" class=""><a class="padding" href="/faq/package-update-notifications/">Package Update Notifications</a></li>
+          <li data-nav-id="/faq/packages-different-from-slackware/" class=""><a class="padding" href="/faq/packages-different-from-slackware/">Packages Different from Slackware</a></li>
+          <li data-nav-id="/faq/space/" class=""><a class="padding" href="/faq/space/">Required Risk Space</a></li>
+          <li data-nav-id="/faq/salix-man-page/" class=""><a class="padding" href="/faq/salix-man-page/">Salix Man Page</a></li>
+          <li data-nav-id="/faq/salixlive-passwords/" class=""><a class="padding" href="/faq/salixlive-passwords/">SalixLive Passwords</a></li>
+          <li data-nav-id="/faq/slackpkg/" class=""><a class="padding" href="/faq/slackpkg/">slackpkg</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.18/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.18/">Upgrade to Xfce 4.18</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.20/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.20/">Upgrade to Xfce 4.20</a></li>
+          <li data-nav-id="/faq/why-was-salix-created/" class=""><a class="padding" href="/faq/why-was-salix-created/">Why Was Salix Created?</a></li></ul></li>
+          <li data-nav-id="/user/" class="parent "><a class="padding" href="/user/">User Documentation</a><ul id="R-subsections-7b100e0e1dbc65a685f8274f22ab6cfc" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/" class="alwaysopen"><a class="padding" href="/user/upgrading/">Upgrading Between Releases</a><ul id="R-subsections-cc5b8bedb97a05882e36b33a7708685d" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/13.0-to-13.1/" class=""><a class="padding" href="/user/upgrading/13.0-to-13.1/">Upgrade Salix 13.0 to 13.1</a></li>
+          <li data-nav-id="/user/upgrading/13.1-to-13.37/" class=""><a class="padding" href="/user/upgrading/13.1-to-13.37/">Upgrade Salix 13.1 to 13.37</a></li>
+          <li data-nav-id="/user/upgrading/13.37-to-14.0/" class=""><a class="padding" href="/user/upgrading/13.37-to-14.0/">Upgrade Salix 13.37 to 14.0</a></li>
+          <li data-nav-id="/user/upgrading/14.0-to-14.1/" class=""><a class="padding" href="/user/upgrading/14.0-to-14.1/">Upgrade Salix 14.0 to 14.1</a></li>
+          <li data-nav-id="/user/upgrading/14.1-to-14.2/" class=""><a class="padding" href="/user/upgrading/14.1-to-14.2/">Upgrade Salix 14.1 to 14.2</a></li>
+          <li data-nav-id="/user/upgrading/14.2-to-15.0/" class=""><a class="padding" href="/user/upgrading/14.2-to-15.0/">Upgrade Salix 14.2 to 15.0</a></li></ul></li>
+          <li data-nav-id="/user/enable-horizontal-scrolling-3-button-mouse/" class=""><a class="padding" href="/user/enable-horizontal-scrolling-3-button-mouse/">3-button Mouse Horizontal Scrolling</a></li>
+          <li data-nav-id="/user/access-server-in-virtualbox/" class=""><a class="padding" href="/user/access-server-in-virtualbox/">Access Server in VirtualBox</a></li>
+          <li data-nav-id="/user/bluetooth/" class=""><a class="padding" href="/user/bluetooth/">Bluetooth</a></li>
+          <li data-nav-id="/user/boot-into-existing-installation/" class=""><a class="padding" href="/user/boot-into-existing-installation/">Boot Into Existing Installation</a></li>
+          <li data-nav-id="/user/broadcom/" class=""><a class="padding" href="/user/broadcom/">Broadcom WiFi</a></li>
+          <li data-nav-id="/user/configure-own-dns-server/" class=""><a class="padding" href="/user/configure-own-dns-server/">Configure Own DNS Server</a></li>
+          <li data-nav-id="/user/fix-unknown-filetypes-in-browser/" class=""><a class="padding" href="/user/fix-unknown-filetypes-in-browser/">Fix Unknown Filetypes in Browser</a></li>
+          <li data-nav-id="/user/greek-polytonic-on-openbox/" class=""><a class="padding" href="/user/greek-polytonic-on-openbox/">Greek Polytonic on Openbox</a></li>
+          <li data-nav-id="/user/how-to-beta-test/" class=""><a class="padding" href="/user/how-to-beta-test/">How to Beta Test</a></li>
+          <li data-nav-id="/user/install-different-kernel/" class=""><a class="padding" href="/user/install-different-kernel/">Install Different Kernel</a></li>
+          <li data-nav-id="/user/install-from-usb/" class=""><a class="padding" href="/user/install-from-usb/">Install from USB</a></li>
+          <li data-nav-id="/user/install-kernel-from-current/" class=""><a class="padding" href="/user/install-kernel-from-current/">Install Kernel From Current</a></li>
+          <li data-nav-id="/user/install-nvidia/" class=""><a class="padding" href="/user/install-nvidia/">Install NVIDIA Driver</a></li>
+          <li data-nav-id="/user/salixlive/" class=""><a class="padding" href="/user/salixlive/">Install SalixLive on USB</a></li>
+          <li data-nav-id="/user/install-guest-additions-in-virtualbox-guest/" class=""><a class="padding" href="/user/install-guest-additions-in-virtualbox-guest/">Install VirtualBox Guest Additions</a></li>
+          <li data-nav-id="/user/xorg-on-core/" class=""><a class="padding" href="/user/xorg-on-core/">Install Xorg on Core</a></li>
+          <li data-nav-id="/user/kernel-compilation/" class=""><a class="padding" href="/user/kernel-compilation/">Kernel Compilation</a></li>
+          <li data-nav-id="/user/lilo/" class=""><a class="padding" href="/user/lilo/">LILO</a></li>
+          <li data-nav-id="/user/multilib/" class=""><a class="padding" href="/user/multilib/">Multilib</a></li>
+          <li data-nav-id="/user/rebuild-slackware-kernel/" class=""><a class="padding" href="/user/rebuild-slackware-kernel/">Rebuild Slackware Kernel</a></li>
+          <li data-nav-id="/user/remove-unnecessary-xorg-packages/" class=""><a class="padding" href="/user/remove-unnecessary-xorg-packages/">Remove Unnecessary Xorg Packages</a></li>
+          <li data-nav-id="/user/repository-mirrors/" class=""><a class="padding" href="/user/repository-mirrors/">Repository Mirrors</a></li>
+          <li data-nav-id="/user/restore-fluxbox-menu/" class=""><a class="padding" href="/user/restore-fluxbox-menu/">Restore Fluxbox menu</a></li>
+          <li data-nav-id="/user/sbopkg/" class=""><a class="padding" href="/user/sbopkg/">Sbopkg</a></li>
+          <li data-nav-id="/user/setup-alpine-with-gmail/" class=""><a class="padding" href="/user/setup-alpine-with-gmail/">Setup Alpine With Gmail</a></li>
+          <li data-nav-id="/user/setup-basic-firewall/" class=""><a class="padding" href="/user/setup-basic-firewall/">Setup Basic Firewall</a></li>
+          <li data-nav-id="/user/slackbuilds-in-salix-repos/" class=""><a class="padding" href="/user/slackbuilds-in-salix-repos/">Slackbuilds in Salix Repos</a></li>
+          <li data-nav-id="/user/ssh-without-password/" class=""><a class="padding" href="/user/ssh-without-password/">SSH Login Without Password</a></li>
+          <li data-nav-id="/user/start-wm-from-login-screen/" class=""><a class="padding" href="/user/start-wm-from-login-screen/">Start WM from Login Screen</a></li>
+          <li data-nav-id="/user/tune-ssd/" class="active"><a class="padding" href="/user/tune-ssd/">Tune an SSD</a></li>
+          <li data-nav-id="/user/how-to-create-a-video-dvd-from-the-cli/" class=""><a class="padding" href="/user/how-to-create-a-video-dvd-from-the-cli/">Video DVD from the CLI</a></li>
+          <li data-nav-id="/user/virtualbox-host-devices/" class=""><a class="padding" href="/user/virtualbox-host-devices/">Virtualbox Access Host USB</a></li></ul></li>
+          <li data-nav-id="/dev/" class=""><a class="padding" href="/dev/">Developer Documentation</a><ul id="R-subsections-bde8a83577188605f0afbdffa38c9c13" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/" class="alwaysopen"><a class="padding" href="/dev/packaging/">Packaging Documentation</a><ul id="R-subsections-44df389f6ee6cba780e4599b7c3f6732" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/gconf/" class=""><a class="padding" href="/dev/packaging/gconf/">GConf and Packaging</a></li>
+          <li data-nav-id="/dev/packaging/git-svn-sources-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/git-svn-sources-with-slkbuild/">Git/SVN with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/mateconf/" class=""><a class="padding" href="/dev/packaging/mateconf/">MATEConf</a></li>
+          <li data-nav-id="/dev/packaging/mimetypes/" class=""><a class="padding" href="/dev/packaging/mimetypes/">Mimetypes</a></li>
+          <li data-nav-id="/dev/packaging/new-to-packaging/" class=""><a class="padding" href="/dev/packaging/new-to-packaging/">New to Packaging</a></li>
+          <li data-nav-id="/dev/packaging/package-categories/" class=""><a class="padding" href="/dev/packaging/package-categories/">Package Categories</a></li>
+          <li data-nav-id="/dev/packaging/packaging-rules/" class=""><a class="padding" href="/dev/packaging/packaging-rules/">Packaging rules</a></li>
+          <li data-nav-id="/dev/packaging/packaging-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/packaging-with-slkbuild/">Packaging with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/scrollkeeper/" class=""><a class="padding" href="/dev/packaging/scrollkeeper/">Scrollkeeper</a></li>
+          <li data-nav-id="/dev/packaging/uid-gid/" class=""><a class="padding" href="/dev/packaging/uid-gid/">slkbuild UIDs/GIDs</a></li>
+          <li data-nav-id="/dev/packaging/submitting-packages/" class=""><a class="padding" href="/dev/packaging/submitting-packages/">Submitting Packages</a></li></ul></li>
+          <li data-nav-id="/dev/create-public-mirror/" class=""><a class="padding" href="/dev/create-public-mirror/">How to Create a Public Salix Mirror</a></li>
+          <li data-nav-id="/dev/internationalize-shell-scripts/" class=""><a class="padding" href="/dev/internationalize-shell-scripts/">Internationalize Shell Scripts</a></li>
+          <li data-nav-id="/dev/work-with-sourceforge/" class=""><a class="padding" href="/dev/work-with-sourceforge/">Sourceforge</a></li>
+          <li data-nav-id="/dev/transifex/" class=""><a class="padding" href="/dev/transifex/">Transifex</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://salixos.org"><i class='fas fa-home'></i> Main website</a></li>
+            <li><a class="padding" href="https://forum.salixos.org"><i class='fas fa-question-circle'></i> Support Forum</a></li>
+            <li><a class="padding" href="https://blog.salixos.org"><i class='fas fa-blog'></i> Blog</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/user/tune-ssd/" lang="en-US" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-green" value="green" selected>Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter">
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1739552208" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1739552208" defer></script>
+    <script src="/js/theme.js?1739552208" defer></script>
+  </body>
+</html>

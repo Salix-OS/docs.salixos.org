@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Start Your Window Manager from the Login Screen Menu :: Salix Documentation</title>
+    <link>/user/start-wm-from-login-screen/</link>
+    <description>If you have installed another Window Manager for your system, like Fluxbox, you may find that it may not appear in your Login Screen Menu in LightDM, or any other Display Manager you may be using.&#xA;This is because some window manager packages may not include the proper support for that. For example, Fluxbox is such a package. It is a package provided by Slackware and does not include what is needed to create a menu entry for your Display Manager.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/start-wm-from-login-screen/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

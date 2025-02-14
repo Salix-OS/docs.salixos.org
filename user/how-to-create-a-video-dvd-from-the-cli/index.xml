@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Create a Video DVD from the CLI :: Salix Documentation</title>
+    <link>/user/how-to-create-a-video-dvd-from-the-cli/</link>
+    <description>It is very easy to create a video DVD out of your existing video files, using only command line tools.&#xA;Universal solution using ffmpeg The original video files can be in any format that ffmpeg supports, so that includes just about everything.&#xA;The tools you will need for this are ffmpeg and dvdauthor, so make sure you have them first (run as root):&#xA;slapt-get -i ffmpeg dvdauthorUsing ffmpeg you can convert any video file to an mpg file, that dvdauthor can use later:</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/how-to-create-a-video-dvd-from-the-cli/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

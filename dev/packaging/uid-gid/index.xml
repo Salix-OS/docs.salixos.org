@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIDs and GIDs to use with slkbuild :: Salix Documentation</title>
+    <link>/dev/packaging/uid-gid/</link>
+    <description>Recommended UID/GIDs The recommended UID/GIDs for use with SLKBUILD scripts are the same as [the ones for slackbuilds.org](https://slackbuilds.org/uid_gid.txt Defaults Slackware UID/GIDs) in order to avoid conflicts with packages build from SBo.&#xA;Extra This previous list is maintained by the SBo team. If you build a package that is not on that list, we can discuss about it on the mailing list.&#xA;Warning Note that recommended UID/GIDs should not be created automatically when the user installs a package.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/uid-gid/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boot Into Existing Installation on Hard Disk Using Installation CD :: Salix Documentation</title>
+    <link>/user/boot-into-existing-installation/</link>
+    <description>After installing Salix to hard disk my LILO or GRUB was broken. How can I boot into the installed system on the hard disk using Salix installation CD (not LiveCD)?&#xA;Put the Salix installation CD into the drive, reboot and when prompt appears type this:&#xA;hugesmp.s root=/dev/partition rdinit= rowhere partition stands for your partition number (ie. sda2; sdb1, etc.) where Salix was installed and yes there is a space between rdinit= and ro.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/boot-into-existing-installation/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Remove Unnecessary Xorg Packages :: Salix Documentation</title>
+    <link>/user/remove-unnecessary-xorg-packages/</link>
+    <description>Salix basic and full installation modes install several xorg packages that are not all needed in any given PC, but are included so Salix works in every possible hardware setup. For example, you don’t need ati or nvidia video drivers if you have an intel video card.&#xA;Video drivers You probably have only one video card in your PC so you can remove drivers for all video cards you don’t have.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/remove-unnecessary-xorg-packages/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

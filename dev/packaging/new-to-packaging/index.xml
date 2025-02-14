@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New to Packaging :: Salix Documentation</title>
+    <link>/dev/packaging/new-to-packaging/</link>
+    <description>Packaging 101 Helping out a FOSS project is a great way to say “thank you” to the core team for all their hard work. Helping out with packaging programs for use in the Distribution is a “twofer” in that you get to know the range of software available for the Distro, and you get to learn how it all hangs together, which is really helpful when things go “belly-up” - which happens to us all at some time or another!</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/new-to-packaging/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

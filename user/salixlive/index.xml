@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Install Salix Live on a USB Key? :: Salix Documentation</title>
+    <link>/user/salixlive/</link>
+    <description>These instructions are for LiveCD images of Salix only!!! If your iso image file does not have ’live’ in it’s name look at these instructions: Install-from-USB&#xA;It depends if you already have a Salix Live CD or simply an ISO image. Unetbootin version &lt; 575 is not supported and should not be used. Versions greater or equal to 575 have been reported to correctly deal with USB installation and persistence; however it does not seem to work for all users.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/salixlive/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

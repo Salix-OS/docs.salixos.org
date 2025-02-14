@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Get Notifications for Package Updates :: Salix Documentation</title>
+    <link>/faq/package-update-notifications/</link>
+    <description>If you have selected the FULL set of packages when you installed Salix, you don’t need to do anything at all. You will receive notifications in your system tray when they are available.&#xA;If not, you can just install salix-update-notifier with gslapt or using slapt-get:&#xA;sudo slapt-get -i salix-update-notifierThat will run a service that will check every now and then for package updates in the background and will display a system tray notification icon when there are package updates available in the repositories.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/package-update-notifications/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

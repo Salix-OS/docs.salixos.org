@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Is Flatpak Available in Salix? :: Salix Documentation</title>
+    <link>/faq/flatpak/</link>
+    <description>Flatpak is installed by default on Salix since version 15.0, no setup required!&#xA;Flatpak comes preconfigured with the Flathub repository and desktop integration tools are included to allow 1-click install from Flathub. All you have to do is install some apps!</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/flatpak/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

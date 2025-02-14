@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Compile the Linux Kernel :: Salix Documentation</title>
+    <link>/user/kernel-compilation/</link>
+    <description>It should be noted that the default kernel that ships with Salix will work in most cases, and no recompiling is necessary. You should only recompile if:&#xA;Your system’s hardware is not supported by the default kernel You need (want) features only available in a newer kernel To get an extra fraction of a percent hardware performance For fun Before going ahead, it may be easier (and will in many cases be sufficient to solve the problem) to install the kernel from Slackware current, which will always be relatively recent.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/kernel-compilation/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

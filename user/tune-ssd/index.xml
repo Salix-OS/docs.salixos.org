@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Tune an SSD :: Salix Documentation</title>
+    <link>/user/tune-ssd/</link>
+    <description>The biggest single upgrade you can make to a PC’s performance is to add a Solid-State-Drive or SSD. Doing so will shorten your boot times, dramatically increase your write-to-disk speed and prolong battery life on a laptop.&#xA;When adding the SSD, three factors need balancing:&#xA;System performance SSD longevity Data Safety Background SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS. The controller takes care of all the low level details for us, but knowing something about how the controller works can help us get the best out of our new drive.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/tune-ssd/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

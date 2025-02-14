@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Package Manager Wants to Downgrade Packages :: Salix Documentation</title>
+    <link>/faq/package-manager-wants-to-downgrade-packages/</link>
+    <description>If you install packages from third party mirrors or from Slackbuilds you should not wonder if gslapt/slapt-get wants to “upgrade” these packages to an older version again. This is normal behaviour because the package manager actually doesn’t care about the version number. It just wants to bring the same version to your computer that is available in the Salix repositories. Also sometimes it is intended to downgrade packages.&#xA;If you want to keep your third party package you have to blacklist it in gslapt/slapt-get.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/package-manager-wants-to-downgrade-packages/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

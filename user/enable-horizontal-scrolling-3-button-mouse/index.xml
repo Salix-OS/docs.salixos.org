@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Enable Horizontal Scrolling With a 3-Button Mouse :: Salix Documentation</title>
+    <link>/user/enable-horizontal-scrolling-3-button-mouse/</link>
+    <description>You may have a 3 buttons mouse with vertical scroll, but no physical horizontal scroll.&#xA;Here is how to have horizontal scroll emulation using SHIFT + vertical scroll.&#xA;Installation First install those two packages from source:&#xA;sudo slapt-get -i xbindkeys xautomation xbindkeys will be use to do an action of specific events (here shift + vertical scroll). xautomation will be use to generate the horizontal scroll events for X. Configuration Vertical scrolling is seen as two buttons by X, by default it’s button 4 and 5.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/enable-horizontal-scrolling-3-button-mouse/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

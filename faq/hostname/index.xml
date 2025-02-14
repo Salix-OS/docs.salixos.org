@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How Do I Change the Default System Hostname? :: Salix Documentation</title>
+    <link>/faq/hostname/</link>
+    <description>The easy way to do it, is to simply run the gtkhostsetup Salix system tool.&#xA;Otherwise, you may follow the instructions below:&#xA;If you completed a FULL mode Salix installation, the default hostname is set to darkstar.example.net (inherited from Slackware). If you need to change the hostname you can edit the /etc/hosts and /etc/HOSTNAME files accordingly. For example:&#xA;/etc/hosts:&#xA;# # hosts # This file describes a number of hostname-to-address # mappings for the TCP/IP subsystem.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/hostname/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

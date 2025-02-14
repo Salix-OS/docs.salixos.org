@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packaging Documentation :: Salix Documentation</title>
+    <link>/dev/packaging/</link>
+    <description>Welcome to the packaging section, where you’ll find everything you need to create and maintain your own software packages for Salix. Whether you’re looking to package software for personal use or to share with the wider Salix community, this section provides detailed guides, tutorials, and best practices to help you get started and ensure your packages meet the high standards of the Salix repository.&#xA;GConf and Packaging Getting git or svn sources for use with slkbuild MATEConf Schemas and Packaging Installing Mimetypes with a Package Package Categories Packaging rules Building Packages with slkbuild Scrollkeeper and Packaging Submitting Packages UIDs and GIDs to use with slkbuild </description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GConf and Packaging</title>
+      <link>/dev/packaging/gconf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/gconf/</guid>
+      <description>What is gconf? GConf is a configuration scheme currently used by the GNOME desktop. Programs which use it setup default values in a $NAME.schemasfile which is installed under /etc/gconf/schemas/$NAME.schemas. These defaults are then registered with the gconf daemon which monitors the configuration values and alerts applications when values the applications are interested in change. The schema files also provide documentation about what each value in the configuration system means (which gets displayed when you browse the database in the gconf-editor program).</description>
+    </item>
+    <item>
+      <title>Getting git or svn sources for use with slkbuild</title>
+      <link>/dev/packaging/git-svn-sources-with-slkbuild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/git-svn-sources-with-slkbuild/</guid>
+      <description>If the source only exists in a git or svn repository, then you will have to create a source tarball yourselves and upload it somewhere. You have to add the created source tarballs to the source variable in the SLKBUILD file. Also make sure that you upload the source tarball to your sourcetemplate location. Example:&#xA;source=(&#34;http://some-domain.org/packages/xap/$pkgname/$pkgname-$pkgver.src.tar.gz&#34;)git This script gets latest git sources, creates a source tarball named after the current date and updates the $pkgver variable in the SLKBUILD file.</description>
+    </item>
+    <item>
+      <title>MATEConf Schemas and Packaging</title>
+      <link>/dev/packaging/mateconf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/mateconf/</guid>
+      <description>What is mateconf? MATEConf is a configuration scheme currently used by the MATE desktop. Programs which use it setup default values in a $NAME.schemas file which is installed under /etc/mateconf/schemas/$NAME.schemas. These defaults are then registered with the mateconf daemon which monitors the configuration values and alerts applications when values the applications are interested in change. The schema files also provide documentation about what each value in the configuration system means (which gets displayed when you browse the database in the mateconf-editor program).</description>
+    </item>
+    <item>
+      <title>Installing Mimetypes with a Package</title>
+      <link>/dev/packaging/mimetypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/mimetypes/</guid>
+      <description>When your package includes xml files in usr/share/mime, the system should be informed about the new mimetypes when the package is installed. That can be accomplished by entering the following code in your doinst.sh:&#xA;#update the mime desktop database if [ -x usr/bin/update-desktop-database ]; then usr/bin/update-desktop-database -q fi # update the mime database if [ -x usr/bin/update-mime-database ]; then usr/bin/update-mime-database usr/share/mime &gt; /dev/null 2&gt;&amp;1 fi</description>
+    </item>
+    <item>
+      <title>New to Packaging</title>
+      <link>/dev/packaging/new-to-packaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/new-to-packaging/</guid>
+      <description>Packaging 101 Helping out a FOSS project is a great way to say “thank you” to the core team for all their hard work. Helping out with packaging programs for use in the Distribution is a “twofer” in that you get to know the range of software available for the Distro, and you get to learn how it all hangs together, which is really helpful when things go “belly-up” - which happens to us all at some time or another!</description>
+    </item>
+    <item>
+      <title>Package Categories</title>
+      <link>/dev/packaging/package-categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/package-categories/</guid>
+      <description>These are the package categories for the Salix repositories (some of them might not be actually present, because there are no packages to place in yet):&#xA;a - The base system. Contains software to get up and running and have a text editor and basic communications programs ap - Various applications that do not require the X Window System d - Program development tools. Compilers, debuggers, interpreters, and man pages. It’s all here f - FAQs, HOWTOs, and other miscellaneous documentation gnome - Applications and libraries from the Gnome project games - Games :) kde - KDE applications (depending on kdelibs) l - Libraries locale - Localisation Packages lxde - LXDE packages lxqt - LXQt packages mate - MATE Desktop packages n - Networking programs.</description>
+    </item>
+    <item>
+      <title>Packaging rules</title>
+      <link>/dev/packaging/packaging-rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/packaging-rules/</guid>
+      <description>Packagers are encouraged to also visit the following links:&#xA;Building packages with slkbuild Writing A SlackBuild Script Submitting packages for inclusion in the Salix repository Recommended UIDs and GIDs Package rules The package should be named $name-$version-$arch-$packagereleaseXY.txz with a breakdown as below:&#xA;$name: the name of the software and should contain only alphanumeric characters. “-” is supported. $version: the version of the software, ie 1.5.0.6 $arch: i586 in most cases for 32-bit packages, x86_64 for 64-bit packages, noarch for scripts or “resource only” packages (ie : artwork) $packagerelease: Start with 1 and for any subsequent updates to the same version of the package, increase by 1; this includes rebuilding for a new Salix edition.</description>
+    </item>
+    <item>
+      <title>Building Packages with slkbuild</title>
+      <link>/dev/packaging/packaging-with-slkbuild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/packaging-with-slkbuild/</guid>
+      <description>slkbuild is a script which makes package creation much easier. It parses a meta file called a SLKBUILD and creates a conventional build-name.sh script and then optionally runs it. It is inspired by the arch build system and greatly simplifies the build process. It is available in the repositories and it is a good idea to have it installed when going through this tutorial. Note that this is not a substitute for knowing how to compile.</description>
+    </item>
+    <item>
+      <title>Scrollkeeper and Packaging</title>
+      <link>/dev/packaging/scrollkeeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/scrollkeeper/</guid>
+      <description>What is scrollkeeper? ScrollKeeper is a cataloging system for documentation on open systems. It manages documentation metadata and provides a simple API to allow help browsers to find, sort, and search the document catalog.&#xA;AFAIK nothing beyond the Gnome and KDE help browsers does anything usefull with it.&#xA;How does it work? Scrollkeeper reads files with meta data (provided in the packages of programs that use this) and templates (provided by the scrollkeeper package).</description>
+    </item>
+    <item>
+      <title>UIDs and GIDs to use with slkbuild</title>
+      <link>/dev/packaging/uid-gid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/uid-gid/</guid>
+      <description>Recommended UID/GIDs The recommended UID/GIDs for use with SLKBUILD scripts are the same as [the ones for slackbuilds.org](https://slackbuilds.org/uid_gid.txt Defaults Slackware UID/GIDs) in order to avoid conflicts with packages build from SBo.&#xA;Extra This previous list is maintained by the SBo team. If you build a package that is not on that list, we can discuss about it on the mailing list.&#xA;Warning Note that recommended UID/GIDs should not be created automatically when the user installs a package.</description>
+    </item>
+    <item>
+      <title>Submitting Packages</title>
+      <link>/dev/packaging/submitting-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/submitting-packages/</guid>
+      <description>What you should do before submitting packages You should register in the Salix-main mailing list. All development discussions are taking place there.&#xA;What packages to submit Feel free to submit packages for any open source software you like. Replacing Slackware packages is generally not accepted, unless there is a really important reason.&#xA;You can also package proprietary software, provided re-distribution of that software is allowed (like for example the opera web browser).</description>
+    </item>
+  </channel>
+</rss>

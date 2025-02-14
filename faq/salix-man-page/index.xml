@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Read the Salix Man Page :: Salix Documentation</title>
+    <link>/faq/salix-man-page/</link>
+    <description>What is a Man Page? The Linux manual pages are the reference documentation of the system user (from the basic user to the administrator via the developer). They include all the commands / functions available in the system. The way to read one is to open a terminal and run:&#xA;man the_command_you_want_to_know_aboutOr if you want to use our GTK manual page viewer:&#xA;gtkman the_command_you_want_to_know_aboutExample man slapt-getThe Salix Man page This manual page allows you to read the minimum vital to use your Salix Operating System.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/salix-man-page/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

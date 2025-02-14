@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fix Unknown Filetypes in Browser :: Salix Documentation</title>
+    <link>/user/fix-unknown-filetypes-in-browser/</link>
+    <description>Symptom Sometimes when you download a file, you get prompted to open or save it (at least in Firefox in the default mode) and the only choice you get to open the file is not the right one (often a text editor). But sometimes it’s ok, for the same file type. Why?&#xA;The reason is that when it fails to propose the right choice, the file type is unknown to the browser.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/fix-unknown-filetypes-in-browser/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slackbuilds in Salix Repositories :: Salix Documentation</title>
+    <link>/user/slackbuilds-in-salix-repos/</link>
+    <description>Salix integrates dependency management for packages in its own repositories and those built from slackbuilds.org, whose package list is mirrored by Salix, using slapt-src.&#xA;Where a package is available from both sources, the Salix package is always preferred, even if it is a less recent version. Should you wish to replace it with a build from source, you will need to do so manually from the slackbuilds.org website, and exclude the package in /etc/slapt-getrc to prevent it being automatically downgraded when you do a general package upgrade.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/slackbuilds-in-salix-repos/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

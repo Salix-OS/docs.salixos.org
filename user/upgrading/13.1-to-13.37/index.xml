@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Upgrade Salix 13.1 to 13.37 :: Salix Documentation</title>
+    <link>/user/upgrading/13.1-to-13.37/</link>
+    <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 13.37. Open file /etc/slapt-get/slapt-getrc and change all “13.1” instances to “13.37”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:&#xA;i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-13.37/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-13.37/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/13.37/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-13.37/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-13.37/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/13.37/:PREFERREDAfter you make the changes, run:&#xA;slapt-get -uUpgrading packages The combined spkg-pkgtools package has been removed in Salix 13.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/upgrading/13.1-to-13.37/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

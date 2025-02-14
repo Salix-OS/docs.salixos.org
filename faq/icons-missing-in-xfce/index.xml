@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icons Missing in the Xfce Menu :: Salix Documentation</title>
+    <link>/faq/icons-missing-in-xfce/</link>
+    <description>If you installed a new software package and the respective icons are missing from the Xfce menu, it’s because Xfce is too slow to update the icon caches. Just run the following command as to update the icon cache for all icon themes installed in your system (among other things):&#xA;sudo update-allIf you have any icon themes installed in your home directory instead of having them installed systemwide, you probably need to run something like this (as non-priviliged user this time):</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/icons-missing-in-xfce/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

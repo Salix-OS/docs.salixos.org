@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Upgrading Between Releases :: Salix Documentation</title>
+    <link>/user/upgrading/</link>
+    <description>Upgrading to a new Salix release is a straightforward process, and we’ve put together a series of tutorials to guide you through it. Below, you’ll find step-by-step instructions on how to upgrade from one Salix release to the next. Please note that only upgrading to the next consecutive release is officially supported, so it’s recommended to upgrade in sequence rather than skipping releases. Attempting to upgrade multiple releases at once is not recommended and may lead to unexpected issues.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/upgrading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Upgrade Salix 13.0 to 13.1</title>
+      <link>/user/upgrading/13.0-to-13.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/13.0-to-13.1/</guid>
+      <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 13.1. Open file /etc/slapt-get/slapt-getrc and change all “13.0” instances to “13.1”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:&#xA;i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-13.1/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-13.1/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/13.1/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-13.1/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-13.1/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/13.1/:PREFERREDAfter you make the changes, run&#xA;slapt-get -uUpgrading packages It’s always safer to upgrade your glibc package first:</description>
+    </item>
+    <item>
+      <title>How to Upgrade Salix 13.1 to 13.37</title>
+      <link>/user/upgrading/13.1-to-13.37/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/13.1-to-13.37/</guid>
+      <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 13.37. Open file /etc/slapt-get/slapt-getrc and change all “13.1” instances to “13.37”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:&#xA;i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-13.37/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-13.37/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/13.37/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-13.37/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-13.37/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/13.37/:PREFERREDAfter you make the changes, run:&#xA;slapt-get -uUpgrading packages The combined spkg-pkgtools package has been removed in Salix 13.</description>
+    </item>
+    <item>
+      <title>How to Upgrade Salix 13.37 to 14.0</title>
+      <link>/user/upgrading/13.37-to-14.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/13.37-to-14.0/</guid>
+      <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all “13.37” instances to “14.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:&#xA;i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/14.0/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED Warning On occasion, you might find that enialis’ download speeds leave things desired. If you find yourself in such a scenario, feel free to experiment with the other [[Repository mirrors|repositories provided here]].</description>
+    </item>
+    <item>
+      <title>How to Upgrade Salix 14.0 to 14.1</title>
+      <link>/user/upgrading/14.0-to-14.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/14.0-to-14.1/</guid>
+      <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.1. Open file /etc/slapt-get/slapt-getrc and change all “14.0” instances to “14.1”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:&#xA;i486 architecture SOURCE=http://salix.hostingxtreme.com/i486/slackware-14.1/:OFFICIAL SOURCE=http://salix.hostingxtreme.com/i486/slackware-14.1/extra/:OFFICIAL SOURCE=http://salix.hostingxtreme.com/i486/14.1/:PREFERREDx86_64 architecture SOURCE=http://salix.hostingxtreme.com/x86_64/slackware-14.1/:OFFICIAL SOURCE=http://salix.hostingxtreme.com/x86_64/slackware-14.1/extra/:OFFICIAL SOURCE=http://salix.hostingxtreme.com/x86_64/14.1/:PREFERREDChanging your mirrors Feel free to try other repositoriy mirrors that might be faster for you. N.B: It is perfectly safe to stop the process while a package is in the process of being downloaded.</description>
+    </item>
+    <item>
+      <title>How to Upgrade Salix 14.1 to 14.2</title>
+      <link>/user/upgrading/14.1-to-14.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/14.1-to-14.2/</guid>
+      <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.2. Open file /etc/slapt-get/slapt-getrc and change all “14.1” instances to “14.2”. Also make sure the Slackware repositories have an OFFICIAL priority. Make sure you add the new extra repository, with an OFFICIAL priority too. Example setups are shown below:&#xA;i486 architecture SOURCE=http://slackware.uk/salix/i486/slackware-14.2/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/slackware-14.2/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/14.2/:PREFERRED SOURCE=http://slackware.uk/salix/i486/extra-14.2/:OFFICIALx86_64 architecture SOURCE=http://slackware.uk/salix/x86_64/slackware-14.2/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/slackware-14.2/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/14.2/:PREFERRED SOURCE=http://slackware.uk/salix/x86_64/extra-14.2/:OFFICIALslapt-srcrc Also edit your /etc/slapt-get/slapt-srcrc file to point to 14.</description>
+    </item>
+    <item>
+      <title>How to Upgrade Salix 14.2 to 15.0</title>
+      <link>/user/upgrading/14.2-to-15.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/14.2-to-15.0/</guid>
+      <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 15.0. Open file /etc/slapt-get/slapt-getrc and change all “14.2” instances to “15.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are shown below:&#xA;i486 architecture SOURCE=http://slackware.uk/salix/i486/slackware-15.0/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/slackware-15.0/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/15.0/:PREFERRED SOURCE=http://slackware.uk/salix/i486/extra-15.0/:OFFICIALx86_64 architecture SOURCE=http://slackware.uk/salix/x86_64/slackware-15.0/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/slackware-15.0/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/15.0/:PREFERRED SOURCE=http://slackware.uk/salix/x86_64/extra-15.0/:OFFICIALslapt-srcrc Also edit your /etc/slapt-get/slapt-srcrc file to point to 15.0 instead of 14.2:&#xA;BUILDDIR=/usr/src/slapt-src PKGEXT=txz SOURCE=http://slackware.</description>
+    </item>
+  </channel>
+</rss>

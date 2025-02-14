@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Setup Alpine With a Gmail Account :: Salix Documentation</title>
+    <link>/user/setup-alpine-with-gmail/</link>
+    <description>Alpine is basically the same application as Pine, which used to be widely used on university computer sytems around the world. It is a text-based console email client which is very easy to learn and use, and many people prefer it to webmail or graphical email clients. There must be hundreds of quick guides to using Alpine with Gmail. This is simply one way of doing it, with the merit that it actually works for Salix.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/setup-alpine-with-gmail/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Install the Kernel Source :: Salix Documentation</title>
+    <link>/faq/kernel-source/</link>
+    <description>The kernel-source package is by default locked in gslapt, just like all other kernel related packages. This is to prevent users from unknowingly upgrading the kernel; it’s easy to miss that kernel packages are about to be upgraded, when a multitude of other packages are going to be upgraded at the same time.&#xA;Salix 14.1 and newer To install the kernel-source package, in Salix 14.1 and newer use sudo . Open a terminal window and run:</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/kernel-source/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

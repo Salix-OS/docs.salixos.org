@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Create a Public Salix Mirror :: Salix Documentation</title>
+    <link>/dev/create-public-mirror/</link>
+    <description>These are rather generic instructions to create a public Salix mirror. You should be familiar with rsync and cron jobs to get things working. At first some basic things:&#xA;It’s up to you if you want to create a ftp or a http mirror Of course you have to adjust the output dirs, that are used in the rsync commands Syncing once a day may be a good idea Salix mirror Let’s get things started.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/create-public-mirror/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

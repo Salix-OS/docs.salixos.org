@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bluetooth :: Salix Documentation</title>
+    <link>/user/bluetooth/</link>
+    <description>Installing firmware Bluetooth should be working out-of-the-box if you selected the FULL installation set. But if you didn’t choose FULL and you want to have your bluetooth hardware working you can install these packages:&#xA;bluez bluez-firmware bluez-hcidumpusing the gslapt package manager&#xA;Bluetooth frontend Here it depends on the salix flavor you chose ( eg : if you have chose KDE you should be able to find the frontend to deal with the bluetooth ) But if you don’t have the program that deals with bluez or you dont see the bluetooth icon in the notification are then you should be installing :</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/bluetooth/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

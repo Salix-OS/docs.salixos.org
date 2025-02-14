@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Install Xorg on Salix Core :: Salix Documentation</title>
+    <link>/user/xorg-on-core/</link>
+    <description>Installing Xorg The easiest way to install Xorg on top of Salix Core is to install everything under the /x repository directory. To do that, first update your package database&#xA;slapt-get -uand then run:&#xA;slapt-get --install-set xThat will install every package that is in the /x directory and will give you a working Xorg. It would be a good idea to install some icon themes, or many apps won’t display properly:</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/xorg-on-core/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Install Salix from a USB stick :: Salix Documentation</title>
+    <link>/user/install-from-usb/</link>
+    <description>This page is about using the standard installation images, not the live images. If you want to install SalixLive on your USB drive, follow these instructions instead: How to install salix live on a USB key&#xA;dd This is the recommended method to create a Salix installation bootable USB stick. It will destroy all previous contents in it, so make sure you make a backup of any data you want to keep.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/install-from-usb/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

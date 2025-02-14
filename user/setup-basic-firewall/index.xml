@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup Basic Firewall :: Salix Documentation</title>
+    <link>/user/setup-basic-firewall/</link>
+    <description>You can setup a secure basic firewall using the “Uncomplicated Firewall or UFW”.&#xA;sudo slapt-get -i gufwthen&#xA;sudo gufwclick status to “on”. This will setup a deny all incoming and allow all outgoing firewall.&#xA;Alternatively, you can&#xA;sudo slapt-get -i ufw sudo ufw enable sudo ufw default deny sudo ufw deny sshThis method will deny all incoming connections and allow outgoing but also deny ssh connections to further protect your system.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/setup-basic-firewall/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

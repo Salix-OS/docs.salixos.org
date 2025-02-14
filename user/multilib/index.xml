@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Install Multilib :: Salix Documentation</title>
+    <link>/user/multilib/</link>
+    <description>Warning Multilib is not officially supported in Salix and it is not recommended. Follow these instructions at your own risk.&#xA;Original Source&#xA;In this guide we will discuss how to install multilib support for 32bit apps on a 64bit Salix. It is based on a ‘full’ version of Salix. The source guide is more in-depth, this guide is only the minimal steps required for Salix. If you are using a more recent Salix version, adjust ‘15.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/multilib/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

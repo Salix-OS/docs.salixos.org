@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How Do I Upgrade to Xfce 4.20? :: Salix Documentation</title>
+    <link>/faq/upgrade-xfce-to-4.20/</link>
+    <description>Salix 15.0 comes with Xfce 4.16 by default. Xfce 4.20 was released a few days before Christmas 2024 and a new dedicated repository for it was added shortly after.&#xA;So, if you want to upgrade your Xfce to version 4.20, all you have to do is add that repository to your slapt-get package manager configuration in the /etc/slapt-get/slapt-getrc file.&#xA;For 64-bit systems, you can add this line:&#xA;SOURCE=https://download.salixos.org/x86_64/xfce4.20-15.0/:PREFERREDwhile for 32-bit systems, you can add this line:</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/upgrade-xfce-to-4.20/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

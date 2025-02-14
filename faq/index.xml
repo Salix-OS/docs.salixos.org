@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frequently Asked Questions :: Salix Documentation</title>
+    <link>/faq/</link>
+    <description>Got a question about Salix? You’re not alone. This FAQ section answers some of the most common questions we receive from users, covering everything from basic concepts to troubleshooting and more. Browse through the questions and answers below to see if we’ve already addressed your concern.&#xA;Can I Use Third Party Repositories? How to Enable the root User How to Get an Extra Console in the Salix Installer Is Flatpak Available in Salix?</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can I Use Third Party Repositories?</title>
+      <link>/faq/3rd-party-repos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/3rd-party-repos/</guid>
+      <description>Yes, of course you are free to add third party repositories (e.g. GSB, MSB, alienbob…) to slapt-get, however, there may be issues.&#xA;It is important to remember that Salix does handle package dependencies, however, only for Salix &amp; the ‘special’ Slackware repositories included in Salix default configuration for gslapt/slapt-get; not for any other third parties for whom we couldn’t guarantee any sort of quality or compatibility control.&#xA;One is always free to direct gslapt/slapt-get to any third party package repositories.</description>
+    </item>
+    <item>
+      <title>How Do I Change the Default System Hostname?</title>
+      <link>/faq/hostname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/hostname/</guid>
+      <description>The easy way to do it, is to simply run the gtkhostsetup Salix system tool.&#xA;Otherwise, you may follow the instructions below:&#xA;If you completed a FULL mode Salix installation, the default hostname is set to darkstar.example.net (inherited from Slackware). If you need to change the hostname you can edit the /etc/hosts and /etc/HOSTNAME files accordingly. For example:&#xA;/etc/hosts:&#xA;# # hosts # This file describes a number of hostname-to-address # mappings for the TCP/IP subsystem.</description>
+    </item>
+    <item>
+      <title>How to Enable the root User</title>
+      <link>/faq/enable-root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/enable-root/</guid>
+      <description>Since the 14.1 release the root user is disabled by default and the use of sudo is needed to perform administrative tasks. If you want to enable the root user, all you have to do is log in as a user that has sudo privileges (any user that is a member of the wheel group) and run the following command:&#xA;sudo passwd rootand provide a new password for the root user.</description>
+    </item>
+    <item>
+      <title>Is Flatpak Available in Salix?</title>
+      <link>/faq/flatpak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/flatpak/</guid>
+      <description>Flatpak is installed by default on Salix since version 15.0, no setup required!&#xA;Flatpak comes preconfigured with the Flathub repository and desktop integration tools are included to allow 1-click install from Flathub. All you have to do is install some apps!</description>
+    </item>
+    <item>
+      <title>Icons Missing in the Xfce Menu</title>
+      <link>/faq/icons-missing-in-xfce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/icons-missing-in-xfce/</guid>
+      <description>If you installed a new software package and the respective icons are missing from the Xfce menu, it’s because Xfce is too slow to update the icon caches. Just run the following command as to update the icon cache for all icon themes installed in your system (among other things):&#xA;sudo update-allIf you have any icon themes installed in your home directory instead of having them installed systemwide, you probably need to run something like this (as non-priviliged user this time):</description>
+    </item>
+    <item>
+      <title>How to Install the Kernel Source</title>
+      <link>/faq/kernel-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/kernel-source/</guid>
+      <description>The kernel-source package is by default locked in gslapt, just like all other kernel related packages. This is to prevent users from unknowingly upgrading the kernel; it’s easy to miss that kernel packages are about to be upgraded, when a multitude of other packages are going to be upgraded at the same time.&#xA;Salix 14.1 and newer To install the kernel-source package, in Salix 14.1 and newer use sudo . Open a terminal window and run:</description>
+    </item>
+    <item>
+      <title>How Do I Install a txz/tgz File I Found Online?</title>
+      <link>/faq/install-txz-found-online/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/install-txz-found-online/</guid>
+      <description>Generally, you can’t.&#xA;While technically they are very similar, txz and tgz files are in fact tar.xz and tar.gz files, they are not the same. It’s essential to understand that what you found might not be a Slackware package, even if it has the same extension. Most likely, it’s a source tarball, which is different from a Slackware package.&#xA;To confuse matters more, some people create source tarballs and name them with a txz or tgz extension, instead of the more usual tar.</description>
+    </item>
+    <item>
+      <title>How to Get an Extra Console in the Salix Installer</title>
+      <link>/faq/extra-console/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/extra-console/</guid>
+      <description>If you find the need to open an extra virtual console during the installation of Salix, you’ll find out that the Ctrl-Alt-Fx key combinations do not do anything. In order to enable that, you just need to exit the installation as soon as it starts when you’re prompted to proceed or exit the installation, right after you select your preferred keyboard map. If you do so, you’ll find that virtual terminals 2 and 3 are now available and you can switch to them with Ctrl-Alt-F2 and Ctrl-Alt-F3 respectively.</description>
+    </item>
+    <item>
+      <title>How to Play Multimedia Files</title>
+      <link>/faq/multimedia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/multimedia/</guid>
+      <description>By default, a new Salix installation supports playback of most free video and audio file file formats. If you want to add support for other, non-free formats, you just have to use the Salix Codecs Installer tool.&#xA;You can either use the GUI tool:&#xA;Menu -&gt; Multimedia -&gt; Install multimedia codecsor from a terminal, run:&#xA;sudo salix-codecs-installer</description>
+    </item>
+    <item>
+      <title>Package Manager Wants to Downgrade Packages</title>
+      <link>/faq/package-manager-wants-to-downgrade-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/package-manager-wants-to-downgrade-packages/</guid>
+      <description>If you install packages from third party mirrors or from Slackbuilds you should not wonder if gslapt/slapt-get wants to “upgrade” these packages to an older version again. This is normal behaviour because the package manager actually doesn’t care about the version number. It just wants to bring the same version to your computer that is available in the Salix repositories. Also sometimes it is intended to downgrade packages.&#xA;If you want to keep your third party package you have to blacklist it in gslapt/slapt-get.</description>
+    </item>
+    <item>
+      <title>How to Get Notifications for Package Updates</title>
+      <link>/faq/package-update-notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/package-update-notifications/</guid>
+      <description>If you have selected the FULL set of packages when you installed Salix, you don’t need to do anything at all. You will receive notifications in your system tray when they are available.&#xA;If not, you can just install salix-update-notifier with gslapt or using slapt-get:&#xA;sudo slapt-get -i salix-update-notifierThat will run a service that will check every now and then for package updates in the background and will display a system tray notification icon when there are package updates available in the repositories.</description>
+    </item>
+    <item>
+      <title>Packages that are Different from Slackware</title>
+      <link>/faq/packages-different-from-slackware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/packages-different-from-slackware/</guid>
+      <description>Here is a list of packages, present in both Salix and Slackware repositories and the reasons Salix is using a different build:&#xA;Salix 15.0 elilo: Minor tweaks to eliloconfig. lilo: Salix artwork. Minor tweaks to liloconfig. meson: Newer version so that updated versions of other packages can be built. mozilla-firefox: Using the latest ESR version. sysvinit-scripts: Tweaked for boot speedup. Colorized boot messages. Autostart feature for every executable file in /etc/rc.</description>
+    </item>
+    <item>
+      <title>How Much Disk Space Does Salix Need</title>
+      <link>/faq/space/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/space/</guid>
+      <description>For the three different installation modes available, Salix occupies approximately the following amounts of disk space respectively:&#xA;FULL: 2.4GB BASIC: 1.4GB CORE: 840MB So, depending on which installation mode you choose, you need to have a partition with at least that much space available.&#xA;These sizes are the absolute minimum that you’ll require. You have to account for any extra software you might want to install and of course for all your files.</description>
+    </item>
+    <item>
+      <title>How to Read the Salix Man Page</title>
+      <link>/faq/salix-man-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/salix-man-page/</guid>
+      <description>What is a Man Page? The Linux manual pages are the reference documentation of the system user (from the basic user to the administrator via the developer). They include all the commands / functions available in the system. The way to read one is to open a terminal and run:&#xA;man the_command_you_want_to_know_aboutOr if you want to use our GTK manual page viewer:&#xA;gtkman the_command_you_want_to_know_aboutExample man slapt-getThe Salix Man page This manual page allows you to read the minimum vital to use your Salix Operating System.</description>
+    </item>
+    <item>
+      <title>SalixLive Passwords</title>
+      <link>/faq/salixlive-passwords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/salixlive-passwords/</guid>
+      <description>Salix 14.1 and newer For Salix 14.1 and newer there is no root user. You can log in as user one and the password is also one. User one can use the sudo command to execute commands as the superuser.&#xA;Salix 14.0 and earlier For Salix 14.0 and earlier:&#xA;The Salix Live root password is live. The Salix Live non-root username is one with no password. </description>
+    </item>
+    <item>
+      <title>Can I Use slackpkg in Salix?</title>
+      <link>/faq/slackpkg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/slackpkg/</guid>
+      <description>It is recommended that you use slapt-get/gslapt and not slackpkg. slackpkg is a package manager that was designed to manage packages from a single Slackware repository only.&#xA;Using slackpkg in Salix could cause (at least) some Salix (customized packages) to be replaced with their Slackware counterparts, which would remove the Salix customizations. Worse case scenario you could end up removing all Salix packages resulting in a mostly unusable system.</description>
+    </item>
+    <item>
+      <title>How Do I Upgrade to Xfce 4.18?</title>
+      <link>/faq/upgrade-xfce-to-4.18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/upgrade-xfce-to-4.18/</guid>
+      <description>Salix 15.0 comes with Xfce 4.16 by default. Xfce 4.18 was released a few months after Salix 15.0 was released and we added an extra repository for it soon after.&#xA;So, if you want to upgrade your Xfce to version 4.18, all you have to do is add that repository to your slapt-get package manager configuration in the /etc/slapt-get/slapt-getrc file.&#xA;For 64-bit systems, you can add this line:&#xA;SOURCE=https://download.salixos.org/x86_64/xfce4.18-15.0/:PREFERREDwhile for 32-bit systems, you can add this line:</description>
+    </item>
+    <item>
+      <title>How Do I Upgrade to Xfce 4.20?</title>
+      <link>/faq/upgrade-xfce-to-4.20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/upgrade-xfce-to-4.20/</guid>
+      <description>Salix 15.0 comes with Xfce 4.16 by default. Xfce 4.20 was released a few days before Christmas 2024 and a new dedicated repository for it was added shortly after.&#xA;So, if you want to upgrade your Xfce to version 4.20, all you have to do is add that repository to your slapt-get package manager configuration in the /etc/slapt-get/slapt-getrc file.&#xA;For 64-bit systems, you can add this line:&#xA;SOURCE=https://download.salixos.org/x86_64/xfce4.20-15.0/:PREFERREDwhile for 32-bit systems, you can add this line:</description>
+    </item>
+    <item>
+      <title>Why Was Salix Created?</title>
+      <link>/faq/why-was-salix-created/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/why-was-salix-created/</guid>
+      <description>The initial development team did know each other from other projects and were good friends. They enjoyed working together, and decided to start their own Slackware based distribution since what they had in mind (expand on Slackware ease of use while staying fully compatible with it) was not really implemented elsewhere. This was the birth of Salix.</description>
+    </item>
+  </channel>
+</rss>

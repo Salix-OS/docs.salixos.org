@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greek Polytonic on Openbox :: Salix Documentation</title>
+    <link>/user/greek-polytonic-on-openbox/</link>
+    <description>Writing greek polytonic,monotonic and ancient, modern spell checking on LibreOffice and Openbox.&#xA;set the key Open the file ~/.config/openbox/rc.xml with a text editor. e.g. geany ~/.config/openbox/rc.xml&#xA;go to line 294 last row with /keybind and add the lines bellow&#xA;&lt;keybind key=&#34;C-1&#34;&gt; &lt;action name=&#34;Execute&#34;&gt; &lt;command&gt;sh ~/.polytonic&lt;/command&gt; &lt;startupnotify&gt; &lt;enabled&gt;yes&lt;/enabled&gt; &lt;name&gt;Polytonic/Monotonic&lt;/name&gt; &lt;/startupnotify&gt; &lt;/action&gt; &lt;/keybind&gt; Save the file&#xA;Create the polytonic file Create the file ~/.polytonic&#xA;geany ~/.polytonicand paste the lines&#xA;#!/bin/sh # Dimitris Tzemos &lt;djemos@slackel.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/greek-polytonic-on-openbox/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

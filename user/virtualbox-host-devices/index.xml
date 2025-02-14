@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Access Host USB Devices in a Guest OS Running in VirtualBox PUEL :: Salix Documentation</title>
+    <link>/user/virtualbox-host-devices/</link>
+    <description>If you want to access usb devices in a guest OS running in VirtualBox PUEL, you will have to:&#xA;Edit your /etc/rc.d/rc.S file in the host OS. Find the line that reads: /sbin/mount -v usbfs /proc/bus/usb -t usbfsand change it to:&#xA;/sbin/mount -v usbfs /proc/bus/usb -t usbfs -o devgid=10,devmode=0664 Add your user to the wheel group. You need to remount /proc/bus/usb. A reboot will do it too. In VirtualBox, select the virtual machine you want to use and hit the settings button.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/virtualbox-host-devices/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

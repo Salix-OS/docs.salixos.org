@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Get an Extra Console in the Salix Installer :: Salix Documentation</title>
+    <link>/faq/extra-console/</link>
+    <description>If you find the need to open an extra virtual console during the installation of Salix, you’ll find out that the Ctrl-Alt-Fx key combinations do not do anything. In order to enable that, you just need to exit the installation as soon as it starts when you’re prompted to proceed or exit the installation, right after you select your preferred keyboard map. If you do so, you’ll find that virtual terminals 2 and 3 are now available and you can switch to them with Ctrl-Alt-F2 and Ctrl-Alt-F3 respectively.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/extra-console/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

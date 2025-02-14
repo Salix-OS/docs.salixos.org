@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Can I Use slackpkg in Salix? :: Salix Documentation</title>
+    <link>/faq/slackpkg/</link>
+    <description>It is recommended that you use slapt-get/gslapt and not slackpkg. slackpkg is a package manager that was designed to manage packages from a single Slackware repository only.&#xA;Using slackpkg in Salix could cause (at least) some Salix (customized packages) to be replaced with their Slackware counterparts, which would remove the Salix customizations. Worse case scenario you could end up removing all Salix packages resulting in a mostly unusable system.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/slackpkg/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

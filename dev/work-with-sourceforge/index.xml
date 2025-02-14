@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Work with Sourceforge :: Salix Documentation</title>
+    <link>/dev/work-with-sourceforge/</link>
+    <description>Upload file releases You have to be a project admin to upload files. Then create a shell to sourceforge:&#xA;ssh -t USERNAME,salix@shell.sourceforge.net createThis shell will stand for 4 hours. Create the directories needed (if any) under Salix directory:&#xA;mkdir /home/frs/project/s/sa/salix/NEW_DIRECTORYUpload the files using scp:&#xA;scp MY_RELEASE.iso USERNAME,salix@shell.sourceforge.net:/home/frs/project/s/sa/salix/NEW_DIRECTORY/Make sure new folders are group writeable, so other project admins can add/delete files to the new folder, too. Finally, announce the release in the announcements forum or wherever you like ;-)</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/work-with-sourceforge/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

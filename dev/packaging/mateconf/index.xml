@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MATEConf Schemas and Packaging :: Salix Documentation</title>
+    <link>/dev/packaging/mateconf/</link>
+    <description>What is mateconf? MATEConf is a configuration scheme currently used by the MATE desktop. Programs which use it setup default values in a $NAME.schemas file which is installed under /etc/mateconf/schemas/$NAME.schemas. These defaults are then registered with the mateconf daemon which monitors the configuration values and alerts applications when values the applications are interested in change. The schema files also provide documentation about what each value in the configuration system means (which gets displayed when you browse the database in the mateconf-editor program).</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/mateconf/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

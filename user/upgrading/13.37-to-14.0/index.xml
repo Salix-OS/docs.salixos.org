@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Upgrade Salix 13.37 to 14.0 :: Salix Documentation</title>
+    <link>/user/upgrading/13.37-to-14.0/</link>
+    <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all “13.37” instances to “14.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:&#xA;i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/14.0/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED Warning On occasion, you might find that enialis’ download speeds leave things desired. If you find yourself in such a scenario, feel free to experiment with the other [[Repository mirrors|repositories provided here]].</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/upgrading/13.37-to-14.0/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

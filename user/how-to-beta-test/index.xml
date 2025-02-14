@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Beta Test :: Salix Documentation</title>
+    <link>/user/how-to-beta-test/</link>
+    <description>Beta Testing and what’s involved… First Steps When the developers announce a new version of a distribution is available for testing, they really appreciate anyone who actually downloads and installs the beta version so that they can find any major bugs in the release.&#xA;So there is the first thing that is involved - download and install the release.&#xA;What should be done if it doesn’t install properly, or has some sort of problem and won’t reboot after the install?</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/how-to-beta-test/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

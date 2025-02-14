@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Install b43 Firmware for Broadcom Wireless Cards :: Salix Documentation</title>
+    <link>/user/broadcom/</link>
+    <description>The Broadcom wireless chip needs proprietary software (called “firmware”) that runs on the wireless chip itself to work properly. This firmware is copyrighted by Broadcom and must be extracted from Broadcom’s proprietary drivers. To get such firmware on your system, you must download the driver from a legal distribution point, extract it, and install it.&#xA;http://linuxwireless.org/en/users/Drivers/b43&#xA;Here is a short guide on how to create a b43(legacy) firmware package for your system.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/broadcom/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

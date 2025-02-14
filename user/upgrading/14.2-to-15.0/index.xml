@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Upgrade Salix 14.2 to 15.0 :: Salix Documentation</title>
+    <link>/user/upgrading/14.2-to-15.0/</link>
+    <description>Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 15.0. Open file /etc/slapt-get/slapt-getrc and change all “14.2” instances to “15.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are shown below:&#xA;i486 architecture SOURCE=http://slackware.uk/salix/i486/slackware-15.0/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/slackware-15.0/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/i486/15.0/:PREFERRED SOURCE=http://slackware.uk/salix/i486/extra-15.0/:OFFICIALx86_64 architecture SOURCE=http://slackware.uk/salix/x86_64/slackware-15.0/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/slackware-15.0/extra/:OFFICIAL SOURCE=http://slackware.uk/salix/x86_64/15.0/:PREFERRED SOURCE=http://slackware.uk/salix/x86_64/extra-15.0/:OFFICIALslapt-srcrc Also edit your /etc/slapt-get/slapt-srcrc file to point to 15.0 instead of 14.2:&#xA;BUILDDIR=/usr/src/slapt-src PKGEXT=txz SOURCE=http://slackware.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/upgrading/14.2-to-15.0/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building Packages with slkbuild :: Salix Documentation</title>
+    <link>/dev/packaging/packaging-with-slkbuild/</link>
+    <description>slkbuild is a script which makes package creation much easier. It parses a meta file called a SLKBUILD and creates a conventional build-name.sh script and then optionally runs it. It is inspired by the arch build system and greatly simplifies the build process. It is available in the repositories and it is a good idea to have it installed when going through this tutorial. Note that this is not a substitute for knowing how to compile.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/packaging-with-slkbuild/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Login with SSH Without a Password :: Salix Documentation</title>
+    <link>/user/ssh-without-password/</link>
+    <description>A user might need the ability of login to a remote machine without typing password each time. First you need to generate a public authentication key:&#xA;Generating authentication keys Use this command on a machine you want to login from:&#xA;ssh-keygen -t rsathe output looks like this (empty passphrase was used):&#xA;user@host1 $ ssh-keygen -t rsa Generating public/private rsa key pair. Enter file in which to save the key (/home/user/.ssh/id_rsa): Enter passphrase (empty for no passphrase): Enter same passphrase again: Your identification has been saved in /home/user/.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/ssh-without-password/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

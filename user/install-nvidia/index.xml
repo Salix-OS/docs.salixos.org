@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Install the Proprietary NVIDIA Driver :: Salix Documentation</title>
+    <link>/user/install-nvidia/</link>
+    <description>You need to close all running applications during the installation of the driver. Therefore if you want to be able to view these instructions while working through them you should open them on another computer or create a printout.&#xA;Prerequisites Download the proprietary NVIDIA driver and save it to a known location. Throughout this guide we assume you used your home directory. Install the kernel sources Installation Close all your applications and save all data.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/install-nvidia/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

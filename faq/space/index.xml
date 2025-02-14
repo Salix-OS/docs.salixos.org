@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How Much Disk Space Does Salix Need :: Salix Documentation</title>
+    <link>/faq/space/</link>
+    <description>For the three different installation modes available, Salix occupies approximately the following amounts of disk space respectively:&#xA;FULL: 2.4GB BASIC: 1.4GB CORE: 840MB So, depending on which installation mode you choose, you need to have a partition with at least that much space available.&#xA;These sizes are the absolute minimum that you’ll require. You have to account for any extra software you might want to install and of course for all your files.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/space/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

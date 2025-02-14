@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scrollkeeper and Packaging :: Salix Documentation</title>
+    <link>/dev/packaging/scrollkeeper/</link>
+    <description>What is scrollkeeper? ScrollKeeper is a cataloging system for documentation on open systems. It manages documentation metadata and provides a simple API to allow help browsers to find, sort, and search the document catalog.&#xA;AFAIK nothing beyond the Gnome and KDE help browsers does anything usefull with it.&#xA;How does it work? Scrollkeeper reads files with meta data (provided in the packages of programs that use this) and templates (provided by the scrollkeeper package).</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/scrollkeeper/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

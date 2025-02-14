@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SalixLive Passwords :: Salix Documentation</title>
+    <link>/faq/salixlive-passwords/</link>
+    <description>Salix 14.1 and newer For Salix 14.1 and newer there is no root user. You can log in as user one and the password is also one. User one can use the sudo command to execute commands as the superuser.&#xA;Salix 14.0 and earlier For Salix 14.0 and earlier:&#xA;The Salix Live root password is live. The Salix Live non-root username is one with no password. </description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/salixlive-passwords/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

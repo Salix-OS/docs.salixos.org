@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Internationalize Shell Scripts :: Salix Documentation</title>
+    <link>/dev/internationalize-shell-scripts/</link>
+    <description>Modification of the original script (We shall take excerpts from the script keyboardsetup as an example.)&#xA;Add the following lines after the usual introductory comments but before your actual code starts:&#xA;# Gettext internationalization export TEXTDOMAIN=&#34;name_of_the_program&#34; export TEXTDOMAINDIR=&#34;destination_path_to_the_compiled_translations&#34; . gettext.shExample Before modification:&#xA;# Version 4.3 - 28/07/2009 # * replaced xorg.conf by fdi policy rule # Take a look at &#34;Xdialog&#34; and use it instead of &#34;dialog&#34; in case X is running if [[ &#34;$DISPLAY&#34; &amp;&amp; &#34;$(which Xdialog 2&gt;&amp;1 | grep -v &#34;which: no&#34;)&#34; ]]; thenAfter modification:</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/internationalize-shell-scripts/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

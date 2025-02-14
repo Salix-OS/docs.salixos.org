@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Submitting Packages :: Salix Documentation</title>
+    <link>/dev/packaging/submitting-packages/</link>
+    <description>What you should do before submitting packages You should register in the Salix-main mailing list. All development discussions are taking place there.&#xA;What packages to submit Feel free to submit packages for any open source software you like. Replacing Slackware packages is generally not accepted, unless there is a really important reason.&#xA;You can also package proprietary software, provided re-distribution of that software is allowed (like for example the opera web browser).</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/submitting-packages/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

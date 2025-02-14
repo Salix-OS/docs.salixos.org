@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Use Sbopkg with Salix :: Salix Documentation</title>
+    <link>/user/sbopkg/</link>
+    <description>Download the sbopkg package from its homepage The version available at the time of writing this guide is 0.33.2 so we’ll use this for our examples. Adjust appropriately for newer versions.&#xA;Open a root terminal and install the package:&#xA;# spkg -i sbopkg-0.33.2-noarch-1_cng.tgzOpen the /usr/sbin/sbopkg file with your favorite text editor as root, find the line that reads:&#xA;upgradepkg --reinstall --install-new $OLDPKG%&#34;$PKG&#34;and change it to:&#xA;spkg -u --reinstall --install-new $PKGSave the file after editing and exit.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/sbopkg/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

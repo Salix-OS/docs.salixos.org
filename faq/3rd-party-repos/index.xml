@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Can I Use Third Party Repositories? :: Salix Documentation</title>
+    <link>/faq/3rd-party-repos/</link>
+    <description>Yes, of course you are free to add third party repositories (e.g. GSB, MSB, alienbob…) to slapt-get, however, there may be issues.&#xA;It is important to remember that Salix does handle package dependencies, however, only for Salix &amp; the ‘special’ Slackware repositories included in Salix default configuration for gslapt/slapt-get; not for any other third parties for whom we couldn’t guarantee any sort of quality or compatibility control.&#xA;One is always free to direct gslapt/slapt-get to any third party package repositories.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/3rd-party-repos/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

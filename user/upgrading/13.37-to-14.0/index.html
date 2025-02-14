@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="description" content="Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all “13.37” instances to “14.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:
+i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/14.0/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED Warning On occasion, you might find that enialis’ download speeds leave things desired. If you find yourself in such a scenario, feel free to experiment with the other [[Repository mirrors|repositories provided here]].">
+    <meta name="author" content="George Vlahavas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/og_image.png">
+    <meta name="twitter:title" content="How to Upgrade Salix 13.37 to 14.0 :: Salix Documentation">
+    <meta name="twitter:description" content="Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all “13.37” instances to “14.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:
+i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/14.0/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED Warning On occasion, you might find that enialis’ download speeds leave things desired. If you find yourself in such a scenario, feel free to experiment with the other [[Repository mirrors|repositories provided here]].">
+    <meta property="og:url" content="/user/upgrading/13.37-to-14.0/">
+    <meta property="og:site_name" content="Salix Documentation">
+    <meta property="og:title" content="How to Upgrade Salix 13.37 to 14.0 :: Salix Documentation">
+    <meta property="og:description" content="Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all “13.37” instances to “14.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:
+i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/14.0/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED Warning On occasion, you might find that enialis’ download speeds leave things desired. If you find yourself in such a scenario, feel free to experiment with the other [[Repository mirrors|repositories provided here]].">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/og_image.png">
+    <meta itemprop="name" content="How to Upgrade Salix 13.37 to 14.0 :: Salix Documentation">
+    <meta itemprop="description" content="Preparing for the upgrade You first need to change the default repositories to the ones for Slackware and Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all “13.37” instances to “14.0”. Also make sure the Slackware repositories have an OFFICIAL priority. Example setups are show below:
+i486 architecture SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/i486/14.0/:PREFERREDx86_64 architecture SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED Warning On occasion, you might find that enialis’ download speeds leave things desired. If you find yourself in such a scenario, feel free to experiment with the other [[Repository mirrors|repositories provided here]].">
+    <meta itemprop="wordCount" content="912">
+    <meta itemprop="image" content="/images/og_image.png">
+    <title>How to Upgrade Salix 13.37 to 14.0 :: Salix Documentation</title>
+    <link href="/user/upgrading/13.37-to-14.0/index.xml" rel="alternate" type="application/rss+xml" title="How to Upgrade Salix 13.37 to 14.0 :: Salix Documentation">
+    <link href="/images/favicon.png?1739552208" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1739552208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1739552208" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1739552208" rel="stylesheet">
+    <link href="/css/auto-complete.css?1739552208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1739552208" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1739552208" rel="stylesheet">
+    <link href="/css/fonts.css?1739552208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1739552208" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1739552208" rel="stylesheet">
+    <link href="/css/theme-green.css?1739552208" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-learn.css?1739552208" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1739552208" rel="stylesheet">
+    <link href="/css/print.css?1739552208" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1739552208"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='';
+      window.index_js_url="/index.search.js?1739552208";
+      // variant stuff
+      window.variants && variants.init( [ 'green' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/user/upgrading/13.37-to-14.0/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#preparing-for-the-upgrade">Preparing for the upgrade</a>
+      <ul>
+        <li><a href="#i486-architecture">i486 architecture</a></li>
+        <li><a href="#x86_64-architecture">x86_64 architecture</a></li>
+        <li><a href="#slapt-src">slapt-src</a></li>
+      </ul>
+    </li>
+    <li><a href="#upgrading-packages">Upgrading packages</a>
+      <ul>
+        <li><a href="#xfce">Xfce</a></li>
+        <li><a href="#mate">MATE</a></li>
+        <li><a href="#ratpoison">ratpoison</a></li>
+      </ul>
+    </li>
+    <li><a href="#obsolete-packages">Obsolete packages</a></li>
+    <li><a href="#upgrading-the-kernel">Upgrading the kernel</a></li>
+    <li><a href="#update-caches">Update caches</a></li>
+    <li><a href="#configuration-files">Configuration files</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Salix Documentation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/user/"><span itemprop="name">User Documentation</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/user/upgrading/"><span itemprop="name">Upgrading Between Releases</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Upgrade Salix 13.37 to 14.0</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+				
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/Salix-OS/docs.salixos.org/tree/master/content/user/upgrading/13.37-to-14.0/_index.md" target="_blank" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="how-to-upgrade-salix-1337-to-140">How to Upgrade Salix 13.37 to 14.0</h1>
+
+<h2 id="preparing-for-the-upgrade">Preparing for the upgrade</h2>
+<p>You first need to change the default repositories to the ones for Slackware and
+Salix 14.0. Open file /etc/slapt-get/slapt-getrc and change all &ldquo;13.37&rdquo;
+instances to &ldquo;14.0&rdquo;. Also make sure the Slackware repositories have an
+<strong>OFFICIAL</strong> priority. Example setups are show below:</p>
+<h3 id="i486-architecture">i486 architecture</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code>SOURCE=http://salix.enialis.net/i486/slackware-14.0/:OFFICIAL
+SOURCE=http://salix.enialis.net/i486/slackware-14.0/extra/:OFFICIAL
+SOURCE=http://salix.enialis.net/i486/14.0/:PREFERRED</code></pre></div><h3 id="x86_64-architecture">x86_64 architecture</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code>SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/:OFFICIAL
+SOURCE=http://salix.enialis.net/x86_64/slackware-14.0/extra/:OFFICIAL
+SOURCE=http://salix.enialis.net/x86_64/14.0/:PREFERRED</code></pre></div>
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</div>
+  <div class="box-content">
+
+<p>On occasion, you might find that enialis&rsquo; download speeds leave things desired.
+If you find yourself in such a scenario, feel free to experiment with the other
+[[Repository mirrors|repositories provided here]]. N.B: It is perfectly safe to
+stop the process while a package is in the process of being downloaded. On
+resume/restart, the download starts off where it last left. But,
+<strong>do not stop</strong> the process, if a package is <strong>in the process of being installed</strong>.</p>
+</div>
+</div>
+<p>After you make the changes, run:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -u</code></pre></div><h3 id="slapt-src">slapt-src</h3>
+<p>Although slapt-src has nothing to do with the upgrade process itself, better
+make sure its repos are pointing to 14.0 so that they work correctly after the
+installation. Open your /etc/slapt-get/slapt-srcrc and change the SOURCE lines
+to these ones:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>SOURCE=http://salix.enialis.net/slkbuild/14.0/
+SOURCE=http://salix.enialis.net/sbo/14.0/</code></pre></div><h2 id="upgrading-packages">Upgrading packages</h2>
+<p>First upgrade spkg, glibc and make sure you install the new kmod package and
+openssl-solibs (it also has the old 0.9.8x openssl libraries included). Also
+you can make sure mtdev is installed:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i spkg glibc kmod openssl-solibs mtdev</code></pre></div><p>Then upgrade slapt-get itself (along with its dependencies):</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i slapt-get</code></pre></div><p>And then upgrade all other packages to their new versions:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get --upgrade</code></pre></div><p><strong>DO NOT</strong> use:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get --dist-upgrade</code></pre></div><p>in any case. Although it might seem to be the best option for upgrading to a
+different version, it really isn&rsquo;t.</p>
+<p>Upgrade your udev package, it&rsquo;s locked for upgrades in
+/etc/slapt-get/slapt-getrc so you have to ask for it explicitly:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i udev</code></pre></div><p>Also udisks is new to 14.0 so you will need to install both udisks and udisks2:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i udisks udisks2</code></pre></div><p>After the upgrade you can also update the previously installed glibc-solibs
+package:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i glibc-solibs</code></pre></div><h3 id="xfce">Xfce</h3>
+<p>One of the major changes in 14.0 is the replacement of the single xfce package
+with many individual packages. If you&rsquo;re using xfce, to install a full xfce
+envirnment, run</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get --install-set xfce</code></pre></div><h3 id="mate">MATE</h3>
+<p>Do all the above, and continue below for the kernel and other updates. Finally,
+add one extra package for retaining the correct look and feel and retain the
+same look and feel from 13.37. Otherwise, your DE/GUI wil break.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i clearlooks-phenix</code></pre></div><h3 id="ratpoison">ratpoison</h3>
+<p>These two additional packages <strong>must</strong> be installed. If these are omitted/not
+installed, the <strong>vimprobable2</strong> browser completely stops working. Do all the
+above steps followed by this, and continue below for the kernel and other
+updates.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get -i glib-networking  gsettings-desktop-schemas</code></pre></div><h2 id="obsolete-packages">Obsolete packages</h2>
+<p>Some packages have been obsoleted and should be removed. Some have been
+replaced by new packages. You can do this automatically with:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>slapt-get --remove-obsolete --remove</code></pre></div><p>Careful, because this will also remove all personal packages that you might
+have installed, if any. It will also remove any packages that used to be part
+of the Slackware or Salix repos in 13.37, but are not anymore in 14.0. And it&rsquo;s
+never a bad idea to have a look at the Slackware CHANGES_AND_HINTS.TXT file:</p>
+<ul>
+<li><a href="https://slackware.uk/slackware/slackware-14.0/CHANGES_AND_HINTS.TXT" rel="external" target="_blank">Changes and Hints File for i486</a></li>
+<li><a href="https://slackware.uk/slackware/slackware64-14.0/CHANGES_AND_HINTS.TXT" rel="external" target="_blank">Changes and Hints File for x864_64</a></li>
+</ul>
+<p>Packages that have been removed from Slackware according to the ChangeLog (use
+this list at your own risk):</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>hal
+hal-info
+wv2
+jre
+raptor (reinstall raptor2 afterwards)
+jdk
+module-init-tools
+ntfsprogs
+iwlwifi*
+rt2860-firmware
+rt2870-firmware
+rt61-firmware
+rt71w-firmware
+radeon_ucode
+scripts
+xaw3d
+xf86-video-radeonhd
+xf86-video-sisusb
+xf86-video-tseng
+xf86-video-xgi</code></pre></div><p>And this NOTE: After upgrading, the following obsolete KDE packages should be
+removed:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>kdeaccessibility kdebase kdebase-runtime
+kdebase-workspace kdebindings kdeedu
+kdegraphics kdeutils koffice konq-plugins
+kopete-cryptography polkit-kde-1 koffice-l10n-*</code></pre></div><h2 id="upgrading-the-kernel">Upgrading the kernel</h2>
+<p>Run:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>ls /var/log/packages/kernel*</code></pre></div><p>to see which kernel packages you have installed and do a <strong>slapt-get -i
+<!-- raw HTML omitted --></strong> for each one of them. (Do not include the package version in
+<strong><!-- raw HTML omitted --></strong>).</p>
+<p>If you have switched to the kernel-generic package instead of the default
+kernel-huge package, don&rsquo;t forget to recreate the initrd.gz file which will be
+needed for booting you upgraded system. If you&rsquo;re still using the default
+kernel-huge package, an initrd is not needed anyway and you needn&rsquo;t be
+concerned about it.</p>
+<p>After upgrading the packages, don&rsquo;t forget to edit your <strong>/etc/lilo.conf</strong> file
+accordingly and run:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>lilo -v</code></pre></div><p>to inform the bootloader about the kernel upgrade.</p>
+<p>On similar note, users running multi-boot systems on GRUB2 must log into the
+distro that controls the bootloader and re-run</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>update-grub</code></pre></div><p>to inform the bootloader about the kernel upgrade.</p>
+<h2 id="update-caches">Update caches</h2>
+<p>You&rsquo;ll also need to run this command:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>update-all</code></pre></div><p>This updates icon caches, font indexes, desktop and mime databases, pango
+files, glib schemas etc. You&rsquo;ll need to run this, or you&rsquo;ll probably won&rsquo;t be
+able to start a graphical environment and even if you do, you&rsquo;ll probably see
+garbage instead of readable characters.</p>
+<h2 id="configuration-files">Configuration files</h2>
+<p>After doing all the upgrades, run:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>dotnew</code></pre></div><p>to accept or reject new configuration files. Make sure that you <strong>DO NOT</strong>
+replace your <strong>/etc/passwd</strong>, <strong>/etc/shadow</strong> or <strong>/etc/group</strong> files. If you
+do, you will lose all users/groups/passwords you have in your system. However,
+even if you do, you can get the old files back, they will be kept in the same
+locations, with an .orig suffix.</p>
+<p>If you are starting your system in init 3 (console), instead of init 4
+(graphics) and you start the GUI by running &lsquo;startx&rsquo;, you&rsquo;d better refresh the
+xinitrc file in your home directory by running (while in init 3):</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>xwmconfig</code></pre></div><p>and selecting your preferred Desktop Environment.</p>
+<p>Edit /etc/slackware-version file to fill in:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>Slackware 14.0</code></pre></div><p>This is not required but this is used by some apps to show your version (for
+example grub).</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://docs.salixos.org">
+	<img src="/images/salix-logo.svg" />
+</a>
+
+        </div>
+
+        <search><form action="/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.min.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1739552208" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1739552208" defer></script>
+        <script src="/js/search.js?1739552208" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/faq/" class=""><a class="padding" href="/faq/">FAQ</a><ul id="R-subsections-925d2998f3d6f88021b2fdbd47d69792" class="morespace collapsible-menu">
+          <li data-nav-id="/faq/3rd-party-repos/" class=""><a class="padding" href="/faq/3rd-party-repos/">3rd Party Repos</a></li>
+          <li data-nav-id="/faq/hostname/" class=""><a class="padding" href="/faq/hostname/">Change the Default Hostname</a></li>
+          <li data-nav-id="/faq/enable-root/" class=""><a class="padding" href="/faq/enable-root/">Enable the root User</a></li>
+          <li data-nav-id="/faq/flatpak/" class=""><a class="padding" href="/faq/flatpak/">Flatpak</a></li>
+          <li data-nav-id="/faq/icons-missing-in-xfce/" class=""><a class="padding" href="/faq/icons-missing-in-xfce/">Icons missing in Xfce</a></li>
+          <li data-nav-id="/faq/kernel-source/" class=""><a class="padding" href="/faq/kernel-source/">Install Kernel Source</a></li>
+          <li data-nav-id="/faq/install-txz-found-online/" class=""><a class="padding" href="/faq/install-txz-found-online/">Install txz/tgz File Found Online</a></li>
+          <li data-nav-id="/faq/extra-console/" class=""><a class="padding" href="/faq/extra-console/">Installer Extra Console</a></li>
+          <li data-nav-id="/faq/multimedia/" class=""><a class="padding" href="/faq/multimedia/">Multimedia</a></li>
+          <li data-nav-id="/faq/package-manager-wants-to-downgrade-packages/" class=""><a class="padding" href="/faq/package-manager-wants-to-downgrade-packages/">Package Manager Downgrades</a></li>
+          <li data-nav-id="/faq/package-update-notifications/" class=""><a class="padding" href="/faq/package-update-notifications/">Package Update Notifications</a></li>
+          <li data-nav-id="/faq/packages-different-from-slackware/" class=""><a class="padding" href="/faq/packages-different-from-slackware/">Packages Different from Slackware</a></li>
+          <li data-nav-id="/faq/space/" class=""><a class="padding" href="/faq/space/">Required Risk Space</a></li>
+          <li data-nav-id="/faq/salix-man-page/" class=""><a class="padding" href="/faq/salix-man-page/">Salix Man Page</a></li>
+          <li data-nav-id="/faq/salixlive-passwords/" class=""><a class="padding" href="/faq/salixlive-passwords/">SalixLive Passwords</a></li>
+          <li data-nav-id="/faq/slackpkg/" class=""><a class="padding" href="/faq/slackpkg/">slackpkg</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.18/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.18/">Upgrade to Xfce 4.18</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.20/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.20/">Upgrade to Xfce 4.20</a></li>
+          <li data-nav-id="/faq/why-was-salix-created/" class=""><a class="padding" href="/faq/why-was-salix-created/">Why Was Salix Created?</a></li></ul></li>
+          <li data-nav-id="/user/" class="parent "><a class="padding" href="/user/">User Documentation</a><ul id="R-subsections-7b100e0e1dbc65a685f8274f22ab6cfc" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/" class="parent alwaysopen"><a class="padding" href="/user/upgrading/">Upgrading Between Releases</a><ul id="R-subsections-cc5b8bedb97a05882e36b33a7708685d" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/13.0-to-13.1/" class=""><a class="padding" href="/user/upgrading/13.0-to-13.1/">Upgrade Salix 13.0 to 13.1</a></li>
+          <li data-nav-id="/user/upgrading/13.1-to-13.37/" class=""><a class="padding" href="/user/upgrading/13.1-to-13.37/">Upgrade Salix 13.1 to 13.37</a></li>
+          <li data-nav-id="/user/upgrading/13.37-to-14.0/" class="active"><a class="padding" href="/user/upgrading/13.37-to-14.0/">Upgrade Salix 13.37 to 14.0</a></li>
+          <li data-nav-id="/user/upgrading/14.0-to-14.1/" class=""><a class="padding" href="/user/upgrading/14.0-to-14.1/">Upgrade Salix 14.0 to 14.1</a></li>
+          <li data-nav-id="/user/upgrading/14.1-to-14.2/" class=""><a class="padding" href="/user/upgrading/14.1-to-14.2/">Upgrade Salix 14.1 to 14.2</a></li>
+          <li data-nav-id="/user/upgrading/14.2-to-15.0/" class=""><a class="padding" href="/user/upgrading/14.2-to-15.0/">Upgrade Salix 14.2 to 15.0</a></li></ul></li>
+          <li data-nav-id="/user/enable-horizontal-scrolling-3-button-mouse/" class=""><a class="padding" href="/user/enable-horizontal-scrolling-3-button-mouse/">3-button Mouse Horizontal Scrolling</a></li>
+          <li data-nav-id="/user/access-server-in-virtualbox/" class=""><a class="padding" href="/user/access-server-in-virtualbox/">Access Server in VirtualBox</a></li>
+          <li data-nav-id="/user/bluetooth/" class=""><a class="padding" href="/user/bluetooth/">Bluetooth</a></li>
+          <li data-nav-id="/user/boot-into-existing-installation/" class=""><a class="padding" href="/user/boot-into-existing-installation/">Boot Into Existing Installation</a></li>
+          <li data-nav-id="/user/broadcom/" class=""><a class="padding" href="/user/broadcom/">Broadcom WiFi</a></li>
+          <li data-nav-id="/user/configure-own-dns-server/" class=""><a class="padding" href="/user/configure-own-dns-server/">Configure Own DNS Server</a></li>
+          <li data-nav-id="/user/fix-unknown-filetypes-in-browser/" class=""><a class="padding" href="/user/fix-unknown-filetypes-in-browser/">Fix Unknown Filetypes in Browser</a></li>
+          <li data-nav-id="/user/greek-polytonic-on-openbox/" class=""><a class="padding" href="/user/greek-polytonic-on-openbox/">Greek Polytonic on Openbox</a></li>
+          <li data-nav-id="/user/how-to-beta-test/" class=""><a class="padding" href="/user/how-to-beta-test/">How to Beta Test</a></li>
+          <li data-nav-id="/user/install-different-kernel/" class=""><a class="padding" href="/user/install-different-kernel/">Install Different Kernel</a></li>
+          <li data-nav-id="/user/install-from-usb/" class=""><a class="padding" href="/user/install-from-usb/">Install from USB</a></li>
+          <li data-nav-id="/user/install-kernel-from-current/" class=""><a class="padding" href="/user/install-kernel-from-current/">Install Kernel From Current</a></li>
+          <li data-nav-id="/user/install-nvidia/" class=""><a class="padding" href="/user/install-nvidia/">Install NVIDIA Driver</a></li>
+          <li data-nav-id="/user/salixlive/" class=""><a class="padding" href="/user/salixlive/">Install SalixLive on USB</a></li>
+          <li data-nav-id="/user/install-guest-additions-in-virtualbox-guest/" class=""><a class="padding" href="/user/install-guest-additions-in-virtualbox-guest/">Install VirtualBox Guest Additions</a></li>
+          <li data-nav-id="/user/xorg-on-core/" class=""><a class="padding" href="/user/xorg-on-core/">Install Xorg on Core</a></li>
+          <li data-nav-id="/user/kernel-compilation/" class=""><a class="padding" href="/user/kernel-compilation/">Kernel Compilation</a></li>
+          <li data-nav-id="/user/lilo/" class=""><a class="padding" href="/user/lilo/">LILO</a></li>
+          <li data-nav-id="/user/multilib/" class=""><a class="padding" href="/user/multilib/">Multilib</a></li>
+          <li data-nav-id="/user/rebuild-slackware-kernel/" class=""><a class="padding" href="/user/rebuild-slackware-kernel/">Rebuild Slackware Kernel</a></li>
+          <li data-nav-id="/user/remove-unnecessary-xorg-packages/" class=""><a class="padding" href="/user/remove-unnecessary-xorg-packages/">Remove Unnecessary Xorg Packages</a></li>
+          <li data-nav-id="/user/repository-mirrors/" class=""><a class="padding" href="/user/repository-mirrors/">Repository Mirrors</a></li>
+          <li data-nav-id="/user/restore-fluxbox-menu/" class=""><a class="padding" href="/user/restore-fluxbox-menu/">Restore Fluxbox menu</a></li>
+          <li data-nav-id="/user/sbopkg/" class=""><a class="padding" href="/user/sbopkg/">Sbopkg</a></li>
+          <li data-nav-id="/user/setup-alpine-with-gmail/" class=""><a class="padding" href="/user/setup-alpine-with-gmail/">Setup Alpine With Gmail</a></li>
+          <li data-nav-id="/user/setup-basic-firewall/" class=""><a class="padding" href="/user/setup-basic-firewall/">Setup Basic Firewall</a></li>
+          <li data-nav-id="/user/slackbuilds-in-salix-repos/" class=""><a class="padding" href="/user/slackbuilds-in-salix-repos/">Slackbuilds in Salix Repos</a></li>
+          <li data-nav-id="/user/ssh-without-password/" class=""><a class="padding" href="/user/ssh-without-password/">SSH Login Without Password</a></li>
+          <li data-nav-id="/user/start-wm-from-login-screen/" class=""><a class="padding" href="/user/start-wm-from-login-screen/">Start WM from Login Screen</a></li>
+          <li data-nav-id="/user/tune-ssd/" class=""><a class="padding" href="/user/tune-ssd/">Tune an SSD</a></li>
+          <li data-nav-id="/user/how-to-create-a-video-dvd-from-the-cli/" class=""><a class="padding" href="/user/how-to-create-a-video-dvd-from-the-cli/">Video DVD from the CLI</a></li>
+          <li data-nav-id="/user/virtualbox-host-devices/" class=""><a class="padding" href="/user/virtualbox-host-devices/">Virtualbox Access Host USB</a></li></ul></li>
+          <li data-nav-id="/dev/" class=""><a class="padding" href="/dev/">Developer Documentation</a><ul id="R-subsections-bde8a83577188605f0afbdffa38c9c13" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/" class="alwaysopen"><a class="padding" href="/dev/packaging/">Packaging Documentation</a><ul id="R-subsections-44df389f6ee6cba780e4599b7c3f6732" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/gconf/" class=""><a class="padding" href="/dev/packaging/gconf/">GConf and Packaging</a></li>
+          <li data-nav-id="/dev/packaging/git-svn-sources-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/git-svn-sources-with-slkbuild/">Git/SVN with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/mateconf/" class=""><a class="padding" href="/dev/packaging/mateconf/">MATEConf</a></li>
+          <li data-nav-id="/dev/packaging/mimetypes/" class=""><a class="padding" href="/dev/packaging/mimetypes/">Mimetypes</a></li>
+          <li data-nav-id="/dev/packaging/new-to-packaging/" class=""><a class="padding" href="/dev/packaging/new-to-packaging/">New to Packaging</a></li>
+          <li data-nav-id="/dev/packaging/package-categories/" class=""><a class="padding" href="/dev/packaging/package-categories/">Package Categories</a></li>
+          <li data-nav-id="/dev/packaging/packaging-rules/" class=""><a class="padding" href="/dev/packaging/packaging-rules/">Packaging rules</a></li>
+          <li data-nav-id="/dev/packaging/packaging-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/packaging-with-slkbuild/">Packaging with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/scrollkeeper/" class=""><a class="padding" href="/dev/packaging/scrollkeeper/">Scrollkeeper</a></li>
+          <li data-nav-id="/dev/packaging/uid-gid/" class=""><a class="padding" href="/dev/packaging/uid-gid/">slkbuild UIDs/GIDs</a></li>
+          <li data-nav-id="/dev/packaging/submitting-packages/" class=""><a class="padding" href="/dev/packaging/submitting-packages/">Submitting Packages</a></li></ul></li>
+          <li data-nav-id="/dev/create-public-mirror/" class=""><a class="padding" href="/dev/create-public-mirror/">How to Create a Public Salix Mirror</a></li>
+          <li data-nav-id="/dev/internationalize-shell-scripts/" class=""><a class="padding" href="/dev/internationalize-shell-scripts/">Internationalize Shell Scripts</a></li>
+          <li data-nav-id="/dev/work-with-sourceforge/" class=""><a class="padding" href="/dev/work-with-sourceforge/">Sourceforge</a></li>
+          <li data-nav-id="/dev/transifex/" class=""><a class="padding" href="/dev/transifex/">Transifex</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://salixos.org"><i class='fas fa-home'></i> Main website</a></li>
+            <li><a class="padding" href="https://forum.salixos.org"><i class='fas fa-question-circle'></i> Support Forum</a></li>
+            <li><a class="padding" href="https://blog.salixos.org"><i class='fas fa-blog'></i> Blog</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/user/upgrading/13.37-to-14.0/" lang="en-US" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-green" value="green" selected>Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter">
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1739552208" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1739552208" defer></script>
+    <script src="/js/theme.js?1739552208" defer></script>
+  </body>
+</html>

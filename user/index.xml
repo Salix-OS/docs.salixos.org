@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>User Documentation :: Salix Documentation</title>
+    <link>/user/</link>
+    <description>Welcome to the documentation section for Salix users. This section is designed to help you get the most out of your Salix experience, with guides and tutorials on how to install, configure, and use Salix. Whether you’re new to Salix or just looking for help with a specific task, this is the place to look first for the information you need to get started.&#xA;In case you don’t find what you’re looking for here, you can always visit our forums or reach us in our IRC channel.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading Between Releases</title>
+      <link>/user/upgrading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/upgrading/</guid>
+      <description>Upgrading to a new Salix release is a straightforward process, and we’ve put together a series of tutorials to guide you through it. Below, you’ll find step-by-step instructions on how to upgrade from one Salix release to the next. Please note that only upgrading to the next consecutive release is officially supported, so it’s recommended to upgrade in sequence rather than skipping releases. Attempting to upgrade multiple releases at once is not recommended and may lead to unexpected issues.</description>
+    </item>
+    <item>
+      <title>How to Enable Horizontal Scrolling With a 3-Button Mouse</title>
+      <link>/user/enable-horizontal-scrolling-3-button-mouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/enable-horizontal-scrolling-3-button-mouse/</guid>
+      <description>You may have a 3 buttons mouse with vertical scroll, but no physical horizontal scroll.&#xA;Here is how to have horizontal scroll emulation using SHIFT + vertical scroll.&#xA;Installation First install those two packages from source:&#xA;sudo slapt-get -i xbindkeys xautomation xbindkeys will be use to do an action of specific events (here shift + vertical scroll). xautomation will be use to generate the horizontal scroll events for X. Configuration Vertical scrolling is seen as two buttons by X, by default it’s button 4 and 5.</description>
+    </item>
+    <item>
+      <title>How to Access a Server Running in a VirtualBox Guest</title>
+      <link>/user/access-server-in-virtualbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/access-server-in-virtualbox/</guid>
+      <description>VirtualBox guests are usually set up with NAT networking. That way, there is no way to directly access a server running in a VirtualBox guest from the host system or from anywhere in the network. In order to do that, you’ll have to inform VirtualBox to forward packets from a host port to a port in the guest system. This guide will show you how to access an ssh server running in a VirtualBox guest, but the procedure is similar for any kind of server that you may want to run (ftp, apache http etc).</description>
+    </item>
+    <item>
+      <title>Bluetooth</title>
+      <link>/user/bluetooth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/bluetooth/</guid>
+      <description>Installing firmware Bluetooth should be working out-of-the-box if you selected the FULL installation set. But if you didn’t choose FULL and you want to have your bluetooth hardware working you can install these packages:&#xA;bluez bluez-firmware bluez-hcidumpusing the gslapt package manager&#xA;Bluetooth frontend Here it depends on the salix flavor you chose ( eg : if you have chose KDE you should be able to find the frontend to deal with the bluetooth ) But if you don’t have the program that deals with bluez or you dont see the bluetooth icon in the notification are then you should be installing :</description>
+    </item>
+    <item>
+      <title>Boot Into Existing Installation on Hard Disk Using Installation CD</title>
+      <link>/user/boot-into-existing-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/boot-into-existing-installation/</guid>
+      <description>After installing Salix to hard disk my LILO or GRUB was broken. How can I boot into the installed system on the hard disk using Salix installation CD (not LiveCD)?&#xA;Put the Salix installation CD into the drive, reboot and when prompt appears type this:&#xA;hugesmp.s root=/dev/partition rdinit= rowhere partition stands for your partition number (ie. sda2; sdb1, etc.) where Salix was installed and yes there is a space between rdinit= and ro.</description>
+    </item>
+    <item>
+      <title>How to Install b43 Firmware for Broadcom Wireless Cards</title>
+      <link>/user/broadcom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/broadcom/</guid>
+      <description>The Broadcom wireless chip needs proprietary software (called “firmware”) that runs on the wireless chip itself to work properly. This firmware is copyrighted by Broadcom and must be extracted from Broadcom’s proprietary drivers. To get such firmware on your system, you must download the driver from a legal distribution point, extract it, and install it.&#xA;http://linuxwireless.org/en/users/Drivers/b43&#xA;Here is a short guide on how to create a b43(legacy) firmware package for your system.</description>
+    </item>
+    <item>
+      <title>How to Configure Your Own DNS Server With a Static IP</title>
+      <link>/user/configure-own-dns-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/configure-own-dns-server/</guid>
+      <description>Because a friend had to setup his own dns server using the static ip and installed the ubuntu on the server, so I set up the dns server. The instructions below are for any possible need to do the same. The domain here is my-domain.gr you replace it with your own.&#xA;The instructions are simple and not in the correct technical vocabulary to be understand from all. The following instructrions work and of course someone else may use different settings.</description>
+    </item>
+    <item>
+      <title>Fix Unknown Filetypes in Browser</title>
+      <link>/user/fix-unknown-filetypes-in-browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/fix-unknown-filetypes-in-browser/</guid>
+      <description>Symptom Sometimes when you download a file, you get prompted to open or save it (at least in Firefox in the default mode) and the only choice you get to open the file is not the right one (often a text editor). But sometimes it’s ok, for the same file type. Why?&#xA;The reason is that when it fails to propose the right choice, the file type is unknown to the browser.</description>
+    </item>
+    <item>
+      <title>Greek Polytonic on Openbox</title>
+      <link>/user/greek-polytonic-on-openbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/greek-polytonic-on-openbox/</guid>
+      <description>Writing greek polytonic,monotonic and ancient, modern spell checking on LibreOffice and Openbox.&#xA;set the key Open the file ~/.config/openbox/rc.xml with a text editor. e.g. geany ~/.config/openbox/rc.xml&#xA;go to line 294 last row with /keybind and add the lines bellow&#xA;&lt;keybind key=&#34;C-1&#34;&gt; &lt;action name=&#34;Execute&#34;&gt; &lt;command&gt;sh ~/.polytonic&lt;/command&gt; &lt;startupnotify&gt; &lt;enabled&gt;yes&lt;/enabled&gt; &lt;name&gt;Polytonic/Monotonic&lt;/name&gt; &lt;/startupnotify&gt; &lt;/action&gt; &lt;/keybind&gt; Save the file&#xA;Create the polytonic file Create the file ~/.polytonic&#xA;geany ~/.polytonicand paste the lines&#xA;#!/bin/sh # Dimitris Tzemos &lt;djemos@slackel.</description>
+    </item>
+    <item>
+      <title>How to Beta Test</title>
+      <link>/user/how-to-beta-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/how-to-beta-test/</guid>
+      <description>Beta Testing and what’s involved… First Steps When the developers announce a new version of a distribution is available for testing, they really appreciate anyone who actually downloads and installs the beta version so that they can find any major bugs in the release.&#xA;So there is the first thing that is involved - download and install the release.&#xA;What should be done if it doesn’t install properly, or has some sort of problem and won’t reboot after the install?</description>
+    </item>
+    <item>
+      <title>How to Install a Different Kernel</title>
+      <link>/user/install-different-kernel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/install-different-kernel/</guid>
+      <description>If you have hardware that is not supported by the kernel that ships with Salix, you can compile your own. In most cases though, it is sufficient to install the latest kernel from the repositories. This page contains instructions for this straightforward procedure, and also for installing the kernel manually. In some cases, if there is a regression, meaning hardware that used to be supported doesn’t work any more, you might actually need to downgrade to an older kernel, but in most cases the solution will be a more recent one.</description>
+    </item>
+    <item>
+      <title>Install Salix from a USB stick</title>
+      <link>/user/install-from-usb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/install-from-usb/</guid>
+      <description>This page is about using the standard installation images, not the live images. If you want to install SalixLive on your USB drive, follow these instructions instead: How to install salix live on a USB key&#xA;dd This is the recommended method to create a Salix installation bootable USB stick. It will destroy all previous contents in it, so make sure you make a backup of any data you want to keep.</description>
+    </item>
+    <item>
+      <title>Install Kernel From Current</title>
+      <link>/user/install-kernel-from-current/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/install-kernel-from-current/</guid>
+      <description>If you have hardware that is not supported by the kernel that ships with Salix, you can always compile your own. In most cases though, it is sufficient to install the latest kernel from the repositories. This page contains instructions for this straightforward procedure, and also for installing the kernel manually. In some cases, if there is a regression, meaning hardware that used to be supported doesn’t work any more, you might actually need to downgrade to an older kernel, but in most cases the solution will be a more recent one.</description>
+    </item>
+    <item>
+      <title>How to Install the Proprietary NVIDIA Driver</title>
+      <link>/user/install-nvidia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/install-nvidia/</guid>
+      <description>You need to close all running applications during the installation of the driver. Therefore if you want to be able to view these instructions while working through them you should open them on another computer or create a printout.&#xA;Prerequisites Download the proprietary NVIDIA driver and save it to a known location. Throughout this guide we assume you used your home directory. Install the kernel sources Installation Close all your applications and save all data.</description>
+    </item>
+    <item>
+      <title>How to Install Salix Live on a USB Key?</title>
+      <link>/user/salixlive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/salixlive/</guid>
+      <description>These instructions are for LiveCD images of Salix only!!! If your iso image file does not have ’live’ in it’s name look at these instructions: Install-from-USB&#xA;It depends if you already have a Salix Live CD or simply an ISO image. Unetbootin version &lt; 575 is not supported and should not be used. Versions greater or equal to 575 have been reported to correctly deal with USB installation and persistence; however it does not seem to work for all users.</description>
+    </item>
+    <item>
+      <title>How to Install the Virtualbox Guest Additions in a Salix Guest</title>
+      <link>/user/install-guest-additions-in-virtualbox-guest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/install-guest-additions-in-virtualbox-guest/</guid>
+      <description>If you’re running Salix inside a virtualbox VM, you’ll find out that the virtualbox guest additions fail to install, with some kernel header error being thrown. In order to be able to install the virtualbox guest additions, you just need to install the kernel-source package. Reboot and the virtualbox guest additions will install with no errors after that.</description>
+    </item>
+    <item>
+      <title>How to Install Xorg on Salix Core</title>
+      <link>/user/xorg-on-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/xorg-on-core/</guid>
+      <description>Installing Xorg The easiest way to install Xorg on top of Salix Core is to install everything under the /x repository directory. To do that, first update your package database&#xA;slapt-get -uand then run:&#xA;slapt-get --install-set xThat will install every package that is in the /x directory and will give you a working Xorg. It would be a good idea to install some icon themes, or many apps won’t display properly:</description>
+    </item>
+    <item>
+      <title>How to Compile the Linux Kernel</title>
+      <link>/user/kernel-compilation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/kernel-compilation/</guid>
+      <description>It should be noted that the default kernel that ships with Salix will work in most cases, and no recompiling is necessary. You should only recompile if:&#xA;Your system’s hardware is not supported by the default kernel You need (want) features only available in a newer kernel To get an extra fraction of a percent hardware performance For fun Before going ahead, it may be easier (and will in many cases be sufficient to solve the problem) to install the kernel from Slackware current, which will always be relatively recent.</description>
+    </item>
+    <item>
+      <title>LILO</title>
+      <link>/user/lilo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/lilo/</guid>
+      <description>LILO (the LInux LOader) is the default bootloader for Salix for systems that use a BIOS, instead of an EFI implementation to boot. This page provides some tips with respect to LILO usage.&#xA;LILO is loading slowly Sometimes LILO is booting very slowly showing lines of dots on the screen. To fix this just add a line containing “compact” (without quotes) at the top inside the global section of /etc/lilo.conf by editing it through a text editor or LiloSetup; then reinstall LILO.</description>
+    </item>
+    <item>
+      <title>How to Install Multilib</title>
+      <link>/user/multilib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/multilib/</guid>
+      <description>Warning Multilib is not officially supported in Salix and it is not recommended. Follow these instructions at your own risk.&#xA;Original Source&#xA;In this guide we will discuss how to install multilib support for 32bit apps on a 64bit Salix. It is based on a ‘full’ version of Salix. The source guide is more in-depth, this guide is only the minimal steps required for Salix. If you are using a more recent Salix version, adjust ‘15.</description>
+    </item>
+    <item>
+      <title>How to Rebuild the Slackware Kernel</title>
+      <link>/user/rebuild-slackware-kernel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/rebuild-slackware-kernel/</guid>
+      <description>It should be noted that the default kernel that ships with Salix will work in the vast majority of cases, and no recompiling is necessary. You should only recompile if:&#xA;Your system’s hardware (or other feature) is not supported by the default kernel You believe the same kernel can be built with an option to support it To get an extra fraction of a percent hardware performance For fun Before going ahead, it may be easier (and will in many cases be sufficient to solve the problem) to install the kernel from slackware current, which will always be relatively recent.</description>
+    </item>
+    <item>
+      <title>How to Remove Unnecessary Xorg Packages</title>
+      <link>/user/remove-unnecessary-xorg-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/remove-unnecessary-xorg-packages/</guid>
+      <description>Salix basic and full installation modes install several xorg packages that are not all needed in any given PC, but are included so Salix works in every possible hardware setup. For example, you don’t need ati or nvidia video drivers if you have an intel video card.&#xA;Video drivers You probably have only one video card in your PC so you can remove drivers for all video cards you don’t have.</description>
+    </item>
+    <item>
+      <title>Repository Mirrors</title>
+      <link>/user/repository-mirrors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/repository-mirrors/</guid>
+      <description>The following mirrors are available for the Salix repositories. Individual directories for every Salix architecture and version are under the following URLs. Users can pick the one that is closest/fastest for them and edit their /etc/slapt-get/slapt-getrc and /etc/slapt-get/slapt-srcrc mirror settings accordingly.&#xA;HTTP http://mirrors.slackware.bg/salix (Bulgaria) http://mirror.its.dal.ca/salix (Canada) http://slackware.uk/salix (England) http://www.mirrorservice.org/sites/download.salixos.org (England) http://download.salixos.org (France) http://salix.enialis.net (France) http://ftp.cc.uoc.gr/mirrors/linux/salix (Greece) http://ftp.heanet.ie/pub/salix (Ireland) http://salix.mirror.garr.it/salix (Italy) http://ftp.nluug.nl/os/Linux/distr/salix (Netherlands) http://ftp.nux.ipb.pt/dists/salix (Portugal) https://mirror.freedif.org/Salix/ (Singapore) https://ftpmirror.infania.net/mirror/salix/ (Sweden) http://ftp.yzu.edu.tw/Linux/salix (Taiwan) http://mirrors.</description>
+    </item>
+    <item>
+      <title>Restore Fluxbox Menu</title>
+      <link>/user/restore-fluxbox-menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/restore-fluxbox-menu/</guid>
+      <description>If for some reason you messed up your menu in your Fluxbox installation, you can quickly restore it with:&#xA;cp /etc/skel/.fluxbox/menu ~/.fluxbox/Alternatively, if you want to restore all default Fluxbox configuration you can run:&#xA;cp -R /etc/skel/.fluxbox ~/</description>
+    </item>
+    <item>
+      <title>How to Use Sbopkg with Salix</title>
+      <link>/user/sbopkg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/sbopkg/</guid>
+      <description>Download the sbopkg package from its homepage The version available at the time of writing this guide is 0.33.2 so we’ll use this for our examples. Adjust appropriately for newer versions.&#xA;Open a root terminal and install the package:&#xA;# spkg -i sbopkg-0.33.2-noarch-1_cng.tgzOpen the /usr/sbin/sbopkg file with your favorite text editor as root, find the line that reads:&#xA;upgradepkg --reinstall --install-new $OLDPKG%&#34;$PKG&#34;and change it to:&#xA;spkg -u --reinstall --install-new $PKGSave the file after editing and exit.</description>
+    </item>
+    <item>
+      <title>How to Setup Alpine With a Gmail Account</title>
+      <link>/user/setup-alpine-with-gmail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/setup-alpine-with-gmail/</guid>
+      <description>Alpine is basically the same application as Pine, which used to be widely used on university computer sytems around the world. It is a text-based console email client which is very easy to learn and use, and many people prefer it to webmail or graphical email clients. There must be hundreds of quick guides to using Alpine with Gmail. This is simply one way of doing it, with the merit that it actually works for Salix.</description>
+    </item>
+    <item>
+      <title>Setup Basic Firewall</title>
+      <link>/user/setup-basic-firewall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/setup-basic-firewall/</guid>
+      <description>You can setup a secure basic firewall using the “Uncomplicated Firewall or UFW”.&#xA;sudo slapt-get -i gufwthen&#xA;sudo gufwclick status to “on”. This will setup a deny all incoming and allow all outgoing firewall.&#xA;Alternatively, you can&#xA;sudo slapt-get -i ufw sudo ufw enable sudo ufw default deny sudo ufw deny sshThis method will deny all incoming connections and allow outgoing but also deny ssh connections to further protect your system.</description>
+    </item>
+    <item>
+      <title>Slackbuilds in Salix Repositories</title>
+      <link>/user/slackbuilds-in-salix-repos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/slackbuilds-in-salix-repos/</guid>
+      <description>Salix integrates dependency management for packages in its own repositories and those built from slackbuilds.org, whose package list is mirrored by Salix, using slapt-src.&#xA;Where a package is available from both sources, the Salix package is always preferred, even if it is a less recent version. Should you wish to replace it with a build from source, you will need to do so manually from the slackbuilds.org website, and exclude the package in /etc/slapt-getrc to prevent it being automatically downgraded when you do a general package upgrade.</description>
+    </item>
+    <item>
+      <title>How to Login with SSH Without a Password</title>
+      <link>/user/ssh-without-password/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/ssh-without-password/</guid>
+      <description>A user might need the ability of login to a remote machine without typing password each time. First you need to generate a public authentication key:&#xA;Generating authentication keys Use this command on a machine you want to login from:&#xA;ssh-keygen -t rsathe output looks like this (empty passphrase was used):&#xA;user@host1 $ ssh-keygen -t rsa Generating public/private rsa key pair. Enter file in which to save the key (/home/user/.ssh/id_rsa): Enter passphrase (empty for no passphrase): Enter same passphrase again: Your identification has been saved in /home/user/.</description>
+    </item>
+    <item>
+      <title>Start Your Window Manager from the Login Screen Menu</title>
+      <link>/user/start-wm-from-login-screen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/start-wm-from-login-screen/</guid>
+      <description>If you have installed another Window Manager for your system, like Fluxbox, you may find that it may not appear in your Login Screen Menu in LightDM, or any other Display Manager you may be using.&#xA;This is because some window manager packages may not include the proper support for that. For example, Fluxbox is such a package. It is a package provided by Slackware and does not include what is needed to create a menu entry for your Display Manager.</description>
+    </item>
+    <item>
+      <title>How to Tune an SSD</title>
+      <link>/user/tune-ssd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/tune-ssd/</guid>
+      <description>The biggest single upgrade you can make to a PC’s performance is to add a Solid-State-Drive or SSD. Doing so will shorten your boot times, dramatically increase your write-to-disk speed and prolong battery life on a laptop.&#xA;When adding the SSD, three factors need balancing:&#xA;System performance SSD longevity Data Safety Background SSDs are NAND memory, organised into PAGES, which are organised into BLOCKS. The controller takes care of all the low level details for us, but knowing something about how the controller works can help us get the best out of our new drive.</description>
+    </item>
+    <item>
+      <title>How to Create a Video DVD from the CLI</title>
+      <link>/user/how-to-create-a-video-dvd-from-the-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/how-to-create-a-video-dvd-from-the-cli/</guid>
+      <description>It is very easy to create a video DVD out of your existing video files, using only command line tools.&#xA;Universal solution using ffmpeg The original video files can be in any format that ffmpeg supports, so that includes just about everything.&#xA;The tools you will need for this are ffmpeg and dvdauthor, so make sure you have them first (run as root):&#xA;slapt-get -i ffmpeg dvdauthorUsing ffmpeg you can convert any video file to an mpg file, that dvdauthor can use later:</description>
+    </item>
+    <item>
+      <title>How to Access Host USB Devices in a Guest OS Running in VirtualBox PUEL</title>
+      <link>/user/virtualbox-host-devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/virtualbox-host-devices/</guid>
+      <description>If you want to access usb devices in a guest OS running in VirtualBox PUEL, you will have to:&#xA;Edit your /etc/rc.d/rc.S file in the host OS. Find the line that reads: /sbin/mount -v usbfs /proc/bus/usb -t usbfsand change it to:&#xA;/sbin/mount -v usbfs /proc/bus/usb -t usbfs -o devgid=10,devmode=0664 Add your user to the wheel group. You need to remount /proc/bus/usb. A reboot will do it too. In VirtualBox, select the virtual machine you want to use and hit the settings button.</description>
+    </item>
+  </channel>
+</rss>

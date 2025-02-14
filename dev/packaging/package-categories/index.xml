@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Package Categories :: Salix Documentation</title>
+    <link>/dev/packaging/package-categories/</link>
+    <description>These are the package categories for the Salix repositories (some of them might not be actually present, because there are no packages to place in yet):&#xA;a - The base system. Contains software to get up and running and have a text editor and basic communications programs ap - Various applications that do not require the X Window System d - Program development tools. Compilers, debuggers, interpreters, and man pages. It’s all here f - FAQs, HOWTOs, and other miscellaneous documentation gnome - Applications and libraries from the Gnome project games - Games :) kde - KDE applications (depending on kdelibs) l - Libraries locale - Localisation Packages lxde - LXDE packages lxqt - LXQt packages mate - MATE Desktop packages n - Networking programs.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/package-categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

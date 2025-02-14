@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer Documentation :: Salix Documentation</title>
+    <link>/dev/</link>
+    <description>Welcome to the Documentation section for Salix developers and packagers. Whether you’re a seasoned developer or just starting out, this documentation is designed to provide you with the information and guidance you need to get the most out of Salix. Here, you’ll find guides, tutorials, and reference materials covering various aspects of Salix development and packaging, from getting started with the basics to advanced topics and best practices. Browse through our documentation to learn how to contribute to Salix, create and maintain packages, and optimize your workflow.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packaging Documentation</title>
+      <link>/dev/packaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/packaging/</guid>
+      <description>Welcome to the packaging section, where you’ll find everything you need to create and maintain your own software packages for Salix. Whether you’re looking to package software for personal use or to share with the wider Salix community, this section provides detailed guides, tutorials, and best practices to help you get started and ensure your packages meet the high standards of the Salix repository.&#xA;GConf and Packaging Getting git or svn sources for use with slkbuild MATEConf Schemas and Packaging Installing Mimetypes with a Package Package Categories Packaging rules Building Packages with slkbuild Scrollkeeper and Packaging Submitting Packages UIDs and GIDs to use with slkbuild </description>
+    </item>
+    <item>
+      <title>How to Create a Public Salix Mirror</title>
+      <link>/dev/create-public-mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/create-public-mirror/</guid>
+      <description>These are rather generic instructions to create a public Salix mirror. You should be familiar with rsync and cron jobs to get things working. At first some basic things:&#xA;It’s up to you if you want to create a ftp or a http mirror Of course you have to adjust the output dirs, that are used in the rsync commands Syncing once a day may be a good idea Salix mirror Let’s get things started.</description>
+    </item>
+    <item>
+      <title>How to Internationalize Shell Scripts</title>
+      <link>/dev/internationalize-shell-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/internationalize-shell-scripts/</guid>
+      <description>Modification of the original script (We shall take excerpts from the script keyboardsetup as an example.)&#xA;Add the following lines after the usual introductory comments but before your actual code starts:&#xA;# Gettext internationalization export TEXTDOMAIN=&#34;name_of_the_program&#34; export TEXTDOMAINDIR=&#34;destination_path_to_the_compiled_translations&#34; . gettext.shExample Before modification:&#xA;# Version 4.3 - 28/07/2009 # * replaced xorg.conf by fdi policy rule # Take a look at &#34;Xdialog&#34; and use it instead of &#34;dialog&#34; in case X is running if [[ &#34;$DISPLAY&#34; &amp;&amp; &#34;$(which Xdialog 2&gt;&amp;1 | grep -v &#34;which: no&#34;)&#34; ]]; thenAfter modification:</description>
+    </item>
+    <item>
+      <title>How to Work with Sourceforge</title>
+      <link>/dev/work-with-sourceforge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/work-with-sourceforge/</guid>
+      <description>Upload file releases You have to be a project admin to upload files. Then create a shell to sourceforge:&#xA;ssh -t USERNAME,salix@shell.sourceforge.net createThis shell will stand for 4 hours. Create the directories needed (if any) under Salix directory:&#xA;mkdir /home/frs/project/s/sa/salix/NEW_DIRECTORYUpload the files using scp:&#xA;scp MY_RELEASE.iso USERNAME,salix@shell.sourceforge.net:/home/frs/project/s/sa/salix/NEW_DIRECTORY/Make sure new folders are group writeable, so other project admins can add/delete files to the new folder, too. Finally, announce the release in the announcements forum or wherever you like ;-)</description>
+    </item>
+    <item>
+      <title>How to Work with Transifex</title>
+      <link>/dev/transifex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/transifex/</guid>
+      <description>Install the Transifex client First you need to install the transifex-client package, so:&#xA;slapt-get -i transifex-clientHow to map local translation files to a Transifex project You should only do this once for each application you have in Transifex. If you’re using several PCs, you should do it once in every PC.&#xA;Navigate to your project’s directory (the one that includes the po directory with all the *.po files)&#xA;cd myprojectInitialize the transifex project locally:</description>
+    </item>
+  </channel>
+</rss>

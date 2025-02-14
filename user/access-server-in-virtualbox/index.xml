@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Access a Server Running in a VirtualBox Guest :: Salix Documentation</title>
+    <link>/user/access-server-in-virtualbox/</link>
+    <description>VirtualBox guests are usually set up with NAT networking. That way, there is no way to directly access a server running in a VirtualBox guest from the host system or from anywhere in the network. In order to do that, you’ll have to inform VirtualBox to forward packets from a host port to a port in the guest system. This guide will show you how to access an ssh server running in a VirtualBox guest, but the procedure is similar for any kind of server that you may want to run (ftp, apache http etc).</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/access-server-in-virtualbox/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

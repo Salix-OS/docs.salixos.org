@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to Work with Transifex :: Salix Documentation</title>
+    <link>/dev/transifex/</link>
+    <description>Install the Transifex client First you need to install the transifex-client package, so:&#xA;slapt-get -i transifex-clientHow to map local translation files to a Transifex project You should only do this once for each application you have in Transifex. If you’re using several PCs, you should do it once in every PC.&#xA;Navigate to your project’s directory (the one that includes the po directory with all the *.po files)&#xA;cd myprojectInitialize the transifex project locally:</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/transifex/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

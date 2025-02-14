@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting git or svn sources for use with slkbuild :: Salix Documentation</title>
+    <link>/dev/packaging/git-svn-sources-with-slkbuild/</link>
+    <description>If the source only exists in a git or svn repository, then you will have to create a source tarball yourselves and upload it somewhere. You have to add the created source tarballs to the source variable in the SLKBUILD file. Also make sure that you upload the source tarball to your sourcetemplate location. Example:&#xA;source=(&#34;http://some-domain.org/packages/xap/$pkgname/$pkgname-$pkgver.src.tar.gz&#34;)git This script gets latest git sources, creates a source tarball named after the current date and updates the $pkgver variable in the SLKBUILD file.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/dev/packaging/git-svn-sources-with-slkbuild/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
