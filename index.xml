@@ -1,1 +1,32 @@
-post/index.xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salix Documentation</title>
+    <link>/</link>
+    <description>Welcome to the Salix Documentation project! This is the place for tutorials, guides and frequently asked questions for both Salix users and developers.&#xA;You can navigate the documentation through the menubar, or search for a term using the sidebar.&#xA;Documentation is generally split into three sections:&#xA;Frequently Asked Questions User Documentation Developer Documentation You can navigate the documentation or use the search bar for looking up specific terms. Note that the search function requires Javascript.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/</guid>
+      <description>Got a question about Salix? You’re not alone. This FAQ section answers some of the most common questions we receive from users, covering everything from basic concepts to troubleshooting and more. Browse through the questions and answers below to see if we’ve already addressed your concern.&#xA;Can I Use Third Party Repositories? How to Enable the root User How to Get an Extra Console in the Salix Installer Is Flatpak Available in Salix?</description>
+    </item>
+    <item>
+      <title>User Documentation</title>
+      <link>/user/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/</guid>
+      <description>Welcome to the documentation section for Salix users. This section is designed to help you get the most out of your Salix experience, with guides and tutorials on how to install, configure, and use Salix. Whether you’re new to Salix or just looking for help with a specific task, this is the place to look first for the information you need to get started.&#xA;In case you don’t find what you’re looking for here, you can always visit our forums or reach us in our IRC channel.</description>
+    </item>
+    <item>
+      <title>Developer Documentation</title>
+      <link>/dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/dev/</guid>
+      <description>Welcome to the Documentation section for Salix developers and packagers. Whether you’re a seasoned developer or just starting out, this documentation is designed to provide you with the information and guidance you need to get the most out of Salix. Here, you’ll find guides, tutorials, and reference materials covering various aspects of Salix development and packaging, from getting started with the basics to advanced topics and best practices. Browse through our documentation to learn how to contribute to Salix, create and maintain packages, and optimize your workflow.</description>
+    </item>
+  </channel>
+</rss>
