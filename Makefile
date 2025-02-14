@@ -13,9 +13,7 @@ build: faq user dev packaging upgrading
 	rm -rf public/*
 	hugo-0.123.8
 	cp README.md public/
-	cd public && \
-	rm -f index.xml && \
-	ln -s post/index.xml index.xml
+	touch public/.nojekyll
 
 .PHONY: serve
 serve: build
