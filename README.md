@@ -26,3 +26,19 @@ In order to update the theme submodule to the latest version, run:
 git submodule update --recursive --remote
 ```
 
+## Publishing
+
+The `master` branch
+includes the files that are used for publishing and can be updated by running:
+
+```
+make publish
+```
+
+The `master` branch resides inside the `public` directory.
+**You should not update it manually**, only by using the above command.
+The contents of the `master` branch are used by Github pages to show the
+actual blog.
+
+The `source` branch is the one that should be used for editing the content.
+
