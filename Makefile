@@ -2,7 +2,7 @@ SSH_HOST=salixos.org
 SSH_PORT=22
 SSH_USER=web
 SSH_TARGET_DIR=/srv/www/docs
-GIT_PUBLISH_BRANCH=master
+GIT_PUBLISH_BRANCH=public
 
 .PHONY: build
 build: faq user dev packaging upgrading
