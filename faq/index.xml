@@ -110,7 +110,7 @@
       <link>/faq/salixlive-passwords/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/faq/salixlive-passwords/</guid>
-      <description>Salix 14.1 and newer For Salix 14.1 and newer there is no root user. You can log in as user one and the password is also one. User one can use the sudo command to execute commands as the superuser.&#xA;Salix 14.0 and earlier For Salix 14.0 and earlier:&#xA;The Salix Live root password is live. The Salix Live non-root username is one with no password. </description>
+      <description>You can log in SalixLive as user one. The password is also one. User one can use the sudo command to execute commands as the superuser.&#xA;The root user is disabled by default and therefore you can’t log in as root.&#xA;Salix 14.0 and earlier These are now old and unsupported releases of Salix, but just in case you happen to come across one, here is the relevant information:&#xA;You log in as user one.</description>
     </item>
     <item>
       <title>Can I Use slackpkg in Salix?</title>
