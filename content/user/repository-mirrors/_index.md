@@ -60,7 +60,7 @@ The following public rsync servers are available:
 * rsync://rsync.gtlib.gatech.edu/salixos (Georgia, US)
 
 The main rsync service for the Salix repositories is located at:
-* rsync://rsync.salixos.org/salix (Germany)
+* rsync://rsync.salixos.org/salix (France)
 
 Please use the main rsync service only if you are mirroring the Salix
 repositories for the purpose of providing a publicly available mirror.
