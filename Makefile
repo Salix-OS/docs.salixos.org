@@ -15,6 +15,7 @@ build: faq user dev packaging upgrading
 	hugo-0.123.8
 	cp README.md public/
 	touch public/.nojekyll
+	echo "docs.salixos.org" > public/CNAME
 
 .PHONY: serve
 serve: build
