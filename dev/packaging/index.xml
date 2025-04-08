@@ -75,7 +75,7 @@
       <link>/dev/packaging/uid-gid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/dev/packaging/uid-gid/</guid>
-      <description>Recommended UID/GIDs The recommended UID/GIDs for use with SLKBUILD scripts are the same as [the ones for slackbuilds.org](https://slackbuilds.org/uid_gid.txt Defaults Slackware UID/GIDs) in order to avoid conflicts with packages build from SBo.&#xA;Extra This previous list is maintained by the SBo team. If you build a package that is not on that list, we can discuss about it on the mailing list.&#xA;Warning Note that recommended UID/GIDs should not be created automatically when the user installs a package.</description>
+      <description>Recommended UID/GIDs The recommended UID/GIDs for use with SLKBUILD scripts are the same as the ones for slackbuilds.org (Default Slackware UID/GIDs) in order to avoid conflicts with packages build from SBo.&#xA;Extra This previous list is maintained by the SBo team. If you build a package that is not on that list, we can discuss about it on the mailing list.&#xA;Warning Note that recommended UID/GIDs should not be created automatically when the user installs a package.</description>
     </item>
     <item>
       <title>Submitting Packages</title>
