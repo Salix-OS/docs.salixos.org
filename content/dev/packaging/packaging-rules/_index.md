@@ -74,22 +74,22 @@ configure --prefix=/usr --libdir=/usr/lib${LIBDIRSUFFIX} --localstatedir=/var --
 
 where `$LIBDIRSUFFIX` should be empty for x86 packages and set to "64" for x86_64 packages.
 This also means that: 
-* Packages are not allowed to install files in "/opt" and "/usr/local" by any means.
-* "/usr" is the install path prefix
-* log files must be installed in the directory "/var"
-* configuration files must be installed in the directory "/etc"
-* man pages must be placed in "/usr/man"
+* Packages are not allowed to install files in "**/opt**" and "**/usr/local**" by any means.
+* "**/usr**" is the install path prefix
+* log files must be installed in the directory "**/var**"
+* configuration files must be installed in the directory "**/etc**"
+* man pages must be placed in "**/usr/man**"
 
 All binaries and system libraries must be stripped of debugging symbols.
 
 Man pages and Info files must be gziped.
 
-Files installed to the directory "/usr/doc" must not have group/world writeable
+Files installed to the directory "**/usr/doc**" must not have group/world writeable
 permissions.
 
 All X application packages which are supposed to appear in the application menu
-shall install appropriate "packagename.desktop" files in the
-"/usr/share/applications" directory.
+shall install appropriate "**packagename.desktop**" files in the
+"**/usr/share/applications**" directory.
 
 All icons are to be installed in the
 **/usr/share/icons/hicolor/scalable/apps/** or
