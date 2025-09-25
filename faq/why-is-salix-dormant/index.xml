@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Why is Salix dormant? :: Salix Documentation</title>
+    <link>/faq/why-is-salix-dormant/</link>
+    <description>(Sigh…) It isn’t.&#xA;Distrowatch has the following policy:&#xA;A distribution which has not put out a new release in two or more years is marked as being Dormant in our database. The distribution may still be worked on, but has not published any new stable releases. When a dormant distribution publishes a new stable release it is then marked as being Active. A project may also be marked as dormant if it no longer plans to put out future releases, ie planned inactivity, while older releases are maintained.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/faq/why-is-salix-dormant/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

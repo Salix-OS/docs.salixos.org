@@ -134,6 +134,13 @@
       <description>Salix 15.0 comes with Xfce 4.16 by default. Xfce 4.20 was released a few days before Christmas 2024 and a new dedicated repository for it was added shortly after.&#xA;So, if you want to upgrade your Xfce to version 4.20, all you have to do is add that repository to your slapt-get package manager configuration in the /etc/slapt-get/slapt-getrc file.&#xA;For 64-bit systems, you can add this line:&#xA;SOURCE=https://download.salixos.org/x86_64/xfce4.20-15.0/:PREFERREDwhile for 32-bit systems, you can add this line:</description>
     </item>
     <item>
+      <title>Why is Salix dormant?</title>
+      <link>/faq/why-is-salix-dormant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/faq/why-is-salix-dormant/</guid>
+      <description>(Sigh…) It isn’t.&#xA;Distrowatch has the following policy:&#xA;A distribution which has not put out a new release in two or more years is marked as being Dormant in our database. The distribution may still be worked on, but has not published any new stable releases. When a dormant distribution publishes a new stable release it is then marked as being Active. A project may also be marked as dormant if it no longer plans to put out future releases, ie planned inactivity, while older releases are maintained.</description>
+    </item>
+    <item>
       <title>Why Was Salix Created?</title>
       <link>/faq/why-was-salix-created/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1,7 +1,7 @@
 var relearn_search_index = [
   {
     "breadcrumb": "Salix Documentation",
-    "content": "Got a question about Salix? You’re not alone. This FAQ section answers some of the most common questions we receive from users, covering everything from basic concepts to troubleshooting and more. Browse through the questions and answers below to see if we’ve already addressed your concern.\nCan I Use Third Party Repositories? How to Enable the root User How to Get an Extra Console in the Salix Installer Is Flatpak Available in Salix? How Do I Change the Default System Hostname? Icons Missing in the Xfce Menu How Do I Install a txz/tgz File I Found Online? How to Install the Kernel Source How to Play Multimedia Files Package Manager Wants to Downgrade Packages How to Get Notifications for Package Updates Packages that are Different from Slackware How to Read the Salix Man Page SalixLive Passwords Can I Use slackpkg in Salix? How Much Disk Space Does Salix Need How Do I Upgrade to Xfce 4.18? How Do I Upgrade to Xfce 4.20? Why Was Salix Created? ",
+    "content": "Got a question about Salix? You’re not alone. This FAQ section answers some of the most common questions we receive from users, covering everything from basic concepts to troubleshooting and more. Browse through the questions and answers below to see if we’ve already addressed your concern.\nCan I Use Third Party Repositories? How to Enable the root User How to Get an Extra Console in the Salix Installer Is Flatpak Available in Salix? How Do I Change the Default System Hostname? Icons Missing in the Xfce Menu How Do I Install a txz/tgz File I Found Online? How to Install the Kernel Source How to Play Multimedia Files Package Manager Wants to Downgrade Packages How to Get Notifications for Package Updates Packages that are Different from Slackware How to Read the Salix Man Page SalixLive Passwords Can I Use slackpkg in Salix? How Much Disk Space Does Salix Need How Do I Upgrade to Xfce 4.18? How Do I Upgrade to Xfce 4.20? Why is Salix dormant? Why Was Salix Created? ",
     "description": "Got a question about Salix? You’re not alone. This FAQ section answers some of the most common questions we receive from users, covering everything from basic concepts to troubleshooting and more. Browse through the questions and answers below to see if we’ve already addressed your concern.\nCan I Use Third Party Repositories? How to Enable the root User How to Get an Extra Console in the Salix Installer Is Flatpak Available in Salix?",
     "tags": [],
     "title": "Frequently Asked Questions",
@@ -630,6 +630,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "How to Access Host USB Devices in a Guest OS Running in VirtualBox PUEL",
     "uri": "/user/virtualbox-host-devices/"
+  },
+  {
+    "breadcrumb": "Salix Documentation \u003e FAQ",
+    "content": "(Sigh…) It isn’t.\nDistrowatch has the following policy:\nA distribution which has not put out a new release in two or more years is marked as being Dormant in our database. The distribution may still be worked on, but has not published any new stable releases. When a dormant distribution publishes a new stable release it is then marked as being Active. A project may also be marked as dormant if it no longer plans to put out future releases, ie planned inactivity, while older releases are maintained.\nSalix is based on Slackware and usually new Salix releases happen only when there is a new Slackware release. The time between Slackware releases is usually greater than two years, so the time between Salix releases is usually greater than two years. Unavoidably, Distrowatch then marks Salix as “dormant”, which means nothing about the actual state of Salix. It is only a result of the above mentioned Distrowatch policy.\nBut why isn’t Slackware also marked as dormant then? That is something that you will have to ask Distrowatch about.",
+    "description": "(Sigh…) It isn’t.\nDistrowatch has the following policy:\nA distribution which has not put out a new release in two or more years is marked as being Dormant in our database. The distribution may still be worked on, but has not published any new stable releases. When a dormant distribution publishes a new stable release it is then marked as being Active. A project may also be marked as dormant if it no longer plans to put out future releases, ie planned inactivity, while older releases are maintained.",
+    "tags": [],
+    "title": "Why is Salix dormant?",
+    "uri": "/faq/why-is-salix-dormant/"
   },
   {
     "breadcrumb": "Salix Documentation \u003e FAQ",
