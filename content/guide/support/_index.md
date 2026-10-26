@@ -4,8 +4,8 @@ weight: 6
 ---
 
 If you are still quite new to either Salix, Slackware or even Linux in
-general, then you should first of all take some time to study Salix
-Startup Guide, as it is specifically intended to be accessible to
+general, then you should first of all take some time to study this
+guide, as it is specifically intended to be accessible to
 newcomers. The desktop link, Salix Online, will bring you to the Salix
 [Homepage](https://salixos.org). You could also
 use the
@@ -35,8 +35,8 @@ similar look and feel to those found on other operating systems, such as
 the office suite LibreOffice, which offers full compatibility with
 common file formats.
 
-Our [Wiki](https://docs.salixos.org) and
-[Forum](https://forum.salixos.org) will be two other important
+The rest of the [Salix Documentation](/) and the
+[Forum](https://forum.salixos.org/) will be two other important
 sources of information. The search option of the forum will quickly show
 you if the question you have in mind has already been posted by a member
 of the community and if it has been answered. For the same reason,
@@ -75,10 +75,9 @@ The best way to learn Linux is by using it to the full, finding out in
 the process how to make it do exactly what you want. After a while,
 though, it may be helpful to supplement this experience with some
 more systematic background. As mentioned in the section introducing
-the command line, the
-[Documentation](http://www.salixos.org/forum/viewforum.php?f=30&sid=8007ff0fe74d8ba139ecb29032db24d2) 
-board on the Salix forums contains a useful post on
-[tutorials and guides](http://www.salixos.org/forum/viewtopic.php?f=30&t=852).
+the command line, [Linuxcommand.org](http://linuxcommand.org/index.php)
+is a good place to start, and the [Salix Forum](https://forum.salixos.org/)
+is always there for questions.
 Wherever you find problems recur, it may be worth reading up on the
 underlying issues over time to gain broader knowledge, especially
 when it comes to general features of Linux that may be unfamiliar to
