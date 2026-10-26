@@ -35,13 +35,3 @@ You'll certainly need __xf86-input-keyboard__, __xf86-input-mouse__ and
 __xf86-input-evdev__. Look in the list for any other hardware you might have
 and you can remove the rest.
 
-## IBus 
-
-If you're not using IBus and anthy to input characters in your native
-language, then you can remove them with:
-
-```
-spkg -d /var/log/packages/ibus-*
-spkg -d anthy fcitx-anthy ibus-anthy
-```
-
