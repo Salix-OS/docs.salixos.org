@@ -43,7 +43,8 @@ of the community and if it has been answered. For the same reason,
 please also search the internet. If you are working on the command
 line ([Working with the Command Line Interface](/guide/mini-walkthroughs/#working_with_cli)), remember to
 consult `man` (and try `man salix` for a summary of key points
-specific to this distribution). There are several online
+specific to this distribution, see
+[How to Read the Salix Man Page](/faq/salix-man-page/)). There are several online
 forums devoted to Linux, such as
 [linuxquestions.org](http://www.linuxquestions.org/).
 It should be noted that each forum

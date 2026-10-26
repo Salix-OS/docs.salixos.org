@@ -68,6 +68,9 @@ without a problem).
 [partition](http://en.wikipedia.org/wiki/Disk_partitioning)
 dedicated for Salix on your computer.
 
+For the disk space each installation mode needs, see
+[How Much Disk Space Does Salix Need](/faq/space/).
+
 <!-- Is this info about rEFIt up to date? -->
 
 ### Partition Management
@@ -205,7 +208,8 @@ to reboot the system.
 {{% notice style="note" title="Salix now uses sudo!" %}}
 By default, the first user created has access to sudo, any others do not; to
 allow them access as well, they need to be added to the wheel group. The **root**
-user is disabled by default in Salix.
+user is disabled by default in Salix. If you need it, see
+[How to Enable the root User](/faq/enable-root/).
 {{% /notice %}}
 
 ### Installing from a Salix Installation USB

@@ -146,6 +146,12 @@ will build and install a package. For
 more command line instructions, please refer to
 
     slapt-src --help
+
+When a package is available both in the Salix repositories and from SBo, the
+Salix package is preferred. See
+[Slackbuilds in Salix Repositories](/user/slackbuilds-in-salix-repos/) for
+why, and for how to build the SBo version instead.
+
 ### spkg {#spkg}
 
 If you would like to install or upgrade a package that you have manually
@@ -166,6 +172,11 @@ issuing
     sudo spkg -d [software name]
 
 e.g. `sudo spkg -d mozilla-firefox`
+
+Be careful with package files you find online: not every *.txz* or *.tgz*
+file is a package, and packages built for other systems can break yours. See
+[How Do I Install a txz/tgz File I Found Online?](/faq/install-txz-found-online/)
+for how to check.
 
 {{% notice style="note" title="Blacklisting packages" %}}
 If you are replacing a package that is available in the repositories,
@@ -412,6 +423,10 @@ preferred mirror goes temporarily offline to switch to another.
 To execute this utility in a terminal, simply type
 
     sudo reposetup
+
+If you prefer to edit the mirror settings by hand, the full list of mirrors is
+available in [Repository Mirrors](/user/repository-mirrors/).
+
 ### System Clock
 
 This utility will configure your computer clock.

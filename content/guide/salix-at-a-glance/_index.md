@@ -58,7 +58,8 @@ administer their systems. It is most commonly used to set up
 types of server such as web-servers and e-mail servers. The servers that host
 the Salix websites are hosted on, run Salix installed using the **Core**
 mode method. Expert users can of course use this
-mode to install the X window system and any graphical environment on top of it if desired.
+mode to install the X window system and any graphical environment on top of it if desired
+(see [How to Install Xorg on Salix Core](/user/xorg-on-core/)).
 
 ## Salix Repositories & Package Management
 
