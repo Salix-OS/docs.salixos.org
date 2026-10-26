@@ -254,8 +254,8 @@ before issuing
 to create a Salix compatible package which can then be installed with [spkg](#spkg) 
 (the *fakeroot* package should also be installed).
 For more on SLKBUILD, please consult
-[SLKBUILD](http://www.salixos.org/wiki/index.php/Building_packages_with_slkbuild) 
-and [New to Packaging](http://docs.salixos.org/wiki/New_to_Packaging).
+[SLKBUILD](/dev/packaging/packaging-with-slkbuild/) 
+and [New to Packaging](/dev/packaging/new-to-packaging/).
 
 ## Configuring Your Salix
 
@@ -307,9 +307,6 @@ instead, you can load it here.
 
  * Select Add Printer, and finish the process by configuring details of the printer.
  * Now the printer should be usable on your computer.
-
-For setting up a network printer, please consult the Salix
-[wiki](http://www.salixos.org/wiki/index.php/How_to_share_a_printer_via_CUPS).
 
 ### Salix Codecs Installer
 
