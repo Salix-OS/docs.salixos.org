@@ -1,6 +1,6 @@
 ---
 title: Developer Documentation
-weight: 3
+weight: 4
 ---
 
 Welcome to the Documentation section for Salix developers and packagers.

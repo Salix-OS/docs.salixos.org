@@ -11,8 +11,9 @@ and developers.
 You can navigate the documentation through the menubar, or search for a
 term using the sidebar.
 
-Documentation is generally split into three sections:
+Documentation is generally split into four sections:
 
+* [Salix Startup Guide](/guide), for your first steps with Salix
 * [Frequently Asked Questions](/faq)
 * [User Documentation](/user)
 * [Developer Documentation](/dev)
@@ -35,7 +36,6 @@ your feedback is invaluable in helping us make it more comprehensive and
 user-friendly. Happy reading!
 
 {{% notice tip %}}
-In addition to this documentation, the
-[Salix Startup Guide](https://guide.salixos.org) is also available to guide
-you with your first steps with Salix.
+New to Salix? Start with the [Salix Startup Guide](/guide), which walks you
+through your first steps with Salix, from installation to everyday use.
 {{% /notice %}}

@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 linktitle: FAQ
-weight: 1
+weight: 2
 ---
 
 Got a question about Salix? You're not alone. This FAQ section answers some of

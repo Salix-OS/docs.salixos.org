@@ -1,0 +1,8 @@
+{{- with .Parent }}{{ if eq .RelPermalink "/guide/" }}
+	{{- $current := $ }}
+	{{- $chapters := .Pages.ByWeight }}
+	{{- range $i, $p := $chapters }}{{ if eq $p $current }}
+<p class="guide-chapter"><a href="{{ $p.Parent.RelPermalink }}">{{ $p.Parent.Title }}</a> &middot; Chapter {{ add $i 1 }} of {{ len $chapters }}</p>
+	{{- end }}{{ end }}
+{{- end }}{{ end }}
+{{- .Params.headingPre | safeHTML }}

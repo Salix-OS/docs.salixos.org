@@ -1,0 +1,28 @@
+{{- /* Previous/next navigation is only shown in the Startup Guide, which is
+       meant to be read in order, and never leads out of it. */}}
+{{- $onwidths := cond (isset . "onwidths") .onwidths "show" }}
+{{- $onwidthm := cond (isset . "onwidthm") .onwidthm "show" }}
+{{- $onwidthl := cond (isset . "onwidthl") .onwidthl "show" }}
+{{- with .page }}
+	{{- if and (eq .Section "guide") (not .Params.disableNextPrev) }}
+		{{- $next := .Scratch.Get "relearnNextPage" }}
+		{{- $href := "" }}
+		{{- $hint := "" }}
+		{{- with $next }}
+			{{- if eq .Section "guide" }}
+				{{- $href = partial "relLangPrettyUglyURL.hugo" (dict "to" .) }}
+				{{- $hint = printf "%s (%s)" (partial "pageHelper/title.hugo" (dict "page" . "outputFormat" "html")) ("🡒" | safeHTML) }}
+			{{- end }}
+		{{- end }}
+		{{- partial "topbar/func/button.html" (dict
+			"page" .
+			"class" "topbar-button-next"
+			"href" $href
+			"icon" "chevron-right"
+			"onwidths" $onwidths
+			"onwidthm" $onwidthm
+			"onwidthl" $onwidthl
+			"hint" $hint
+		)}}
+	{{- end }}
+{{- end }}

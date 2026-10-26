@@ -1,6 +1,6 @@
 ---
 title: "User Documentation"
-weight: 2
+weight: 3
 ---
 
 Welcome to the documentation section for Salix users. This section is designed
