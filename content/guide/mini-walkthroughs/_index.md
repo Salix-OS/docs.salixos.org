@@ -228,6 +228,7 @@ folder has been safely copied, you can remove the `photo` folder
 from the `Music` directory:
 
     rm -r photo/
+
 ### Installing a Program - slapt-get
 
 Maybe a little bird has told you that there is a wonderful application

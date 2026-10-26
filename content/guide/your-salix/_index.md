@@ -218,6 +218,7 @@ You may find more information about the `flatpak` command by running:
 or
 
     flatpak --help
+
 ### Making a Package from a Source File with SLKBUILD {#roll-your-own}
 
 Installing software from a source file is in most cases not difficult.
@@ -352,6 +353,7 @@ found in the system.
 To execute this utility in a terminal, simply type
 
     sudo dotnew
+
 ### GUEFI
 
 GUEFI is a Python/GTK+3 application that acts as a frontend for efibootmgr.
@@ -390,6 +392,7 @@ up, you can do so by ticking the optional box.
 To execute this utility in a terminal, simply type
 
     sudo keyboardsetup
+
 ### Rebuild Icon Cache
 
 As the name indicates, Rebuild Icon Cache reconnects some icons that may
@@ -457,6 +460,7 @@ system users and groups of users.
 To execute it in a terminal, simply type
 
     sudo usersetup
+
 ### Salix-Update-Notifier
 
 Salix update notifier is a tool that periodically checks for available
