@@ -29,9 +29,7 @@ adaptation (see Linux is
 best features are concerned. The only way to climb the learning curve is
 by trying things out and using them. The more you explore Salix, the
 quicker you will become familiar with it. However, it is worth
-emphasising that the default set of applications (they vary depending on
-the version of Salix you choose, see
-List of Applications)
+emphasising that the default set of applications
 include many that have a very
 similar look and feel to those found on other operating systems, such as
 the office suite LibreOffice, which offers full compatibility with
