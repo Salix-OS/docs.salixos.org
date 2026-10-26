@@ -19,6 +19,16 @@ SCSI harddisks are named with *sdx*, where *x* is a harddisk letter. The disk wi
 lowest SCSI ID on the first controller will become *sda*, the next
 after that, sdb, and so on.
 
+Not all disks follow this scheme, though:
+
+* NVMe drives are named *nvmeXnY*, where *X* is the number of the NVMe
+  controller (starting from 0) and *Y* the number of the namespace on it
+  (starting from 1). The first NVMe drive will usually be *nvme0n1*, the
+  second *nvme1n1*, and so on.
+* SD cards and eMMC storage, which is common on small laptops and tablets, are
+  named *mmcblkX*, where *X* is a number starting from 0. The first one will
+  be *mmcblk0*, the next *mmcblk1*, and so on.
+
 ### Hard disk partitions
 
 GNU/Linux systems often use a partition scheme inherited from MS-DOS. With this, 
@@ -28,6 +38,11 @@ partitions are named with the disk they belong to, and a number. The first prima
 partition on the first disk is therefore *sda1*, the second primary partition is 
 *sda2*, and so on. The first and second logical partition on an extended partition on 
 the first disk is *sda5* and *sda6*, and so on.
+
+For NVMe drives and SD cards or eMMC storage, a *p* is added between the disk
+name and the partition number, since the disk name already ends in a number.
+The first partition on the first NVMe drive is therefore *nvme0n1p1*, and the
+first partition on the first SD card is *mmcblk0p1*.
 
 ## Using cfdisk
 
