@@ -257,18 +257,6 @@ For more on SLKBUILD, please consult
 [SLKBUILD](http://www.salixos.org/wiki/index.php/Building_packages_with_slkbuild) 
 and [New to Packaging](http://docs.salixos.org/wiki/New_to_Packaging).
 
-### Upgrading Salix to a Newer Version
-
-If you wish to upgrade an older version of Salix on your machine to the
-latest, please refer to the following guides:
-
- * [Salix 14.2 to 15.0](http://www.salixos.org/wiki/index.php/How_to_upgrade_Salix_14.2_to_15.0)
- * [Salix 14.1 to 14.2](http://www.salixos.org/wiki/index.php/How_to_upgrade_Salix_14.1_to_14.2)
- * [Salix 14.0 to 14.1](http://www.salixos.org/wiki/index.php/How_to_upgrade_Salix_14.0_to_14.1)
- * [Salix 13.37 to 14.0](http://www.salixos.org/wiki/index.php/How_to_upgrade_Salix_13.37_to_14.0)
- * [Salix 13.1 to 13.37](http://www.salixos.org/wiki/index.php/How_to_upgrade_Salix_13.1_to_13.37)
- * [Salix 13.0 to 13.1](http://www.salixos.org/wiki/index.php/How_to_upgrade_Salix_13.0_to_13.1)
-
 ## Configuring Your Salix
 
 ### Setting up an internet connection
