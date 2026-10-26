@@ -41,3 +41,4 @@ you need to change the hostname you can edit the `/etc/hosts` and
 mypc.salixos.org
 ```
 
+See also the [Hostnames](/guide/your-salix/#hostnames) section of the Salix Startup Guide.

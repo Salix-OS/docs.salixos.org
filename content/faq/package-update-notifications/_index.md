@@ -20,3 +20,4 @@ icon when there are package updates available in the repositories. By
 clicking on it, *gslapt* will be launched directly in upgrade mode where
 you can review the package upgrades and agree to apply them or not.
 
+See also the [Salix Update Notifier](/guide/your-salix/#salix-update-notifier) section of the Salix Startup Guide.

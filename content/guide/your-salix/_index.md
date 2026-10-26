@@ -334,6 +334,9 @@ country.
 Salix codecs installer can be found under "Multimedia" in the main
 application menu, and will conveniently install those codecs which
 enable the viewing of the vast majority of commercial media formats.
+You can also run it from a terminal:
+
+    sudo salix-codecs-installer
 
 ![salix-codecs-installer.png](salix-codecs-installer.png)
 

@@ -9,3 +9,4 @@ Flatpak comes preconfigured with the Flathub repository and desktop integration
 tools are included to allow 1-click install from Flathub. All you have to do is
 [install some apps](https://flathub.org/)!
 
+See also the [flatpak](/guide/your-salix/#flatpak) section of the Salix Startup Guide.
