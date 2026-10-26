@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Starting up Salix :: Salix Documentation</title>
+    <link>/guide/starting-up-salix/</link>
+    <description>Introduction Downloading Salix The latest Salix releases are freely and easily available as ISO image files from the Salix download page, via direct download link or torrent file.&#xA;Please use the torrents… if it is convenient for you to do so and please seed if you can. These torrents are hosted by Salix’s torrent server, made possible by generous donations from users.&#xA;An ISO image is an archive file of an optical disc.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/guide/starting-up-salix/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

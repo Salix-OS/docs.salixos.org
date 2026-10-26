@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salix Startup Guide :: Salix Documentation</title>
+    <link>/guide/</link>
+    <description>Getting familiar with your new operating system.&#xA;The Salix Startup Guide is meant to be read from start to finish. It takes you from downloading and installing Salix to managing software, configuring your system and finding your way around the command line. If you are new to Salix, this is the best place to start.&#xA;Use the arrows at the top of each page to move to the previous or next chapter.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About this Manual</title>
+      <link>/guide/about-this-manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/guide/about-this-manual/</guid>
+      <description>The purpose of this manual is to enable you to take full advantage of the many features of Salix. The latest version of this document is available from our website.&#xA;The Salix start up guide is released under the CC-BY-SA 3.0 license.&#xA;Your contribution is important!&#xA;We would like to improve the quality of the manual and to provide more documents translated in your mother tongue. Your help is always welcome.</description>
+    </item>
+    <item>
+      <title>Salix at a Glance</title>
+      <link>/guide/salix-at-a-glance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/guide/salix-at-a-glance/</guid>
+      <description>Salix is a Linux Distribution based on Slackware that retains full backwards compatibility with its illustrious parent. However, while the KISS principle that Slackware adheres to refers to the viewpoint of system design, Salix also applies it to the viewpoint of the end user.&#xA;Salix Features One application per task rationale. Fully backwards compatible with Slackware. Optimised for desktop usage. With Salix Tools to assist system management. High-quality package repositories with dependency support.</description>
+    </item>
+    <item>
+      <title>Starting up Salix</title>
+      <link>/guide/starting-up-salix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/guide/starting-up-salix/</guid>
+      <description>Introduction Downloading Salix The latest Salix releases are freely and easily available as ISO image files from the Salix download page, via direct download link or torrent file.&#xA;Please use the torrents… if it is convenient for you to do so and please seed if you can. These torrents are hosted by Salix’s torrent server, made possible by generous donations from users.&#xA;An ISO image is an archive file of an optical disc.</description>
+    </item>
+    <item>
+      <title>Your Salix</title>
+      <link>/guide/your-salix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/guide/your-salix/</guid>
+      <description>Package Management Installing applications (which roughly equates to “installing packages”) is a fundamental part of the Linux experience. A Linux distribution, such as Salix (or Slackware, on which it is based) could be said to consist of its repositories, where the software available for that distribution is kept. These packages have been compiled with the kernel and build tools provided by the distribution and tested to ensure they work together. Salix, like most distros (but not Slackware) provides full dependency management, which means that any items the package needs to run are installed too – and also that they are guaranteed to be available.</description>
+    </item>
+    <item>
+      <title>Salix Mini Walkthroughs</title>
+      <link>/guide/mini-walkthroughs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/guide/mini-walkthroughs/</guid>
+      <description>Working with the Command Line Interface This section deals with working in a console mode or with a terminal (such as Xfce terminal, xterm, konsole and so forth), and serves merely as a light introduction to the command line interface (CLI). The intended audience here is not seasoned travelers but new journeymen in the land of Linux, who are willing to discover more about what one can do with it. We will go through some examples in this section for you to follow, and hopefully by the end of this walkthrough, you will have no problem working with the “black screen”.</description>
+    </item>
+    <item>
+      <title>Support</title>
+      <link>/guide/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/guide/support/</guid>
+      <description>If you are still quite new to either Salix, Slackware or even Linux in general, then you should first of all take some time to study this guide, as it is specifically intended to be accessible to newcomers. The desktop link, Salix Online, will bring you to the Salix Homepage. You could also use the IRC link to be in live communication with members of the community and get instant help if necessary.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/faq/</loc>
+    <loc>/guide/about-this-manual/</loc>
   </url>
   <url>
     <loc>/dev/packaging/gconf/</loc>
@@ -10,7 +10,22 @@
     <loc>/</loc>
   </url>
   <url>
+    <loc>/guide/</loc>
+  </url>
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  <url>
+    <loc>/guide/salix-at-a-glance/</loc>
+  </url>
+  <url>
     <loc>/user/upgrading/</loc>
+  </url>
+  <url>
+    <loc>/dev/packaging/</loc>
+  </url>
+  <url>
+    <loc>/guide/starting-up-salix/</loc>
   </url>
   <url>
     <loc>/user/</loc>
@@ -19,7 +34,13 @@
     <loc>/dev/</loc>
   </url>
   <url>
-    <loc>/dev/packaging/</loc>
+    <loc>/guide/your-salix/</loc>
+  </url>
+  <url>
+    <loc>/guide/mini-walkthroughs/</loc>
+  </url>
+  <url>
+    <loc>/guide/support/</loc>
   </url>
   <url>
     <loc>/user/enable-horizontal-scrolling-3-button-mouse/</loc>
@@ -74,9 +95,6 @@
   </url>
   <url>
     <loc>/user/install-different-kernel/</loc>
-  </url>
-  <url>
-    <loc>/user/install-from-usb/</loc>
   </url>
   <url>
     <loc>/user/install-kernel-from-current/</loc>
@@ -143,6 +161,9 @@
   </url>
   <url>
     <loc>/dev/packaging/packaging-with-slkbuild/</loc>
+  </url>
+  <url>
+    <loc>/user/partitioning-with-cfdisk/</loc>
   </url>
   <url>
     <loc>/user/rebuild-slackware-kernel/</loc>

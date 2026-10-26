@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="description" content="cfdisk is the partitioning tool that the Salix installer runs to let you set up your partitions. On disks that use the GPT partitioning scheme, the installer runs cgdisk instead, which works mostly the same way. This page explains how disks and partitions are named and how to use each of the cfdisk commands. For a quick walkthrough of partitioning during installation, see the Salix Startup Guide.
+Hard disk and partition names Hard disk names SCSI harddisks are named with sdx, where x is a harddisk letter.">
+    <meta name="author" content="George Vlahavas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/og_image.png">
+    <meta name="twitter:title" content="Partitioning with cfdisk :: Salix Documentation">
+    <meta name="twitter:description" content="cfdisk is the partitioning tool that the Salix installer runs to let you set up your partitions. On disks that use the GPT partitioning scheme, the installer runs cgdisk instead, which works mostly the same way. This page explains how disks and partitions are named and how to use each of the cfdisk commands. For a quick walkthrough of partitioning during installation, see the Salix Startup Guide.
+Hard disk and partition names Hard disk names SCSI harddisks are named with sdx, where x is a harddisk letter.">
+    <meta property="og:url" content="/user/partitioning-with-cfdisk/">
+    <meta property="og:site_name" content="Salix Documentation">
+    <meta property="og:title" content="Partitioning with cfdisk :: Salix Documentation">
+    <meta property="og:description" content="cfdisk is the partitioning tool that the Salix installer runs to let you set up your partitions. On disks that use the GPT partitioning scheme, the installer runs cgdisk instead, which works mostly the same way. This page explains how disks and partitions are named and how to use each of the cfdisk commands. For a quick walkthrough of partitioning during installation, see the Salix Startup Guide.
+Hard disk and partition names Hard disk names SCSI harddisks are named with sdx, where x is a harddisk letter.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/og_image.png">
+    <meta itemprop="name" content="Partitioning with cfdisk :: Salix Documentation">
+    <meta itemprop="description" content="cfdisk is the partitioning tool that the Salix installer runs to let you set up your partitions. On disks that use the GPT partitioning scheme, the installer runs cgdisk instead, which works mostly the same way. This page explains how disks and partitions are named and how to use each of the cfdisk commands. For a quick walkthrough of partitioning during installation, see the Salix Startup Guide.
+Hard disk and partition names Hard disk names SCSI harddisks are named with sdx, where x is a harddisk letter.">
+    <meta itemprop="wordCount" content="698">
+    <meta itemprop="image" content="/images/og_image.png">
+    <title>Partitioning with cfdisk :: Salix Documentation</title>
+    <link href="/user/partitioning-with-cfdisk/index.xml" rel="alternate" type="application/rss+xml" title="Partitioning with cfdisk :: Salix Documentation">
+    <link href="/images/favicon.png?1793056471" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1793056471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1793056471" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1793056471" rel="stylesheet">
+    <link href="/css/auto-complete.css?1793056471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1793056471" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1793056471" rel="stylesheet">
+    <link href="/css/fonts.css?1793056471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1793056471" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1793056471" rel="stylesheet">
+    <link href="/css/theme-green.css?1793056471" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-learn.css?1793056471" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1793056471" rel="stylesheet">
+    <link href="/css/print.css?1793056471" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1793056471"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='';
+      window.index_js_url="/index.search.js?1793056471";
+      // variant stuff
+      window.variants && variants.init( [ 'green' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style>
+  .guide-chapter {
+    color: var(--INTERNAL-MAIN-TITLES-TEXT-color);
+    font-size: .9rem;
+    margin-bottom: 0;
+    opacity: .7;
+  }
+</style>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/user/partitioning-with-cfdisk/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#hard-disk-and-partition-names">Hard disk and partition names</a>
+      <ul>
+        <li><a href="#hard-disk-names">Hard disk names</a></li>
+        <li><a href="#hard-disk-partitions">Hard disk partitions</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-cfdisk">Using cfdisk</a>
+      <ul>
+        <li><a href="#the-user-interface">The user interface</a></li>
+        <li><a href="#deleting-a-partition">Deleting a partition</a></li>
+        <li><a href="#making-a-new-partition">Making a new partition</a></li>
+        <li><a href="#set-the-type-of-a-partition">Set the type of a partition</a></li>
+        <li><a href="#make-a-partition-bootable">Make a partition bootable</a></li>
+        <li><a href="#write-the-result-to-disk-and-quit">Write the result to disk and quit</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Salix Documentation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/user/"><span itemprop="name">User Documentation</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Partitioning with cfdisk</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+				
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/Salix-OS/docs.salixos.org/tree/master/content/user/partitioning-with-cfdisk/_index.md" target="_blank" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+
+
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+
+<h1 id="partitioning-with-cfdisk">Partitioning with cfdisk</h1>
+
+<p><em>cfdisk</em> is the partitioning tool that the Salix installer runs to let you set
+up your partitions. On disks that use the GPT partitioning scheme, the
+installer runs <em>cgdisk</em> instead, which works mostly the same way. This page
+explains how disks and partitions are named and how to use each of the
+<em>cfdisk</em> commands. For a quick walkthrough of partitioning during
+installation, see the
+<a href="/guide/starting-up-salix/#cfdisk">Salix Startup Guide</a>.</p>
+<h2 id="hard-disk-and-partition-names">Hard disk and partition names</h2>
+<h3 id="hard-disk-names">Hard disk names</h3>
+<p>SCSI harddisks are named with <em>sdx</em>, where <em>x</em> is a harddisk letter. The disk with the
+lowest SCSI ID on the first controller will become <em>sda</em>, the next
+after that, sdb, and so on.</p>
+<p>Not all disks follow this scheme, though:</p>
+<ul>
+<li>NVMe drives are named <em>nvmeXnY</em>, where <em>X</em> is the number of the NVMe
+controller (starting from 0) and <em>Y</em> the number of the namespace on it
+(starting from 1). The first NVMe drive will usually be <em>nvme0n1</em>, the
+second <em>nvme1n1</em>, and so on.</li>
+<li>SD cards and eMMC storage, which is common on small laptops and tablets, are
+named <em>mmcblkX</em>, where <em>X</em> is a number starting from 0. The first one will
+be <em>mmcblk0</em>, the next <em>mmcblk1</em>, and so on.</li>
+</ul>
+<h3 id="hard-disk-partitions">Hard disk partitions</h3>
+<p>GNU/Linux systems often use a partition scheme inherited from MS-DOS. With this,
+a harddisk can have up to four primary partitions. If you want more, you have to make
+one of these an extended partition where you can make several logical partitions. The
+partitions are named with the disk they belong to, and a number. The first primary
+partition on the first disk is therefore <em>sda1</em>, the second primary partition is
+<em>sda2</em>, and so on. The first and second logical partition on an extended partition on
+the first disk is <em>sda5</em> and <em>sda6</em>, and so on.</p>
+<p>For NVMe drives and SD cards or eMMC storage, a <em>p</em> is added between the disk
+name and the partition number, since the disk name already ends in a number.
+The first partition on the first NVMe drive is therefore <em>nvme0n1p1</em>, and the
+first partition on the first SD card is <em>mmcblk0p1</em>.</p>
+<h2 id="using-cfdisk">Using cfdisk</h2>
+<h3 id="the-user-interface">The user interface</h3>
+<p>After <em>cfdisk</em> is started you&rsquo;ll get an interface where the current partition
+table is listed with the names and some data about each partition and some command
+buttons on the bottom of the screen. To change between partitions, use the up and down
+arrow keys. To change between commands, use the left and right arrow keys.</p>
+<h3 id="deleting-a-partition">Deleting a partition</h3>
+<p>To delete an existing partition, highlight it with the up and down keys, select the
+Delete command with the left and right arrow keys and press <em>Enter</em>
+or just press <code>D</code>.</p>
+<h3 id="making-a-new-partition">Making a new partition</h3>
+<p>To make a new partition, select the New command with the left and right arrow keys, and
+press <em>Enter</em>. You&rsquo;ll get the choice between a primary and a logical partition. If you
+want a logical partition, the program will automatically make an extended partition for
+you. Then you must choose the size of the partition (in MB). If you can&rsquo;t enter a value
+in MB, return to the main screen with the <code>Esc</code> key and select MB with the Units command.</p>
+<h3 id="set-the-type-of-a-partition">Set the type of a partition</h3>
+<p>To set the type of a partition, highlight
+the desired partition and select the <em>Type</em> command. You&rsquo;ll get a list of different types.
+Press <em>space</em>, and you&rsquo;ll get even more. Find what type you need, and enter the number at
+the prompt. Linux is <code>83</code>, Linux swap is <code>82</code>.</p>
+<h3 id="make-a-partition-bootable">Make a partition bootable</h3>
+<p>To be able to boot from a primary partition, you need to make it bootable. Highlight
+the partition and select the <em>Bootable</em> command.</p>
+<h3 id="write-the-result-to-disk-and-quit">Write the result to disk and quit</h3>
+<p>When you are content with the layout of the disk, select the <em>Write</em> command. The partition
+table will be written to disk. Remember that this will destroy all data on partitions you
+have deleted or changed. You should, therefore, be very sure that you want to do this before
+actually pressing the Return key.</p>
+<p>To exit the program, select the <em>Quit</em> command. The installer will
+then detect any partitions you have created and offer you the option to
+assign mount points to them.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://docs.salixos.org">
+	<img src="/images/salix-logo.svg" />
+</a>
+
+        </div>
+
+        <search><form action="/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.min.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1793056471" defer></script>
+        <script src="/js/search.js?1793056471" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/guide/" class=""><a class="padding" href="/guide/">Startup Guide</a><ul id="R-subsections-14563fd857ea1b2e693f8a15be24fadb" class="morespace collapsible-menu">
+          <li data-nav-id="/guide/about-this-manual/" class=""><a class="padding" href="/guide/about-this-manual/">About this Manual</a></li>
+          <li data-nav-id="/guide/salix-at-a-glance/" class=""><a class="padding" href="/guide/salix-at-a-glance/">Salix at a Glance</a></li>
+          <li data-nav-id="/guide/starting-up-salix/" class=""><a class="padding" href="/guide/starting-up-salix/">Starting up Salix</a></li>
+          <li data-nav-id="/guide/your-salix/" class=""><a class="padding" href="/guide/your-salix/">Your Salix</a></li>
+          <li data-nav-id="/guide/mini-walkthroughs/" class=""><a class="padding" href="/guide/mini-walkthroughs/">Mini Walkthroughs</a></li>
+          <li data-nav-id="/guide/support/" class=""><a class="padding" href="/guide/support/">Support</a></li></ul></li>
+          <li data-nav-id="/faq/" class=""><a class="padding" href="/faq/">FAQ</a><ul id="R-subsections-925d2998f3d6f88021b2fdbd47d69792" class="morespace collapsible-menu">
+          <li data-nav-id="/faq/3rd-party-repos/" class=""><a class="padding" href="/faq/3rd-party-repos/">3rd Party Repos</a></li>
+          <li data-nav-id="/faq/hostname/" class=""><a class="padding" href="/faq/hostname/">Change the Default Hostname</a></li>
+          <li data-nav-id="/faq/enable-root/" class=""><a class="padding" href="/faq/enable-root/">Enable the root User</a></li>
+          <li data-nav-id="/faq/flatpak/" class=""><a class="padding" href="/faq/flatpak/">Flatpak</a></li>
+          <li data-nav-id="/faq/icons-missing-in-xfce/" class=""><a class="padding" href="/faq/icons-missing-in-xfce/">Icons missing in Xfce</a></li>
+          <li data-nav-id="/faq/kernel-source/" class=""><a class="padding" href="/faq/kernel-source/">Install Kernel Source</a></li>
+          <li data-nav-id="/faq/install-txz-found-online/" class=""><a class="padding" href="/faq/install-txz-found-online/">Install txz/tgz File Found Online</a></li>
+          <li data-nav-id="/faq/extra-console/" class=""><a class="padding" href="/faq/extra-console/">Installer Extra Console</a></li>
+          <li data-nav-id="/faq/multimedia/" class=""><a class="padding" href="/faq/multimedia/">Multimedia</a></li>
+          <li data-nav-id="/faq/package-manager-wants-to-downgrade-packages/" class=""><a class="padding" href="/faq/package-manager-wants-to-downgrade-packages/">Package Manager Downgrades</a></li>
+          <li data-nav-id="/faq/package-update-notifications/" class=""><a class="padding" href="/faq/package-update-notifications/">Package Update Notifications</a></li>
+          <li data-nav-id="/faq/packages-different-from-slackware/" class=""><a class="padding" href="/faq/packages-different-from-slackware/">Packages Different from Slackware</a></li>
+          <li data-nav-id="/faq/space/" class=""><a class="padding" href="/faq/space/">Required Risk Space</a></li>
+          <li data-nav-id="/faq/salix-man-page/" class=""><a class="padding" href="/faq/salix-man-page/">Salix Man Page</a></li>
+          <li data-nav-id="/faq/salixlive-passwords/" class=""><a class="padding" href="/faq/salixlive-passwords/">SalixLive Passwords</a></li>
+          <li data-nav-id="/faq/slackpkg/" class=""><a class="padding" href="/faq/slackpkg/">slackpkg</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.18/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.18/">Upgrade to Xfce 4.18</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.20/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.20/">Upgrade to Xfce 4.20</a></li>
+          <li data-nav-id="/faq/why-is-salix-dormant/" class=""><a class="padding" href="/faq/why-is-salix-dormant/">Why is Salix dormant?</a></li>
+          <li data-nav-id="/faq/why-was-salix-created/" class=""><a class="padding" href="/faq/why-was-salix-created/">Why Was Salix Created?</a></li></ul></li>
+          <li data-nav-id="/user/" class="parent "><a class="padding" href="/user/">User Documentation</a><ul id="R-subsections-7b100e0e1dbc65a685f8274f22ab6cfc" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/" class="alwaysopen"><a class="padding" href="/user/upgrading/">Upgrading Between Releases</a><ul id="R-subsections-cc5b8bedb97a05882e36b33a7708685d" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/13.0-to-13.1/" class=""><a class="padding" href="/user/upgrading/13.0-to-13.1/">Upgrade Salix 13.0 to 13.1</a></li>
+          <li data-nav-id="/user/upgrading/13.1-to-13.37/" class=""><a class="padding" href="/user/upgrading/13.1-to-13.37/">Upgrade Salix 13.1 to 13.37</a></li>
+          <li data-nav-id="/user/upgrading/13.37-to-14.0/" class=""><a class="padding" href="/user/upgrading/13.37-to-14.0/">Upgrade Salix 13.37 to 14.0</a></li>
+          <li data-nav-id="/user/upgrading/14.0-to-14.1/" class=""><a class="padding" href="/user/upgrading/14.0-to-14.1/">Upgrade Salix 14.0 to 14.1</a></li>
+          <li data-nav-id="/user/upgrading/14.1-to-14.2/" class=""><a class="padding" href="/user/upgrading/14.1-to-14.2/">Upgrade Salix 14.1 to 14.2</a></li>
+          <li data-nav-id="/user/upgrading/14.2-to-15.0/" class=""><a class="padding" href="/user/upgrading/14.2-to-15.0/">Upgrade Salix 14.2 to 15.0</a></li></ul></li>
+          <li data-nav-id="/user/enable-horizontal-scrolling-3-button-mouse/" class=""><a class="padding" href="/user/enable-horizontal-scrolling-3-button-mouse/">3-button Mouse Horizontal Scrolling</a></li>
+          <li data-nav-id="/user/access-server-in-virtualbox/" class=""><a class="padding" href="/user/access-server-in-virtualbox/">Access Server in VirtualBox</a></li>
+          <li data-nav-id="/user/bluetooth/" class=""><a class="padding" href="/user/bluetooth/">Bluetooth</a></li>
+          <li data-nav-id="/user/boot-into-existing-installation/" class=""><a class="padding" href="/user/boot-into-existing-installation/">Boot Into Existing Installation</a></li>
+          <li data-nav-id="/user/broadcom/" class=""><a class="padding" href="/user/broadcom/">Broadcom WiFi</a></li>
+          <li data-nav-id="/user/configure-own-dns-server/" class=""><a class="padding" href="/user/configure-own-dns-server/">Configure Own DNS Server</a></li>
+          <li data-nav-id="/user/fix-unknown-filetypes-in-browser/" class=""><a class="padding" href="/user/fix-unknown-filetypes-in-browser/">Fix Unknown Filetypes in Browser</a></li>
+          <li data-nav-id="/user/greek-polytonic-on-openbox/" class=""><a class="padding" href="/user/greek-polytonic-on-openbox/">Greek Polytonic on Openbox</a></li>
+          <li data-nav-id="/user/how-to-beta-test/" class=""><a class="padding" href="/user/how-to-beta-test/">How to Beta Test</a></li>
+          <li data-nav-id="/user/install-different-kernel/" class=""><a class="padding" href="/user/install-different-kernel/">Install Different Kernel</a></li>
+          <li data-nav-id="/user/install-kernel-from-current/" class=""><a class="padding" href="/user/install-kernel-from-current/">Install Kernel From Current</a></li>
+          <li data-nav-id="/user/install-nvidia/" class=""><a class="padding" href="/user/install-nvidia/">Install NVIDIA Driver</a></li>
+          <li data-nav-id="/user/salixlive/" class=""><a class="padding" href="/user/salixlive/">Install SalixLive on USB</a></li>
+          <li data-nav-id="/user/install-guest-additions-in-virtualbox-guest/" class=""><a class="padding" href="/user/install-guest-additions-in-virtualbox-guest/">Install VirtualBox Guest Additions</a></li>
+          <li data-nav-id="/user/xorg-on-core/" class=""><a class="padding" href="/user/xorg-on-core/">Install Xorg on Core</a></li>
+          <li data-nav-id="/user/kernel-compilation/" class=""><a class="padding" href="/user/kernel-compilation/">Kernel Compilation</a></li>
+          <li data-nav-id="/user/lilo/" class=""><a class="padding" href="/user/lilo/">LILO</a></li>
+          <li data-nav-id="/user/multilib/" class=""><a class="padding" href="/user/multilib/">Multilib</a></li>
+          <li data-nav-id="/user/partitioning-with-cfdisk/" class="active"><a class="padding" href="/user/partitioning-with-cfdisk/">Partitioning with cfdisk</a></li>
+          <li data-nav-id="/user/rebuild-slackware-kernel/" class=""><a class="padding" href="/user/rebuild-slackware-kernel/">Rebuild Slackware Kernel</a></li>
+          <li data-nav-id="/user/remove-unnecessary-xorg-packages/" class=""><a class="padding" href="/user/remove-unnecessary-xorg-packages/">Remove Unnecessary Xorg Packages</a></li>
+          <li data-nav-id="/user/repository-mirrors/" class=""><a class="padding" href="/user/repository-mirrors/">Repository Mirrors</a></li>
+          <li data-nav-id="/user/restore-fluxbox-menu/" class=""><a class="padding" href="/user/restore-fluxbox-menu/">Restore Fluxbox menu</a></li>
+          <li data-nav-id="/user/sbopkg/" class=""><a class="padding" href="/user/sbopkg/">Sbopkg</a></li>
+          <li data-nav-id="/user/setup-alpine-with-gmail/" class=""><a class="padding" href="/user/setup-alpine-with-gmail/">Setup Alpine With Gmail</a></li>
+          <li data-nav-id="/user/setup-basic-firewall/" class=""><a class="padding" href="/user/setup-basic-firewall/">Setup Basic Firewall</a></li>
+          <li data-nav-id="/user/slackbuilds-in-salix-repos/" class=""><a class="padding" href="/user/slackbuilds-in-salix-repos/">Slackbuilds in Salix Repos</a></li>
+          <li data-nav-id="/user/ssh-without-password/" class=""><a class="padding" href="/user/ssh-without-password/">SSH Login Without Password</a></li>
+          <li data-nav-id="/user/start-wm-from-login-screen/" class=""><a class="padding" href="/user/start-wm-from-login-screen/">Start WM from Login Screen</a></li>
+          <li data-nav-id="/user/tune-ssd/" class=""><a class="padding" href="/user/tune-ssd/">Tune an SSD</a></li>
+          <li data-nav-id="/user/how-to-create-a-video-dvd-from-the-cli/" class=""><a class="padding" href="/user/how-to-create-a-video-dvd-from-the-cli/">Video DVD from the CLI</a></li>
+          <li data-nav-id="/user/virtualbox-host-devices/" class=""><a class="padding" href="/user/virtualbox-host-devices/">Virtualbox Access Host USB</a></li></ul></li>
+          <li data-nav-id="/dev/" class=""><a class="padding" href="/dev/">Developer Documentation</a><ul id="R-subsections-bde8a83577188605f0afbdffa38c9c13" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/" class="alwaysopen"><a class="padding" href="/dev/packaging/">Packaging Documentation</a><ul id="R-subsections-44df389f6ee6cba780e4599b7c3f6732" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/gconf/" class=""><a class="padding" href="/dev/packaging/gconf/">GConf and Packaging</a></li>
+          <li data-nav-id="/dev/packaging/git-svn-sources-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/git-svn-sources-with-slkbuild/">Git/SVN with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/mateconf/" class=""><a class="padding" href="/dev/packaging/mateconf/">MATEConf</a></li>
+          <li data-nav-id="/dev/packaging/mimetypes/" class=""><a class="padding" href="/dev/packaging/mimetypes/">Mimetypes</a></li>
+          <li data-nav-id="/dev/packaging/new-to-packaging/" class=""><a class="padding" href="/dev/packaging/new-to-packaging/">New to Packaging</a></li>
+          <li data-nav-id="/dev/packaging/package-categories/" class=""><a class="padding" href="/dev/packaging/package-categories/">Package Categories</a></li>
+          <li data-nav-id="/dev/packaging/packaging-rules/" class=""><a class="padding" href="/dev/packaging/packaging-rules/">Packaging rules</a></li>
+          <li data-nav-id="/dev/packaging/packaging-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/packaging-with-slkbuild/">Packaging with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/scrollkeeper/" class=""><a class="padding" href="/dev/packaging/scrollkeeper/">Scrollkeeper</a></li>
+          <li data-nav-id="/dev/packaging/uid-gid/" class=""><a class="padding" href="/dev/packaging/uid-gid/">slkbuild UIDs/GIDs</a></li>
+          <li data-nav-id="/dev/packaging/submitting-packages/" class=""><a class="padding" href="/dev/packaging/submitting-packages/">Submitting Packages</a></li></ul></li>
+          <li data-nav-id="/dev/create-public-mirror/" class=""><a class="padding" href="/dev/create-public-mirror/">How to Create a Public Salix Mirror</a></li>
+          <li data-nav-id="/dev/internationalize-shell-scripts/" class=""><a class="padding" href="/dev/internationalize-shell-scripts/">Internationalize Shell Scripts</a></li>
+          <li data-nav-id="/dev/work-with-sourceforge/" class=""><a class="padding" href="/dev/work-with-sourceforge/">Sourceforge</a></li>
+          <li data-nav-id="/dev/transifex/" class=""><a class="padding" href="/dev/transifex/">Transifex</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://salixos.org"><i class='fas fa-home'></i> Main website</a></li>
+            <li><a class="padding" href="https://forum.salixos.org"><i class='fas fa-question-circle'></i> Support Forum</a></li>
+            <li><a class="padding" href="https://blog.salixos.org"><i class='fas fa-blog'></i> Blog</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/user/partitioning-with-cfdisk/" lang="en-US" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-green" value="green" selected>Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter">
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1793056471" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1793056471" defer></script>
+    <script src="/js/theme.js?1793056471" defer></script>
+  </body>
+</html>

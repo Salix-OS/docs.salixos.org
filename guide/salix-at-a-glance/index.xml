@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salix at a Glance :: Salix Documentation</title>
+    <link>/guide/salix-at-a-glance/</link>
+    <description>Salix is a Linux Distribution based on Slackware that retains full backwards compatibility with its illustrious parent. However, while the KISS principle that Slackware adheres to refers to the viewpoint of system design, Salix also applies it to the viewpoint of the end user.&#xA;Salix Features One application per task rationale. Fully backwards compatible with Slackware. Optimised for desktop usage. With Salix Tools to assist system management. High-quality package repositories with dependency support.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/guide/salix-at-a-glance/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

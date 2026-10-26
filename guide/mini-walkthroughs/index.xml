@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salix Mini Walkthroughs :: Salix Documentation</title>
+    <link>/guide/mini-walkthroughs/</link>
+    <description>Working with the Command Line Interface This section deals with working in a console mode or with a terminal (such as Xfce terminal, xterm, konsole and so forth), and serves merely as a light introduction to the command line interface (CLI). The intended audience here is not seasoned travelers but new journeymen in the land of Linux, who are willing to discover more about what one can do with it. We will go through some examples in this section for you to follow, and hopefully by the end of this walkthrough, you will have no problem working with the “black screen”.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/guide/mini-walkthroughs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

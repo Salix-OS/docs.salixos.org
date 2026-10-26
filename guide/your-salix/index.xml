@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your Salix :: Salix Documentation</title>
+    <link>/guide/your-salix/</link>
+    <description>Package Management Installing applications (which roughly equates to “installing packages”) is a fundamental part of the Linux experience. A Linux distribution, such as Salix (or Slackware, on which it is based) could be said to consist of its repositories, where the software available for that distribution is kept. These packages have been compiled with the kernel and build tools provided by the distribution and tested to ensure they work together. Salix, like most distros (but not Slackware) provides full dependency management, which means that any items the package needs to run are installed too – and also that they are guaranteed to be available.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/guide/your-salix/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

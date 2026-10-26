@@ -85,13 +85,6 @@
       <description>If you have hardware that is not supported by the kernel that ships with Salix, you can compile your own. In most cases though, it is sufficient to install the latest kernel from the repositories. This page contains instructions for this straightforward procedure, and also for installing the kernel manually. In some cases, if there is a regression, meaning hardware that used to be supported doesn’t work any more, you might actually need to downgrade to an older kernel, but in most cases the solution will be a more recent one.</description>
     </item>
     <item>
-      <title>Install Salix from a USB stick</title>
-      <link>/user/install-from-usb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/user/install-from-usb/</guid>
-      <description>This page is about using the standard installation images, not the live images. If you want to install SalixLive on your USB drive, follow these instructions instead: How to install salix live on a USB key&#xA;dd This is the recommended method to create a Salix installation bootable USB stick. It will destroy all previous contents in it, so make sure you make a backup of any data you want to keep.</description>
-    </item>
-    <item>
       <title>Install Kernel From Current</title>
       <link>/user/install-kernel-from-current/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -110,7 +103,7 @@
       <link>/user/salixlive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/user/salixlive/</guid>
-      <description>These instructions are for LiveCD images of Salix only!!! If your iso image file does not have ’live’ in it’s name look at these instructions: Install-from-USB&#xA;It depends if you already have a Salix Live CD or simply an ISO image. Unetbootin version &lt; 575 is not supported and should not be used. Versions greater or equal to 575 have been reported to correctly deal with USB installation and persistence; however it does not seem to work for all users.</description>
+      <description>These instructions are for LiveCD images of Salix only!!! If your iso image file does not have ’live’ in it’s name look at these instructions: Installing from a Salix Installation USB&#xA;It depends if you already have a Salix Live CD or simply an ISO image. Unetbootin version &lt; 575 is not supported and should not be used. Versions greater or equal to 575 have been reported to correctly deal with USB installation and persistence; however it does not seem to work for all users.</description>
     </item>
     <item>
       <title>How to Install the Virtualbox Guest Additions in a Salix Guest</title>
@@ -146,6 +139,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/user/multilib/</guid>
       <description>Warning Multilib is not officially supported in Salix and it is not recommended. Follow these instructions at your own risk.&#xA;Original Source&#xA;In this guide we will discuss how to install multilib support for 32bit apps on a 64bit Salix. It is based on a ‘full’ version of Salix. The source guide is more in-depth, this guide is only the minimal steps required for Salix. If you are using a more recent Salix version, adjust ‘15.</description>
+    </item>
+    <item>
+      <title>Partitioning with cfdisk</title>
+      <link>/user/partitioning-with-cfdisk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/user/partitioning-with-cfdisk/</guid>
+      <description>cfdisk is the partitioning tool that the Salix installer runs to let you set up your partitions. On disks that use the GPT partitioning scheme, the installer runs cgdisk instead, which works mostly the same way. This page explains how disks and partitions are named and how to use each of the cfdisk commands. For a quick walkthrough of partitioning during installation, see the Salix Startup Guide.&#xA;Hard disk and partition names Hard disk names SCSI harddisks are named with sdx, where x is a harddisk letter.</description>
     </item>
     <item>
       <title>How to Rebuild the Slackware Kernel</title>

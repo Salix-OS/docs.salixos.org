@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.8">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="description" content="Package Management Installing applications (which roughly equates to “installing packages”) is a fundamental part of the Linux experience. A Linux distribution, such as Salix (or Slackware, on which it is based) could be said to consist of its repositories, where the software available for that distribution is kept. These packages have been compiled with the kernel and build tools provided by the distribution and tested to ensure they work together. Salix, like most distros (but not Slackware) provides full dependency management, which means that any items the package needs to run are installed too – and also that they are guaranteed to be available.">
+    <meta name="author" content="George Vlahavas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/og_image.png">
+    <meta name="twitter:title" content="Your Salix :: Salix Documentation">
+    <meta name="twitter:description" content="Package Management Installing applications (which roughly equates to “installing packages”) is a fundamental part of the Linux experience. A Linux distribution, such as Salix (or Slackware, on which it is based) could be said to consist of its repositories, where the software available for that distribution is kept. These packages have been compiled with the kernel and build tools provided by the distribution and tested to ensure they work together. Salix, like most distros (but not Slackware) provides full dependency management, which means that any items the package needs to run are installed too – and also that they are guaranteed to be available.">
+    <meta property="og:url" content="/guide/your-salix/">
+    <meta property="og:site_name" content="Salix Documentation">
+    <meta property="og:title" content="Your Salix :: Salix Documentation">
+    <meta property="og:description" content="Package Management Installing applications (which roughly equates to “installing packages”) is a fundamental part of the Linux experience. A Linux distribution, such as Salix (or Slackware, on which it is based) could be said to consist of its repositories, where the software available for that distribution is kept. These packages have been compiled with the kernel and build tools provided by the distribution and tested to ensure they work together. Salix, like most distros (but not Slackware) provides full dependency management, which means that any items the package needs to run are installed too – and also that they are guaranteed to be available.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/og_image.png">
+    <meta itemprop="name" content="Your Salix :: Salix Documentation">
+    <meta itemprop="description" content="Package Management Installing applications (which roughly equates to “installing packages”) is a fundamental part of the Linux experience. A Linux distribution, such as Salix (or Slackware, on which it is based) could be said to consist of its repositories, where the software available for that distribution is kept. These packages have been compiled with the kernel and build tools provided by the distribution and tested to ensure they work together. Salix, like most distros (but not Slackware) provides full dependency management, which means that any items the package needs to run are installed too – and also that they are guaranteed to be available.">
+    <meta itemprop="wordCount" content="2561">
+    <meta itemprop="image" content="/images/og_image.png">
+    <title>Your Salix :: Salix Documentation</title>
+    <link href="/guide/your-salix/index.xml" rel="alternate" type="application/rss+xml" title="Your Salix :: Salix Documentation">
+    <link href="/images/favicon.png?1793056471" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1793056471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1793056471" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1793056471" rel="stylesheet">
+    <link href="/css/auto-complete.css?1793056471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1793056471" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1793056471" rel="stylesheet">
+    <link href="/css/fonts.css?1793056471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1793056471" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1793056471" rel="stylesheet">
+    <link href="/css/theme-green.css?1793056471" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-learn.css?1793056471" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1793056471" rel="stylesheet">
+    <link href="/css/print.css?1793056471" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1793056471"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='';
+      window.index_js_url="/index.search.js?1793056471";
+      // variant stuff
+      window.variants && variants.init( [ 'green' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style>
+  .guide-chapter {
+    color: var(--INTERNAL-MAIN-TITLES-TEXT-color);
+    font-size: .9rem;
+    margin-bottom: 0;
+    opacity: .7;
+  }
+</style>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/guide/your-salix/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#package-management">Package Management</a>
+      <ul>
+        <li><a href="#Gslapt">Gslapt</a></li>
+      </ul>
+    </li>
+    <li><a href="#package-management-from-the-command-line">Package management from the command line</a>
+      <ul>
+        <li><a href="#slapt-get">slapt-get</a></li>
+        <li><a href="#slapt-src">slapt-src</a></li>
+        <li><a href="#spkg">spkg</a></li>
+        <li><a href="#flatpak">flatpak</a></li>
+        <li><a href="#roll-your-own">Making a Package from a Source File with SLKBUILD</a></li>
+        <li><a href="#upgrading-salix-to-a-newer-version">Upgrading Salix to a Newer Version</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuring-your-salix">Configuring Your Salix</a>
+      <ul>
+        <li><a href="#setting-up-an-internet-connection">Setting up an internet connection</a></li>
+        <li><a href="#setting-up-a-printer----is-this-still-up-to-date---">Setting up a Printer <!-- raw HTML omitted --></a></li>
+        <li><a href="#salix-codecs-installer">Salix Codecs Installer</a></li>
+      </ul>
+    </li>
+    <li><a href="#salix-tools">Salix Tools</a>
+      <ul>
+        <li><a href="#salixtools">What are the Salix Tools?</a></li>
+        <li><a href="#dotnew">Dotnew</a></li>
+        <li><a href="#guefi">GUEFI</a></li>
+        <li><a href="#hostnames">Hostnames</a></li>
+        <li><a href="#keyboard-layout">Keyboard Layout</a></li>
+        <li><a href="#rebuild-icon-cache">Rebuild Icon Cache</a></li>
+        <li><a href="#repository-mirror">Repository Mirror</a></li>
+        <li><a href="#system-clock">System Clock</a></li>
+        <li><a href="#system-language">System Language</a></li>
+        <li><a href="#system_services">System Services</a></li>
+        <li><a href="#user-profiles">User Profiles</a></li>
+        <li><a href="#salix-update-notifier">Salix-Update-Notifier</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/"><span itemprop="name">Salix Documentation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/guide/"><span itemprop="name">Startup Guide</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Your Salix</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+				
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/Salix-OS/docs.salixos.org/tree/master/content/guide/your-salix/_index.md" target="_blank" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/guide/starting-up-salix/" title="Starting up Salix (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/guide/mini-walkthroughs/" title="Salix Mini Walkthroughs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<p class="guide-chapter"><a href="/guide/">Salix Startup Guide</a> &middot; Chapter 4 of 6</p>
+
+<h1 id="your-salix">Your Salix</h1>
+
+<h2 id="package-management">Package Management</h2>
+<p>Installing applications (which roughly equates to &ldquo;installing packages&rdquo;) is a
+fundamental part of the Linux experience. A Linux distribution, such as Salix
+(or Slackware, on which it is based) could be said to consist of its repositories, where the software
+available for that distribution is kept. These packages have been
+compiled with the kernel and build tools provided by the distribution
+and tested to ensure they work together. Salix, like most distros (but
+not Slackware) provides full dependency management, which means that any
+items the package needs to run are installed too &ndash; and also that
+they are guaranteed to be available.</p>
+<p>Installing extra software is also possible through flatpaks and
+<a href="https://flathub.org" rel="external" target="_blank">Flathub</a>. Just navigate to the software you wish to
+install and press the &ldquo;Install&rdquo; button on the webpage. If your browser
+defaults to downloading the <code>.flatpakref</code> file instead of opening it, just
+open the Downloads folder and double-click it inside your file manager.</p>
+<p>You can also create and install your own packages, for which Salix
+provides a suite of console scripts, especially <code>slkbuild</code>; for
+further information, see the wiki pages on packaging. When installing
+packages from any other source, proceed with caution.</p>
+<p><a href="https://slackbuilds.org" rel="external" target="_blank">slackbuilds.org</a> (SBo) provides build scripts for further
+software not present in the repositories. This means the package will be
+built on your system before being installed. Salix provides a command-lie tool,
+<em>slapt-src</em>, for this purpose. But it has limited dependency management, as
+not dependencies are listed at SBo. Therefore the build
+is not guaranteed to be successful and some manual tinkering may be needed.
+Unlike the software provided in the repositories, these scripts are not<br>
+maintained by either Salix or Slackware but by individual users, and as
+such are not the responsibility of either distribution, although help may
+be found on the forum. If the build fails, the last ten lines or so of the
+output usually provide an indication of the reason. Most commonly, this is
+a missing dependency, which may be a build dependency (needed to compile
+the package, but not to run it). Common packages that are required by
+several SlackBuilds, but not included as part of a standard Salix
+installation are <em>cmake</em> and <em>linuxdoc-tools</em>, so first make sure
+you have these installed if you encounter any problems.
+If you don&rsquo;t mind using a bit of extra space on your hard drive, then
+most of these problems could disappear by installing the <em>slackware/d</em>
+and <em>slackware/l</em> package sets:</p>
+<pre><code>sudo slapt-get --install-set slackware/d --install-set slackware/l
+</code></pre>
+<p>However, you shouldn&rsquo;t really need to revert to SBo often, if at all.
+The Salix repositories offer thousands of packages and even more are
+available through <a href="https://flathub.org" rel="external" target="_blank">Flathub</a>.</p>
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Reminder!</div>
+  <div class="box-content">
+
+<p>You need to have superuser privileges in order to install or upgrade
+packages.</p>
+</div>
+</div>
+<h3 id="Gslapt">Gslapt</h3>
+<p><em>Gslapt</em> is the GUI version of <em>slapt-get</em>. It allows one to
+search Slackware/Salix mirrors for packages.
+Before use you should first click on the <strong>Update</strong> button to ensure that
+the latest updates from the software repositories are known to <em>Gslapt</em>.
+The search field is there for you to search for a particular package.
+You can highlight with your left click and choose to
+install/uninstall/reinstall packages with a right click. <em>Gslapt</em> detects
+dependencies and will install all the dependency files for a package
+automatically. Installation, uninstallation or reinstallation of
+packages (whichever applies) will take
+place once you click on the <strong>Execute</strong> button. You can blacklist
+packages by adding their names to the blacklist found in &ldquo;Preferences&rdquo;
+under &ldquo;Edit&rdquo;.</p>
+<p>On first installing Salix, you should also do a general package upgrade
+to ensure your installed system is up to date with the repositories &ndash; click on
+&ldquo;Mark all upgrades&rdquo;, then &ldquo;Execute&rdquo;.</p>
+<p><a href="#R-image-0e61fe56afd588d48abed8942fc6ca78" class="lightbox-link"><img alt="gslapt.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gslapt.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e61fe56afd588d48abed8942fc6ca78"><img alt="gslapt.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gslapt.png"></a></p>
+<h2 id="package-management-from-the-command-line">Package management from the command line</h2>
+<p><em>slapt-get</em> and <em>slapt-src</em> are the basic command-line tools used for installing
+packages. <em>Gslapt</em> provides a GUI for <em>slapt-get</em>. This section describes their use
+from the command line, along with the <em>flatpak</em> command line tool which is used to
+install software that comes in flatpaks.</p>
+<h3 id="slapt-get">slapt-get</h3>
+<p><a href="http://software.jaos.org/git/slapt-get/plain/FAQ.html" rel="external" target="_blank">slapt-get</a> is a
+command line tool for Slackware package management. It allows one to
+search Slackware/Salix mirrors for packages,
+compare them with installed packages, install new packages, or
+upgrade all installed packages.
+To use the application, open a Terminal window and first issue the
+command</p>
+<pre><code>sudo slapt-get -u
+</code></pre>
+<p>in order to update the package database on your
+computer. Then</p>
+<pre><code>slapt-get -l
+</code></pre>
+<p>to list all the available packages,</p>
+<pre><code>slapt-get --search [package name]
+</code></pre>
+<p>to search for a package, and</p>
+<pre><code>sudo slapt-get -i [package name]
+</code></pre>
+<p>to install a package. For more
+command line instructions, please refer to</p>
+<pre><code>slapt-get --help
+</code></pre>
+<p>Here is a little exercise for you. Try installing <em>w3m</em> which is a
+terminal based web browser, by using slapt-get.</p>
+<h3 id="slapt-src">slapt-src</h3>
+<p><em>slapt-src</em> is a command line tool that makes the process of downloading
+and building software packages from <a href="https://slackbuilds.org" rel="external" target="_blank">SBo</a> simple and easy.
+<a href="https://slackbuilds.org" rel="external" target="_blank">SBo</a> keeps a large collection of build scripts for extra
+packages that are still not available from the official Salix /
+Slackware repositories. Thousands of extra packages are now available to
+users through this tool.</p>
+<p>To use the application, type in</p>
+<pre><code>sudo slapt-src -u
+</code></pre>
+<p>first to update on
+your computer the list of build scripts available from Slackbuild.org.</p>
+<pre><code>slapt-src -l
+</code></pre>
+<p>shows you a list of available packages, and as in
+slapt-get,</p>
+<pre><code>sudo slapt-src -i [package name]
+</code></pre>
+<p>will build and install a package. For
+more command line instructions, please refer to</p>
+<pre><code>slapt-src --help
+</code></pre>
+<p>When a package is available both in the Salix repositories and from SBo, the
+Salix package is preferred. See
+<a href="/user/slackbuilds-in-salix-repos/">Slackbuilds in Salix Repositories</a> for
+why, and for how to build the SBo version instead.</p>
+<h3 id="spkg">spkg</h3>
+<p>If you would like to install or upgrade a package that you have manually
+downloaded or have built yourself, you can use <em>spkg</em>. Salix packages
+(just as Slackware packages) have filenames that end with the <em>.tgz</em>,
+or <em>.txz</em> extensions (there are also <em>.tlz</em> and <em>.tbz</em> but they
+are very rarely used). To either install a new package or upgrade a
+package you can use the following command:</p>
+<pre><code>sudo spkg [exact path to package]
+</code></pre>
+<p>Note that the name of the package must be exact to the last character in
+the extension, e.g. <em>mozilla-firefox-24.3.0esr-x86_64-2gv.txz</em>
+(command line auto-complete using the TAB key helps in this respect).
+Removing a package is somewhat similar. You can remove a package by
+issuing</p>
+<pre><code>sudo spkg -d [software name]
+</code></pre>
+<p>e.g. <code>sudo spkg -d mozilla-firefox</code></p>
+<p>Be careful with package files you find online: not every <em>.txz</em> or <em>.tgz</em>
+file is a package, and packages built for other systems can break yours. See
+<a href="/faq/install-txz-found-online/">How Do I Install a txz/tgz File I Found Online?</a>
+for how to check.</p>
+
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-circle"></i> Blacklisting packages</div>
+  <div class="box-content">
+
+<p>If you are replacing a package that is available in the repositories,
+you will need to blacklist this package
+in <em>/etc/slapt-get/slapt-getrc</em> to prevent it from being &ldquo;downgraded&rdquo; when
+you next carry out a general package upgrade. (See above for how to do
+this in <a href="/guide/your-salix/#Gslapt">Gslapt</a>).</p>
+</div>
+</div>
+<h3 id="flatpak">flatpak</h3>
+<p>Software that is installed using flatpaks is managed separately from the main
+package management tools described earlier.</p>
+<p>A popular source for flatpaks is <a href="https://flathub.org" rel="external" target="_blank">Flathub</a>. Salix comes
+with a GUI helper tool, <code>flatpakref-installer</code> to install software that way.</p>
+<p>You may use the <code>flatpak</code> command like tool to manage your flatpak software.</p>
+<p>To install a flatpak you can run a command like the following:</p>
+<pre><code>flatpak install flathub org.kde.krita
+</code></pre>
+<p>You will find this command in the respective webpage of the software you&rsquo;d like
+to install in Flathub.</p>
+<p>To run software that is installed through flatpaks your run something like this:</p>
+<pre><code>flatpak run org.kde.krita
+</code></pre>
+<p>This command is also available in the software&rsquo;s page in Flathub. But a menu entry
+is usually added, so you don&rsquo;t have to remember that.</p>
+<p>To get a list of installed flatpaks, you may run:</p>
+<pre><code>flatpak list
+</code></pre>
+<p>To update all of your flatpaks to their latest version, you can run:</p>
+<pre><code>flatpak update
+</code></pre>
+<p>Uninstalling a flatpak is possible by:</p>
+<pre><code>flatpak uninstall org.kde.krita
+</code></pre>
+<p>You may find more information about the <code>flatpak</code> command by running:</p>
+<pre><code>man flatpak
+</code></pre>
+<p>or</p>
+<pre><code>flatpak --help
+</code></pre>
+<h3 id="roll-your-own">Making a Package from a Source File with SLKBUILD</h3>
+<p>Installing software from a source file is in most cases not difficult.
+You can compile a lot of software generally with the following
+commands.</p>
+<ul>
+<li>unpack a source file, move inside the folder.</li>
+<li>type in <code>./configure</code> on the terminal.</li>
+<li>type in <code>make</code>.</li>
+<li>type in <code>sudo make install</code>.</li>
+<li>type your password.</li>
+</ul>
+<p>Make sure to read accompanying files such as &ldquo;README&rdquo;, &ldquo;INSTALL&rdquo; and so
+on for installation instructions before compiling. These files may list
+dependency packages which you need to install prior to the
+configuration.</p>
+<pre><code>./configure --help
+</code></pre>
+<p>or</p>
+<pre><code>./configure --help=short output
+</code></pre>
+<p>should also help you with some configuration options.</p>
+<p>Although you should manage to install the software after the final
+command, it is essentially <strong>untracked</strong>, and neither Gslapt nor slapt-get
+can see that the software is installed. A better way is to create a
+Salix package using SLKBUILD, which is a build script you can prepare
+before issuing</p>
+<pre><code>fakeroot slkbuild -X
+</code></pre>
+<p>to create a Salix compatible package which can then be installed with <a href="/guide/your-salix/#spkg">spkg</a>
+(the <em>fakeroot</em> package should also be installed).
+For more on SLKBUILD, please consult
+<a href="/dev/packaging/packaging-with-slkbuild/">SLKBUILD</a>
+and <a href="/dev/packaging/new-to-packaging/">New to Packaging</a>.</p>
+<h3 id="upgrading-salix-to-a-newer-version">Upgrading Salix to a Newer Version</h3>
+<p>When a new Salix release comes out, you can upgrade your existing installation
+by following the instructions in
+<a href="/user/upgrading/">Upgrading Between Releases</a>.</p>
+<h2 id="configuring-your-salix">Configuring Your Salix</h2>
+<h3 id="setting-up-an-internet-connection">Setting up an internet connection</h3>
+<p>Network connections are managed by NetworkManager in Salix. It is an open source
+wired and wireless network manager for Linux which aims to provide a
+simple interface to connect to networks with a wide variety of
+settings. You will find NetworkManager in your system tray.</p>
+<p><a href="#R-image-50342cb4fb5f69e115d3019ceb3383a9" class="lightbox-link"><img alt="networkmanager.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/networkmanager.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-50342cb4fb5f69e115d3019ceb3383a9"><img alt="networkmanager.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/networkmanager.png"></a></p>
+<p>It will connect to wired (Ethernet only, no PPPoE/DSL support yet) and
+wireless networks.</p>
+<p>Note that <strong>networkmanager</strong> must be activated in the
+<a href="/guide/your-salix/#system_services">system services</a> in order to use it..</p>
+<h3 id="setting-up-a-printer----is-this-still-up-to-date---">Setting up a Printer <!-- raw HTML omitted --></h3>
+<p>After writing a document, transferring photos from your camera, or
+creating your own images with GIMP, you would probably like to print
+them out with your printer. To do this, you need to have a printer
+already installed on your system. &ldquo;<strong>Manage Printing</strong>&rdquo;, which is found
+under &ldquo;System&rdquo; in the main application menu, handles the installation
+and general management of your printers. (Ensure that &ldquo;CUPS&rdquo; is enabled
+in the <a href="/guide/your-salix/#system_services">system services</a>, or Manage Printing
+will not start properly).</p>
+<p>If you are buying a new printer, it is recommended to check the
+availability of Linux drivers beforehand from the
+<a href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/databaseintro" rel="external" target="_blank">Open Printing database</a>
+(or search on the Internet). Some companies offer printer drivers for Linux,
+but this is less common than desired and could involve a
+lengthy installation process. For most Linux friendly printers,
+you have to install drivers such as gutenprint or HPIJS, both of
+which are available from the repositories.</p>
+<ul>
+<li>Select &ldquo;Add Printers and Classes&rdquo;.</li>
+<li>Under &ldquo;Printers&rdquo;, select &ldquo;Add Printer&rdquo;.</li>
+<li>Enter &ldquo;root&rdquo; as a username and your superuser password.</li>
+<li>Select your printer description and choose if you would like to share the printer.</li>
+<li>Select the correct driver from the list (Model) - see an example
+below. This is the important part. Or if you have a
+<a href="http://en.wikipedia.org/wiki/PostScript_Printer_Description" rel="external" target="_blank">PPD</a> file
+instead, you can load it here.</li>
+</ul>
+<p><a href="#R-image-8c6b2d49ef6d19cdb8467adb30111b0f" class="lightbox-link"><img alt="addprinter.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/addprinter.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c6b2d49ef6d19cdb8467adb30111b0f"><img alt="addprinter.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/addprinter.png"></a></p>
+<ul>
+<li>Select Add Printer, and finish the process by configuring details of the printer.</li>
+<li>Now the printer should be usable on your computer.</li>
+</ul>
+<h3 id="salix-codecs-installer">Salix Codecs Installer</h3>
+<p>Salix only includes, by default, software that is legally free to use
+in any country, and that means that proprietary media formats are not
+configured &ldquo;out of the box&rdquo;. Most commercial DVDs are encrypted, and
+that means that you need to install certain codecs to view them. This is
+legally permitted in most countries but not all. Please check and obtain
+legal advice if you are unsure whether a particular legal restriction
+applies to a media format or packages you wish to use in your
+country.</p>
+<p>Salix codecs installer can be found under &ldquo;Multimedia&rdquo; in the main
+application menu, and will conveniently install those codecs which
+enable the viewing of the vast majority of commercial media formats.
+You can also run it from a terminal:</p>
+<pre><code>sudo salix-codecs-installer
+</code></pre>
+<p><a href="#R-image-4e4426c46bf579df80022d9f4fee95da" class="lightbox-link"><img alt="salix-codecs-installer.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/salix-codecs-installer.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e4426c46bf579df80022d9f4fee95da"><img alt="salix-codecs-installer.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/salix-codecs-installer.png"></a></p>
+<h2 id="salix-tools">Salix Tools</h2>
+<h3 id="salixtools">What are the Salix Tools?</h3>
+<p>Salix tools are a collection of utilities that are designed to manage
+every aspect of Salix configuration easily. You can find these tools
+under the System section of the application menu. Of course, system
+management in Salix can also be done the usual
+(<a href="http://www.slackbook.org/html/book.html" rel="external" target="_blank">manual</a>)
+Slackware way.</p>
+<p><a href="#R-image-eb6ca5f87fb166e80814a350ceeffd99" class="lightbox-link"><img alt="salixtools-gtk.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/salixtools-gtk.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb6ca5f87fb166e80814a350ceeffd99"><img alt="salixtools-gtk.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/salixtools-gtk.png"></a></p>
+<p>Please note that most Salix tools have an ncurses
+counterpart which can be used in a Linux terminal or console.</p>
+<h3 id="dotnew">Dotnew</h3>
+<p>Dotnew manages the system configuration upgrades used by Slackware. It
+will display a possible course of action for each new configuration file
+found in the system.</p>
+<p><a href="#R-image-5fae78b258fb84e06e95f6164daa8228" class="lightbox-link"><img alt="dotnew.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/dotnew.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5fae78b258fb84e06e95f6164daa8228"><img alt="dotnew.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/dotnew.png"></a></p>
+<p>To execute this utility in a terminal, simply type</p>
+<pre><code>sudo dotnew
+</code></pre>
+<h3 id="guefi">GUEFI</h3>
+<p>GUEFI is a Python/GTK+3 application that acts as a frontend for efibootmgr.
+It provides an easy to use interface for managing UEFI boot options.</p>
+<p>Using GUEFI you can:</p>
+<ul>
+<li>Create a new UEFI boot entry</li>
+<li>Edit a UEFI boot entry</li>
+<li>Delete a UEFI boot entry</li>
+<li>Change the UEFI boot order</li>
+<li>Enable/disable a UEFI boot entry</li>
+<li>Configure a UEFI boot entry to be the default during the next boot only</li>
+</ul>
+<p><a href="#R-image-08d780504a1da19f79cc2a700200b782" class="lightbox-link"><img alt="guefi.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/guefi.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08d780504a1da19f79cc2a700200b782"><img alt="guefi.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/guefi.png"></a></p>
+<h3 id="hostnames">Hostnames</h3>
+<p>Hostnames manages the host names used by your computer. This tool
+facilitates defining/overviewing host names used while setting up your
+machine as a server.</p>
+<p><a href="#R-image-c42e2c2b35c93c910425167f25620daf" class="lightbox-link"><img alt="gtkhostsetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtkhostsetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c42e2c2b35c93c910425167f25620daf"><img alt="gtkhostsetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtkhostsetup.png"></a></p>
+<h3 id="keyboard-layout">Keyboard Layout</h3>
+<p>This utility will configure the keyboard layout being used both in
+the graphical and non-graphical environments. Modifications are applied
+instantly.</p>
+<p><a href="#R-image-26275c6cded1d6e8fcf93c0aa872b1c8" class="lightbox-link"><img alt="gtkkeyboardsetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtkkeyboardsetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-26275c6cded1d6e8fcf93c0aa872b1c8"><img alt="gtkkeyboardsetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtkkeyboardsetup.png"></a></p>
+<p>Note that if you would like to activate Ibus during the start
+up, you can do so by ticking the optional box.</p>
+<p>To execute this utility in a terminal, simply type</p>
+<pre><code>sudo keyboardsetup
+</code></pre>
+<h3 id="rebuild-icon-cache">Rebuild Icon Cache</h3>
+<p>As the name indicates, Rebuild Icon Cache reconnects some icons that may
+have become lost after updating your system/installing some new
+program and makes them appear again in the application menu.</p>
+<h3 id="repository-mirror">Repository Mirror</h3>
+<p>This tool can be used to to select your preferred repository mirror. The
+country code where each mirror is located is shown next to each entry. You
+should usually choose a mirror that is closer to you geographically, as they
+will be usually faster. Of course you can also use this tool when your
+preferred mirror goes temporarily offline to switch to another.</p>
+<p><a href="#R-image-94c444d05b62d8274fa515d40d2faccc" class="lightbox-link"><img alt="gtkreposetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtkreposetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94c444d05b62d8274fa515d40d2faccc"><img alt="gtkreposetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtkreposetup.png"></a></p>
+<p>To execute this utility in a terminal, simply type</p>
+<pre><code>sudo reposetup
+</code></pre>
+<p>If you prefer to edit the mirror settings by hand, the full list of mirrors is
+available in <a href="/user/repository-mirrors/">Repository Mirrors</a>.</p>
+<h3 id="system-clock">System Clock</h3>
+<p>This utility will configure your computer clock.
+To execute it in a terminal, simply type</p>
+<pre><code>sudo clocksetup
+</code></pre>
+<p><a href="#R-image-a2a617e10193186daac2619a96879df7" class="lightbox-link"><img alt="gtkclocksetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtkclocksetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2a617e10193186daac2619a96879df7"><img alt="gtkclocksetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtkclocksetup.png"></a></p>
+<h3 id="system-language">System Language</h3>
+<p>This utility will configure the language of your system.
+To execute it in a terminal, simply type</p>
+<pre><code>sudo localesetup
+</code></pre>
+<p><a href="#R-image-add67cf5be2a77253362e9a1b4d67891" class="lightbox-link"><img alt="gtklocalesetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtklocalesetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-add67cf5be2a77253362e9a1b4d67891"><img alt="gtklocalesetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtklocalesetup.png"></a></p>
+<h3 id="system_services">System Services</h3>
+<p>Here you will be able to select the services that should or shouldn&rsquo;t be
+activated in the background when your system starts.</p>
+<p>All your modifications will be applied instantly if you press the OK
+button and will not necessitate a reboot.</p>
+<p>To execute this utility in a terminal, simply type</p>
+<pre><code>sudo servicesetup
+</code></pre>
+<p><a href="#R-image-b0eb2349d1f2ed965feb4f957904f47a" class="lightbox-link"><img alt="gtkservicesetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtkservicesetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0eb2349d1f2ed965feb4f957904f47a"><img alt="gtkservicesetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtkservicesetup.png"></a></p>
+<h3 id="user-profiles">User Profiles</h3>
+<p>In Unix/Linux, all users and groups of users are given certain
+<a href="http://en.wikibooks.org/wiki/UNIX_Computing_Security/Access_authorization" rel="external" target="_blank">permissions and access rights</a>
+to some part of the system in order to control their ability to access
+and change it.</p>
+<p>This utility manages the creation, deletion and properties of all the
+system users and groups of users.</p>
+<!-- raw HTML omitted -->
+<p><a href="#R-image-2e4476da162e836639a84a5837a4f836" class="lightbox-link"><img alt="gtkusersetup.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/gtkusersetup.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e4476da162e836639a84a5837a4f836"><img alt="gtkusersetup.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/gtkusersetup.png"></a></p>
+<p>To execute it in a terminal, simply type</p>
+<pre><code>sudo usersetup
+</code></pre>
+<h3 id="salix-update-notifier">Salix-Update-Notifier</h3>
+<p>Salix update notifier is a tool that periodically checks for available
+package updates and informs the user about them with the display of a
+non-intrusive tray icon, which can be used to launch the upgrade process
+with Gslapt.</p>
+<p><a href="#R-image-23132037c9bdfd5fde2a2b439f34f55f" class="lightbox-link"><img alt="salix-update-notifier.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/guide/your-salix/salix-update-notifier.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23132037c9bdfd5fde2a2b439f34f55f"><img alt="salix-update-notifier.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/guide/your-salix/salix-update-notifier.png"></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://docs.salixos.org">
+	<img src="/images/salix-logo.svg" />
+</a>
+
+        </div>
+
+        <search><form action="/search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.min.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1793056471" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1793056471" defer></script>
+        <script src="/js/search.js?1793056471" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/guide/" class="parent "><a class="padding" href="/guide/">Startup Guide</a><ul id="R-subsections-14563fd857ea1b2e693f8a15be24fadb" class="morespace collapsible-menu">
+          <li data-nav-id="/guide/about-this-manual/" class=""><a class="padding" href="/guide/about-this-manual/">About this Manual</a></li>
+          <li data-nav-id="/guide/salix-at-a-glance/" class=""><a class="padding" href="/guide/salix-at-a-glance/">Salix at a Glance</a></li>
+          <li data-nav-id="/guide/starting-up-salix/" class=""><a class="padding" href="/guide/starting-up-salix/">Starting up Salix</a></li>
+          <li data-nav-id="/guide/your-salix/" class="active"><a class="padding" href="/guide/your-salix/">Your Salix</a></li>
+          <li data-nav-id="/guide/mini-walkthroughs/" class=""><a class="padding" href="/guide/mini-walkthroughs/">Mini Walkthroughs</a></li>
+          <li data-nav-id="/guide/support/" class=""><a class="padding" href="/guide/support/">Support</a></li></ul></li>
+          <li data-nav-id="/faq/" class=""><a class="padding" href="/faq/">FAQ</a><ul id="R-subsections-925d2998f3d6f88021b2fdbd47d69792" class="morespace collapsible-menu">
+          <li data-nav-id="/faq/3rd-party-repos/" class=""><a class="padding" href="/faq/3rd-party-repos/">3rd Party Repos</a></li>
+          <li data-nav-id="/faq/hostname/" class=""><a class="padding" href="/faq/hostname/">Change the Default Hostname</a></li>
+          <li data-nav-id="/faq/enable-root/" class=""><a class="padding" href="/faq/enable-root/">Enable the root User</a></li>
+          <li data-nav-id="/faq/flatpak/" class=""><a class="padding" href="/faq/flatpak/">Flatpak</a></li>
+          <li data-nav-id="/faq/icons-missing-in-xfce/" class=""><a class="padding" href="/faq/icons-missing-in-xfce/">Icons missing in Xfce</a></li>
+          <li data-nav-id="/faq/kernel-source/" class=""><a class="padding" href="/faq/kernel-source/">Install Kernel Source</a></li>
+          <li data-nav-id="/faq/install-txz-found-online/" class=""><a class="padding" href="/faq/install-txz-found-online/">Install txz/tgz File Found Online</a></li>
+          <li data-nav-id="/faq/extra-console/" class=""><a class="padding" href="/faq/extra-console/">Installer Extra Console</a></li>
+          <li data-nav-id="/faq/multimedia/" class=""><a class="padding" href="/faq/multimedia/">Multimedia</a></li>
+          <li data-nav-id="/faq/package-manager-wants-to-downgrade-packages/" class=""><a class="padding" href="/faq/package-manager-wants-to-downgrade-packages/">Package Manager Downgrades</a></li>
+          <li data-nav-id="/faq/package-update-notifications/" class=""><a class="padding" href="/faq/package-update-notifications/">Package Update Notifications</a></li>
+          <li data-nav-id="/faq/packages-different-from-slackware/" class=""><a class="padding" href="/faq/packages-different-from-slackware/">Packages Different from Slackware</a></li>
+          <li data-nav-id="/faq/space/" class=""><a class="padding" href="/faq/space/">Required Risk Space</a></li>
+          <li data-nav-id="/faq/salix-man-page/" class=""><a class="padding" href="/faq/salix-man-page/">Salix Man Page</a></li>
+          <li data-nav-id="/faq/salixlive-passwords/" class=""><a class="padding" href="/faq/salixlive-passwords/">SalixLive Passwords</a></li>
+          <li data-nav-id="/faq/slackpkg/" class=""><a class="padding" href="/faq/slackpkg/">slackpkg</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.18/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.18/">Upgrade to Xfce 4.18</a></li>
+          <li data-nav-id="/faq/upgrade-xfce-to-4.20/" class=""><a class="padding" href="/faq/upgrade-xfce-to-4.20/">Upgrade to Xfce 4.20</a></li>
+          <li data-nav-id="/faq/why-is-salix-dormant/" class=""><a class="padding" href="/faq/why-is-salix-dormant/">Why is Salix dormant?</a></li>
+          <li data-nav-id="/faq/why-was-salix-created/" class=""><a class="padding" href="/faq/why-was-salix-created/">Why Was Salix Created?</a></li></ul></li>
+          <li data-nav-id="/user/" class=""><a class="padding" href="/user/">User Documentation</a><ul id="R-subsections-7b100e0e1dbc65a685f8274f22ab6cfc" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/" class="alwaysopen"><a class="padding" href="/user/upgrading/">Upgrading Between Releases</a><ul id="R-subsections-cc5b8bedb97a05882e36b33a7708685d" class="morespace collapsible-menu">
+          <li data-nav-id="/user/upgrading/13.0-to-13.1/" class=""><a class="padding" href="/user/upgrading/13.0-to-13.1/">Upgrade Salix 13.0 to 13.1</a></li>
+          <li data-nav-id="/user/upgrading/13.1-to-13.37/" class=""><a class="padding" href="/user/upgrading/13.1-to-13.37/">Upgrade Salix 13.1 to 13.37</a></li>
+          <li data-nav-id="/user/upgrading/13.37-to-14.0/" class=""><a class="padding" href="/user/upgrading/13.37-to-14.0/">Upgrade Salix 13.37 to 14.0</a></li>
+          <li data-nav-id="/user/upgrading/14.0-to-14.1/" class=""><a class="padding" href="/user/upgrading/14.0-to-14.1/">Upgrade Salix 14.0 to 14.1</a></li>
+          <li data-nav-id="/user/upgrading/14.1-to-14.2/" class=""><a class="padding" href="/user/upgrading/14.1-to-14.2/">Upgrade Salix 14.1 to 14.2</a></li>
+          <li data-nav-id="/user/upgrading/14.2-to-15.0/" class=""><a class="padding" href="/user/upgrading/14.2-to-15.0/">Upgrade Salix 14.2 to 15.0</a></li></ul></li>
+          <li data-nav-id="/user/enable-horizontal-scrolling-3-button-mouse/" class=""><a class="padding" href="/user/enable-horizontal-scrolling-3-button-mouse/">3-button Mouse Horizontal Scrolling</a></li>
+          <li data-nav-id="/user/access-server-in-virtualbox/" class=""><a class="padding" href="/user/access-server-in-virtualbox/">Access Server in VirtualBox</a></li>
+          <li data-nav-id="/user/bluetooth/" class=""><a class="padding" href="/user/bluetooth/">Bluetooth</a></li>
+          <li data-nav-id="/user/boot-into-existing-installation/" class=""><a class="padding" href="/user/boot-into-existing-installation/">Boot Into Existing Installation</a></li>
+          <li data-nav-id="/user/broadcom/" class=""><a class="padding" href="/user/broadcom/">Broadcom WiFi</a></li>
+          <li data-nav-id="/user/configure-own-dns-server/" class=""><a class="padding" href="/user/configure-own-dns-server/">Configure Own DNS Server</a></li>
+          <li data-nav-id="/user/fix-unknown-filetypes-in-browser/" class=""><a class="padding" href="/user/fix-unknown-filetypes-in-browser/">Fix Unknown Filetypes in Browser</a></li>
+          <li data-nav-id="/user/greek-polytonic-on-openbox/" class=""><a class="padding" href="/user/greek-polytonic-on-openbox/">Greek Polytonic on Openbox</a></li>
+          <li data-nav-id="/user/how-to-beta-test/" class=""><a class="padding" href="/user/how-to-beta-test/">How to Beta Test</a></li>
+          <li data-nav-id="/user/install-different-kernel/" class=""><a class="padding" href="/user/install-different-kernel/">Install Different Kernel</a></li>
+          <li data-nav-id="/user/install-kernel-from-current/" class=""><a class="padding" href="/user/install-kernel-from-current/">Install Kernel From Current</a></li>
+          <li data-nav-id="/user/install-nvidia/" class=""><a class="padding" href="/user/install-nvidia/">Install NVIDIA Driver</a></li>
+          <li data-nav-id="/user/salixlive/" class=""><a class="padding" href="/user/salixlive/">Install SalixLive on USB</a></li>
+          <li data-nav-id="/user/install-guest-additions-in-virtualbox-guest/" class=""><a class="padding" href="/user/install-guest-additions-in-virtualbox-guest/">Install VirtualBox Guest Additions</a></li>
+          <li data-nav-id="/user/xorg-on-core/" class=""><a class="padding" href="/user/xorg-on-core/">Install Xorg on Core</a></li>
+          <li data-nav-id="/user/kernel-compilation/" class=""><a class="padding" href="/user/kernel-compilation/">Kernel Compilation</a></li>
+          <li data-nav-id="/user/lilo/" class=""><a class="padding" href="/user/lilo/">LILO</a></li>
+          <li data-nav-id="/user/multilib/" class=""><a class="padding" href="/user/multilib/">Multilib</a></li>
+          <li data-nav-id="/user/partitioning-with-cfdisk/" class=""><a class="padding" href="/user/partitioning-with-cfdisk/">Partitioning with cfdisk</a></li>
+          <li data-nav-id="/user/rebuild-slackware-kernel/" class=""><a class="padding" href="/user/rebuild-slackware-kernel/">Rebuild Slackware Kernel</a></li>
+          <li data-nav-id="/user/remove-unnecessary-xorg-packages/" class=""><a class="padding" href="/user/remove-unnecessary-xorg-packages/">Remove Unnecessary Xorg Packages</a></li>
+          <li data-nav-id="/user/repository-mirrors/" class=""><a class="padding" href="/user/repository-mirrors/">Repository Mirrors</a></li>
+          <li data-nav-id="/user/restore-fluxbox-menu/" class=""><a class="padding" href="/user/restore-fluxbox-menu/">Restore Fluxbox menu</a></li>
+          <li data-nav-id="/user/sbopkg/" class=""><a class="padding" href="/user/sbopkg/">Sbopkg</a></li>
+          <li data-nav-id="/user/setup-alpine-with-gmail/" class=""><a class="padding" href="/user/setup-alpine-with-gmail/">Setup Alpine With Gmail</a></li>
+          <li data-nav-id="/user/setup-basic-firewall/" class=""><a class="padding" href="/user/setup-basic-firewall/">Setup Basic Firewall</a></li>
+          <li data-nav-id="/user/slackbuilds-in-salix-repos/" class=""><a class="padding" href="/user/slackbuilds-in-salix-repos/">Slackbuilds in Salix Repos</a></li>
+          <li data-nav-id="/user/ssh-without-password/" class=""><a class="padding" href="/user/ssh-without-password/">SSH Login Without Password</a></li>
+          <li data-nav-id="/user/start-wm-from-login-screen/" class=""><a class="padding" href="/user/start-wm-from-login-screen/">Start WM from Login Screen</a></li>
+          <li data-nav-id="/user/tune-ssd/" class=""><a class="padding" href="/user/tune-ssd/">Tune an SSD</a></li>
+          <li data-nav-id="/user/how-to-create-a-video-dvd-from-the-cli/" class=""><a class="padding" href="/user/how-to-create-a-video-dvd-from-the-cli/">Video DVD from the CLI</a></li>
+          <li data-nav-id="/user/virtualbox-host-devices/" class=""><a class="padding" href="/user/virtualbox-host-devices/">Virtualbox Access Host USB</a></li></ul></li>
+          <li data-nav-id="/dev/" class=""><a class="padding" href="/dev/">Developer Documentation</a><ul id="R-subsections-bde8a83577188605f0afbdffa38c9c13" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/" class="alwaysopen"><a class="padding" href="/dev/packaging/">Packaging Documentation</a><ul id="R-subsections-44df389f6ee6cba780e4599b7c3f6732" class="morespace collapsible-menu">
+          <li data-nav-id="/dev/packaging/gconf/" class=""><a class="padding" href="/dev/packaging/gconf/">GConf and Packaging</a></li>
+          <li data-nav-id="/dev/packaging/git-svn-sources-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/git-svn-sources-with-slkbuild/">Git/SVN with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/mateconf/" class=""><a class="padding" href="/dev/packaging/mateconf/">MATEConf</a></li>
+          <li data-nav-id="/dev/packaging/mimetypes/" class=""><a class="padding" href="/dev/packaging/mimetypes/">Mimetypes</a></li>
+          <li data-nav-id="/dev/packaging/new-to-packaging/" class=""><a class="padding" href="/dev/packaging/new-to-packaging/">New to Packaging</a></li>
+          <li data-nav-id="/dev/packaging/package-categories/" class=""><a class="padding" href="/dev/packaging/package-categories/">Package Categories</a></li>
+          <li data-nav-id="/dev/packaging/packaging-rules/" class=""><a class="padding" href="/dev/packaging/packaging-rules/">Packaging rules</a></li>
+          <li data-nav-id="/dev/packaging/packaging-with-slkbuild/" class=""><a class="padding" href="/dev/packaging/packaging-with-slkbuild/">Packaging with slkbuild</a></li>
+          <li data-nav-id="/dev/packaging/scrollkeeper/" class=""><a class="padding" href="/dev/packaging/scrollkeeper/">Scrollkeeper</a></li>
+          <li data-nav-id="/dev/packaging/uid-gid/" class=""><a class="padding" href="/dev/packaging/uid-gid/">slkbuild UIDs/GIDs</a></li>
+          <li data-nav-id="/dev/packaging/submitting-packages/" class=""><a class="padding" href="/dev/packaging/submitting-packages/">Submitting Packages</a></li></ul></li>
+          <li data-nav-id="/dev/create-public-mirror/" class=""><a class="padding" href="/dev/create-public-mirror/">How to Create a Public Salix Mirror</a></li>
+          <li data-nav-id="/dev/internationalize-shell-scripts/" class=""><a class="padding" href="/dev/internationalize-shell-scripts/">Internationalize Shell Scripts</a></li>
+          <li data-nav-id="/dev/work-with-sourceforge/" class=""><a class="padding" href="/dev/work-with-sourceforge/">Sourceforge</a></li>
+          <li data-nav-id="/dev/transifex/" class=""><a class="padding" href="/dev/transifex/">Transifex</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://salixos.org"><i class='fas fa-home'></i> Main website</a></li>
+            <li><a class="padding" href="https://forum.salixos.org"><i class='fas fa-question-circle'></i> Support Forum</a></li>
+            <li><a class="padding" href="https://blog.salixos.org"><i class='fas fa-blog'></i> Blog</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/guide/your-salix/" lang="en-US" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-green" value="green" selected>Green</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter">
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1793056471" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1793056471" defer></script>
+    <script src="/js/theme.js?1793056471" defer></script>
+  </body>
+</html>

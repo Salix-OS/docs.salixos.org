@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Partitioning with cfdisk :: Salix Documentation</title>
+    <link>/user/partitioning-with-cfdisk/</link>
+    <description>cfdisk is the partitioning tool that the Salix installer runs to let you set up your partitions. On disks that use the GPT partitioning scheme, the installer runs cgdisk instead, which works mostly the same way. This page explains how disks and partitions are named and how to use each of the cfdisk commands. For a quick walkthrough of partitioning during installation, see the Salix Startup Guide.&#xA;Hard disk and partition names Hard disk names SCSI harddisks are named with sdx, where x is a harddisk letter.</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/user/partitioning-with-cfdisk/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
