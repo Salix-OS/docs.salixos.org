@@ -269,6 +269,12 @@ For more on SLKBUILD, please consult
 [SLKBUILD](/dev/packaging/packaging-with-slkbuild/) 
 and [New to Packaging](/dev/packaging/new-to-packaging/).
 
+### Upgrading Salix to a Newer Version
+
+When a new Salix release comes out, you can upgrade your existing installation
+by following the instructions in
+[Upgrading Between Releases](/user/upgrading/).
+
 ## Configuring Your Salix
 
 ### Setting up an internet connection
