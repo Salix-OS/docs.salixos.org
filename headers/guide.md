@@ -17,5 +17,3 @@ chapter. If you prefer to read the whole guide in one go, use the print button
 on this page to view all chapters on a single page.
 
 ## Contents
-
-{{% children %}}

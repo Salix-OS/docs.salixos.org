@@ -5,7 +5,7 @@ SSH_TARGET_DIR=/srv/www/docs
 GIT_PUBLISH_BRANCH=public
 
 .PHONY: build
-build: faq user dev packaging upgrading
+build: guide faq user dev packaging upgrading
 	rm -rf public
 	mkdir public
 	git worktree prune
@@ -20,6 +20,22 @@ build: faq user dev packaging upgrading
 .PHONY: serve
 serve: build
 	hugo-0.123.8 serve
+
+.PHONY: guide
+guide:
+	cat headers/guide.md > content/guide/_index.md
+	grep -R "^title: \|^weight: " content/guide/*/_index.md |\
+		sed "/md:weight:/s/.*weight: //" | \
+		tr '\n' ' ' | \
+		sed "s/content\/guide/\ncontent\/guide/g" | \
+		rev | \
+		sort -n | \
+		sed "s/^ *//" | \
+		cut -d' ' -f2- | \
+		rev | \
+		sed "s|content/guide/\(.*\)/_index.md:title: \(.*\)|- [\2](/guide/\1)|" |\
+		sed "s/\"//g" \
+		>> content/guide/_index.md
 
 .PHONY: faq
 faq:
